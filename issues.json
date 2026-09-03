@@ -1,0 +1,74 @@
+{
+  "portal_name": "Spark News Live",
+  "version": "3.0",
+  "active_issue": "1",
+  "reading_streak": 1,
+  "issues": [
+    {
+      "issue_id": "1",
+      "issue_number": 1,
+      "title": "Weekly Investigative Intelligence (Issue #1)",
+      "date": "2026-08-30",
+      "cadence": "Weekly Inaugural Edition",
+      "reading_streak_day": 1,
+      "macro_metrics": {
+        "baseload_nuclear_gw": "2.5 GW",
+        "transformer_lead_time_weeks": "185 WKS",
+        "optical_cpo_bandwidth_tbps": "3.6 Tbps",
+        "target_pue": "1.06",
+        "sni_structural_rating": "9.8 / 10"
+      },
+      "topics": [
+        {
+          "topic_id": 1,
+          "kicker": "LEAD INVESTIGATIVE ANCHOR",
+          "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to Behind-the-Meter 2.5GW Nuclear Generation",
+          "sni": "9.7 / 10",
+          "summary": "Hyperscalers acquire direct busbar generation at 2.5GW Susquehanna nuclear station to escape 7-year RTO transmission queues."
+        },
+        {
+          "topic_id": 2,
+          "kicker": "FRONTIER HARDWARE & SILICON",
+          "headline": "NVIDIA Vera Rubin (VR100) Architecture Validates Co-Packaged Optics & 16-Hi HBM4 Stacks",
+          "sni": "9.3 / 10",
+          "summary": "TSMC N3P silicon validation adopts Co-Packaged Optics, slashing interconnect energy by 84% down to 2.4 pJ/bit."
+        },
+        {
+          "topic_id": 3,
+          "kicker": "GLOBAL GRID SECURITY",
+          "headline": "NERC Issues Level 3 Grid Emergency Alert as AI Datacenters Trigger Gigawatt Load Swings",
+          "sni": "9.1 / 10",
+          "summary": "185-week lead times for 500kV step-down transformers collide with federal foreign inverter import bans."
+        },
+        {
+          "topic_id": 4,
+          "kicker": "SOVEREIGN FAB & BENGALURU TRANSIT",
+          "headline": "Tata-PSMC Dholera Fab Commercializes 300mm Ingot Slicing & Namma Metro Pink Line Breakthrough",
+          "sni": "8.9 / 10",
+          "summary": "India Semiconductor Mission pulls 300mm electronic-grade ingot for automotive CMOS; Pink Line achieves 13.9km tunneling breakthrough."
+        },
+        {
+          "topic_id": 5,
+          "kicker": "TECHNICAL DEEP DIVE",
+          "headline": "The 10-Gigawatt Compute Wall: Architectural Physics, Liquid Cooling & SMR Nuclear Realities",
+          "sni": "9.8 / 10",
+          "summary": "120kW/rack density forces Direct-to-Chip 45\u00b0C warm-water loops and $12.2B 1-GW campus capex allocations."
+        },
+        {
+          "topic_id": 6,
+          "kicker": "ANTITRUST POLICY",
+          "headline": "FTC Issues Federal Enforcement Statement Targeting Algorithmic Personalized Pricing",
+          "sni": "8.6 / 10",
+          "summary": "FTC Section 5 enforcement treats automated multi-tenant surveillance pricing as actionable unfair competition."
+        },
+        {
+          "topic_id": 7,
+          "kicker": "GLOBAL MARITIME SECURITY",
+          "headline": "Maritime Chokepoint Interdictions Trigger Long-Haul Rerouting & Arctic Route Exploration",
+          "sni": "8.8 / 10",
+          "summary": "Strait of Hormuz and Red Sea traffic re-routes around Africa, adding 12-14 days latency and hiking war-risk insurance +380%."
+        }
+      ]
+    }
+  ]
+}
