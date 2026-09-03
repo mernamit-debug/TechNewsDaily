@@ -42,20 +42,18 @@
       </div>
     </header>
 
-    <!-- Interactive Calendar & Issue Archive Navigator (Future Access) -->
+    <!-- Interactive Calendar & Issue Archive Navigator (In-Page Drawer) -->
     <section class="archive-navigator">
       <div class="archive-left">
         <span class="archive-label">📅 ISSUE ARCHIVE & CALENDAR:</span>
         <select class="archive-selector" id="issue-archive-select" onchange="spark.switchIssue(this.value)">
           <option value="issue-1" selected>Issue #1 — Aug 30, 2026 (Inaugural Launch Edition)</option>
-          <option value="future-preview">Issue #2 — Sept 6, 2026 (Scheduled Pipeline)</option>
-          <option value="calendar-vault">View Historical Calendar Vault ➔</option>
+          <option value="issue-2">Issue #2 — Sept 1, 2026 (Mid-Week Special)</option>
+          <option value="issue-3">Issue #3 — Sept 6, 2026 (Scheduled Sunday)</option>
         </select>
       </div>
       <div class="archive-quick-tags">
-        <span class="quick-tag active" onclick="spark.switchIssue('issue-1')">Issue #1</span>
-        <span class="quick-tag" onclick="spark.switchIssue('future-preview')">Issue #2</span>
-        <span class="quick-tag" onclick="spark.switchIssue('calendar-vault')">Archive</span>
+        <button class="action-btn" style="background: rgba(0, 240, 255, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);" onclick="spark.openArchiveDrawer()">🏛️ Open Full Calendar Vault</button>
       </div>
     </section>
 
@@ -403,6 +401,88 @@
     </footer>
 
   </main>
+
+
+  <!-- IN-PAGE ARCHIVE & CALENDAR MODAL DRAWER (ZERO BROWSER ALERTS) -->
+  <div class="drawer-backdrop" id="archive-drawer-modal" onclick="if(event.target === this) spark.closeArchiveDrawer()">
+    <div class="archive-modal-card">
+      <div class="modal-header-bar">
+        <div class="modal-title-text">
+          <span>📅</span> Historical Calendar Vault & Issue Archive
+        </div>
+        <button class="btn-close-modal" onclick="spark.closeArchiveDrawer()">✕</button>
+      </div>
+      <div class="modal-content-scroll">
+        
+        <!-- Interactive Month Calendar Widget -->
+        <div class="calendar-widget-box">
+          <div class="calendar-month-title">
+            <span>AUGUST / SEPTEMBER 2026</span>
+            <span style="color: var(--text-muted); font-size: 11px;">Select date to load issue</span>
+          </div>
+          <div class="calendar-days-grid">
+            <div class="cal-head-day">SU</div>
+            <div class="cal-head-day">MO</div>
+            <div class="cal-head-day">TU</div>
+            <div class="cal-head-day">WE</div>
+            <div class="cal-head-day">TH</div>
+            <div class="cal-head-day">FR</div>
+            <div class="cal-head-day">SA</div>
+
+            <!-- Calendar Dates -->
+            <div class="cal-date-cell">24</div>
+            <div class="cal-date-cell">25</div>
+            <div class="cal-date-cell">26</div>
+            <div class="cal-date-cell">27</div>
+            <div class="cal-date-cell">28</div>
+            <div class="cal-date-cell">29</div>
+            <div class="cal-date-cell has-issue is-selected" onclick="spark.switchIssue('issue-1')" title="Issue #1 Published">30 🟢</div>
+
+            <div class="cal-date-cell">31</div>
+            <div class="cal-date-cell has-issue" onclick="spark.switchIssue('issue-2')" title="Issue #2 Published">01 🟢</div>
+            <div class="cal-date-cell">02</div>
+            <div class="cal-date-cell">03</div>
+            <div class="cal-date-cell">04</div>
+            <div class="cal-date-cell">05</div>
+            <div class="cal-date-cell has-issue" onclick="spark.switchIssue('issue-3')" title="Issue #3 Scheduled">06 ⏳</div>
+          </div>
+        </div>
+
+        <!-- Issue Cards Directory -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-size: 12px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase;">Indexed Intelligence Dossiers:</div>
+          
+          <div class="issue-item-card is-active-issue" onclick="spark.switchIssue('issue-1')">
+            <div class="issue-card-left">
+              <div class="issue-card-title">Issue #1 — Inaugural Launch Edition (August 30, 2026)</div>
+              <div class="issue-card-meta">Hyperscale Energy Decoupling • Silicon Photonics (VR100) • 10GW Compute Wall • NERC Grid Alert</div>
+            </div>
+            <span class="issue-card-badge" style="background: rgba(0, 229, 153, 0.15); color: var(--accent-emerald); border: 1px solid var(--accent-emerald);">CURRENT ACTIVE ✅</span>
+          </div>
+
+          <div class="issue-item-card" onclick="spark.switchIssue('issue-2')">
+            <div class="issue-card-left">
+              <div class="issue-card-title">Issue #2 — Mid-Week Strategic Brief (September 1, 2026)</div>
+              <div class="issue-card-meta">Strait of Hormuz Energy Routing • BMRCL 13.9km Pink Line Breakthrough • Orion Inference Scaling</div>
+            </div>
+            <span class="issue-card-badge" style="background: rgba(0, 112, 243, 0.15); color: var(--accent-blue); border: 1px solid var(--accent-blue);">ARCHIVED 📁</span>
+          </div>
+
+          <div class="issue-item-card" onclick="spark.switchIssue('issue-3')">
+            <div class="issue-card-left">
+              <div class="issue-card-title">Issue #3 — Next Weekly Master Edition (September 6, 2026)</div>
+              <div class="issue-card-meta">Automated Intelligence Pipeline Execution • Weekly Sunday at 8:00 PM IST</div>
+            </div>
+            <span class="issue-card-badge" style="background: rgba(245, 166, 35, 0.15); color: var(--accent-amber); border: 1px solid var(--accent-amber);">SCHEDULED ⏳</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- IN-PAGE TOAST CONTAINER -->
+  <div id="toast-container"></div>
 
   <!-- External Modular JavaScript Application Logic -->
   <script src="app.js"></script>
