@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark News Live — Executive Intelligence Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation & HUD Bar -->
+  <nav id="nav-hud">
+    <div id="scroll-progress"></div>
+    <div class="brand-wrapper">
+      <div class="beacon-dot"></div>
+      <div class="brand-text">SPARK NEWS LIVE // PORTAL OS</div>
+    </div>
+    <div class="hud-actions-group">
+      <span class="pill-status" id="streak-badge" style="color: var(--accent-emerald);">🔥 STREAK: DAY 3</span>
+      <span class="pill-status" id="hud-xp-tracker" style="color: var(--accent-amber);">⭐ 100 XP [LVL 1]</span>
+      <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim: OFF</button>
+      <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode</button>
+    </div>
+  </nav>
+
+  <main class="app-container">
+
+    <!-- Masthead Header -->
+    <header class="portal-header">
+      <div class="header-row">
+        <div>
+          <div class="kicker-overline" id="issue-header-kicker">DAILY INTELLIGENCE // ISSUE #3</div>
+          <h1 class="masthead-title" id="issue-header-title">DAILY INVESTIGATIVE NEWS DIGEST</h1>
+          <div class="header-subtitle">
+            <span id="issue-header-date">VOLUME IV • SEPTEMBER 3, 2026 • ISSUE #3</span>
+            <span style="color: var(--accent-emerald); font-weight: 700;">HEADLESS DATA ENGINE: LIVE</span>
+          </div>
+        </div>
+        <div>
+          <span class="pill-status" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">HEADLESS GITHUB SYNC</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Archive & Calendar Navigator -->
+    <section class="archive-navigator">
+      <div class="archive-left">
+        <span class="archive-label">📅 CALENDAR & ARCHIVE NAVIGATOR:</span>
+        <select class="archive-selector" id="issue-archive-select" onchange="spark.loadIssueFile(this.value)">
+          <option value="data/issues/2026-09-03.json" selected>Issue #3 — September 3, 2026 (Latest)</option>
+        </select>
+      </div>
+      <div class="archive-quick-tags">
+        <button class="action-btn" style="background: rgba(0, 240, 255, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);" onclick="spark.openArchiveDrawer()">🏛️ Open Full Calendar Vault</button>
+      </div>
+    </section>
+
+    <!-- 30-Sec Executive Cheat Sheet -->
+    <section class="cheat-sheet-card">
+      <div class="cheat-header">⚡ The 30-Second Week-in-Review (Core Shifts)</div>
+      <ul class="cheat-items-list" id="cheat-list-container">
+        <!-- Injected dynamically via JSON -->
+      </ul>
+    </section>
+
+    <!-- Macro Radar KPI Grid -->
+    <section class="radar-metrics-grid">
+      <div class="metric-box">
+        <div class="metric-number" id="kpi-nuclear">2.88 GWh</div>
+        <div class="metric-caption">Baseload / BESS</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-number" id="kpi-leadtime">185 WKS</div>
+        <div class="metric-caption">Transformer Lead Time</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-number" id="kpi-bandwidth">3.6 Tbps</div>
+        <div class="metric-caption">Optical CPO Bandwidth</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-number" id="kpi-pue">1.06</div>
+        <div class="metric-caption">Target Facility PUE</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-number" id="kpi-sni">9.8 / 10</div>
+        <div class="metric-caption">Structural SNI Vector</div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: LEAD STORY -->
+    <article class="article-container">
+      <span class="kicker-badge" id="lead-kicker">LEAD INVESTIGATIVE ANCHOR</span>
+      <h2 class="story-heading" id="lead-headline">Loading Lead Story...</h2>
+      <div class="story-columns-grid">
+        <div class="story-main-col">
+          <p class="skim-core" id="lead-catchup">Loading narrative breakdown...</p>
+          <div class="analogy-callout" id="lead-analogy"><b>The Intuitive Bridge:</b> Loading analogy...</div>
+          <div class="infographic-frame">
+            <img id="lead-image" src="" alt="Lead Story Visual" style="max-width: 100%; display: block;">
+          </div>
+          <div style="font-size: 13.5px; color: var(--accent-emerald); font-weight: 700; margin-top: 14px;" id="lead-why-matters"></div>
+        </div>
+        <div class="story-sidebar-col">
+          <div class="widget-card decoder-card">
+            <div class="widget-title" style="color: var(--accent-red);">📢 PR Bullshit Decoder</div>
+            <div class="claim-text" id="lead-pr-claim">"Loading PR claim..."</div>
+            <div class="reality-text" id="lead-pr-reality">Loading savage reality audit...</div>
+          </div>
+          <div class="widget-card">
+            <div class="widget-title">⚖️ Bull vs. Bear Arena</div>
+            <div class="duel-container">
+              <div class="duel-box duel-bull-side" id="lead-bull">Loading bull case...</div>
+              <div class="duel-box duel-bear-side" id="lead-bear">Loading bear case...</div>
+            </div>
+          </div>
+          <div class="widget-card cocktail-flex-card">
+            <div class="widget-title" style="color: var(--accent-purple);">🍸 Cocktail Party Flex</div>
+            <div class="flex-body-text" id="lead-cocktail">"Loading flex..."</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION 2: QUICK HITS -->
+    <article class="article-container">
+      <span class="kicker-badge" style="background: rgba(121, 40, 202, 0.15); color: var(--accent-purple); border-color: rgba(121, 40, 202, 0.3);">SECTION 2 // STRATEGIC BRIEFS</span>
+      <h2 class="story-heading">High-Density Multi-Domain Intelligence Matrix</h2>
+      <div id="quick-hits-container">
+        <!-- Injected dynamically via JSON -->
+      </div>
+    </article>
+
+    <!-- SECTION 3: THE EXECUTIVE WAGER -->
+    <section class="wager-module">
+      <div class="cheat-header" style="color: var(--accent-amber);">🎲 THE EXECUTIVE WAGER (+100 XP)</div>
+      <div class="wager-query" id="wager-question-text">Loading prediction question...</div>
+      <div class="wager-options-row">
+        <div class="wager-checkbox-card" id="wager-card-yes" onclick="spark.handleWager('yes')">
+          <div class="wager-indicator-box">✓</div>
+          <div class="wager-option-text" id="wager-yes-label">[ YES ]</div>
+        </div>
+        <div class="wager-checkbox-card" id="wager-card-no" onclick="spark.handleWager('no')">
+          <div class="wager-indicator-box">✓</div>
+          <div class="wager-option-text" id="wager-no-label">[ NO ]</div>
+        </div>
+      </div>
+      <div id="wager-response-feedback" style="margin-top: 14px; font-weight: 700; color: var(--accent-emerald); font-size: 13px; display: none;"></div>
+    </section>
+
+    <!-- SECTION 4: RAPID MICRO-QUIZ -->
+    <section class="quiz-engine-wrapper">
+      <div class="cheat-header" style="color: var(--accent-emerald); margin-bottom: 20px;">🧠 DAILY RAPID INTELLIGENCE QUIZ (+200 XP)</div>
+      <div id="quiz-items-container">
+        <!-- Injected dynamically via JSON -->
+      </div>
+    </section>
+
+    <!-- SECTION 5: BURIED EASTER EGG -->
+    <section class="article-container" style="padding: 24px;">
+      <div class="easter-pod-container" style="margin: 0;">
+        <div style="font-size: 11px; font-weight: 800; color: var(--accent-purple); text-transform: uppercase;">🎯 Buried Easter Egg Discovery</div>
+        <p style="font-size: 13px; color: #a3a3a3; margin: 6px 0;">A bizarre, verified historical/scientific fact hidden in today's intelligence brief:</p>
+        <button class="btn-secret-reveal" id="btn-reveal-secret" onclick="spark.unlockSecret()">Reveal Secret (+50 XP)</button>
+        <div class="secret-content-unveiled" id="secret-text-block">Loading secret...</div>
+      </div>
+    </section>
+
+    <!-- Editorial Signoff -->
+    <footer class="portal-footer-section">
+      <p>The global computing paradigm has completed an irreversible transition from pure mathematical abstraction to heavy industrial thermodynamics. The organizations that dominate the next decade will not just write the best algorithms—they will own the transmission substations, secure the reactor busbars, engineer the micro-channel liquid cold plates, and master sovereign regulatory physics.</p>
+      <p style="margin-top: 14px; font-weight: 800; color: #ffffff;">— The Daily Intelligence Pipeline Editorial Board • Spark News Live</p>
+    </footer>
+
+  </main>
+
+  <!-- IN-PAGE ARCHIVE & CALENDAR MODAL DRAWER -->
+  <div class="drawer-backdrop" id="archive-drawer-modal" onclick="if(event.target === this) spark.closeArchiveDrawer()">
+    <div class="archive-modal-card">
+      <div class="modal-header-bar">
+        <div class="modal-title-text">
+          <span>📅</span> Historical Calendar Vault & Issue Archive
+        </div>
+        <button class="btn-close-modal" onclick="spark.closeArchiveDrawer()">✕</button>
+      </div>
+      <div class="modal-content-scroll">
+        <div id="modal-issues-list" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Dynamically populated from data/manifest.json -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="app.js"></script>
+</body>
+</html>
