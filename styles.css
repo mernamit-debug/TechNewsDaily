@@ -1,6 +1,6 @@
 /* ==========================================================================
-   SPARK NEWS LIVE — ENTERPRISE EDITORIAL DESIGN SYSTEM
-   Theme: Vercel / Apple High-Contrast Dark Modern Aesthetic
+   SPARK NEWS LIVE — PRODUCTION DESIGN SYSTEM (V3.6 CONSOLIDATED)
+   Theme: Vercel / Apple High-Contrast Dark Modern Aesthetic with Light Mode
    ========================================================================== */
 
 :root {
@@ -9,37 +9,27 @@
   --bg-card: #111111;
   --bg-card-hover: #181818;
   --bg-card-active: #222222;
-  
   --border-subtle: #222222;
   --border-medium: #333333;
   --border-focus: #0070f3;
-  
   --text-primary: #ededed;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
-  
   --accent-cyan: #00f0ff;
   --accent-blue: #0070f3;
   --accent-emerald: #00e599;
   --accent-amber: #f5a623;
   --accent-red: #ff3333;
   --accent-purple: #7928ca;
-  
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-full: 9999px;
-  
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
-  --shadow-glow-cyan: 0 0 20px rgba(0, 240, 255, 0.25);
-  --shadow-glow-emerald: 0 0 20px rgba(0, 229, 153, 0.25);
 }
 
-/* Light Theme Override */
 html.light-mode {
   --bg-canvas: #f8fafc;
   --bg-surface: #ffffff;
@@ -71,9 +61,7 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* --------------------------------------------------------------------------
-   Top Sticky Navigation & Heads-Up Display (HUD)
-   -------------------------------------------------------------------------- */
+/* 1. Sticky Navigation & Heads-Up Display (HUD) */
 #nav-hud {
   position: sticky;
   top: 0;
@@ -116,9 +104,8 @@ html.light-mode #nav-hud {
   animation: pulse-beacon 2s infinite;
 }
 @keyframes pulse-beacon {
-  0% { transform: scale(0.95); opacity: 0.8; }
+  0%, 100% { transform: scale(0.95); opacity: 0.8; }
   50% { transform: scale(1.15); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
 }
 .brand-text {
   font-size: 13px;
@@ -169,16 +156,13 @@ html.light-mode .action-btn {
   transform: translateY(-1px);
 }
 
-/* --------------------------------------------------------------------------
-   Layout & Container
-   -------------------------------------------------------------------------- */
+/* 2. Main Container */
 .app-container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 36px 20px 120px;
 }
 
-/* Masthead Header */
 .portal-header {
   border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 28px;
@@ -202,10 +186,10 @@ html.light-mode .action-btn {
 }
 
 h1.masthead-title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 900;
   letter-spacing: -0.04em;
-  line-height: 1.1;
+  line-height: 1.15;
   background: linear-gradient(180deg, #ffffff 40%, #888888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -225,9 +209,7 @@ html.light-mode h1.masthead-title {
   flex-wrap: wrap;
 }
 
-/* --------------------------------------------------------------------------
-   Interactive Calendar & Issue Archive Navigator
-   -------------------------------------------------------------------------- */
+/* 3. Archive Navigator Bar */
 .archive-navigator {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -239,6 +221,9 @@ html.light-mode h1.masthead-title {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+}
+html.light-mode .archive-navigator {
+  background: #ffffff !important;
 }
 
 .archive-left {
@@ -274,30 +259,7 @@ html.light-mode h1.masthead-title {
   border-color: var(--accent-cyan);
 }
 
-.archive-quick-tags {
-  display: flex;
-  gap: 8px;
-}
-.quick-tag {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.quick-tag:hover, .quick-tag.active {
-  background: var(--accent-blue);
-  color: #ffffff;
-  border-color: var(--accent-blue);
-}
-
-/* --------------------------------------------------------------------------
-   Executive 30-Second Cheat Sheet Card
-   -------------------------------------------------------------------------- */
+/* 4. 30-Second Week-in-Review Card */
 .cheat-sheet-card {
   background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.10) 0%, rgba(12, 12, 12, 0.96) 75%);
   border: 1px solid rgba(245, 166, 35, 0.35);
@@ -306,6 +268,12 @@ html.light-mode h1.masthead-title {
   margin-bottom: 36px;
   box-shadow: var(--shadow-md);
 }
+html.light-mode .cheat-sheet-card {
+  background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.15) 0%, #ffffff 80%) !important;
+  border: 1px solid rgba(245, 166, 35, 0.5) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
 .cheat-header {
   font-size: 13px;
   font-weight: 900;
@@ -327,6 +295,9 @@ html.light-mode h1.masthead-title {
   position: relative;
   padding-left: 20px;
 }
+html.light-mode .cheat-items-list li {
+  color: #1e293b !important;
+}
 .cheat-items-list li::before {
   content: "➔";
   position: absolute;
@@ -335,9 +306,7 @@ html.light-mode h1.masthead-title {
   font-weight: bold;
 }
 
-/* --------------------------------------------------------------------------
-   Macro Radar KPI Dashboard Grid
-   -------------------------------------------------------------------------- */
+/* 5. Macro Radar KPI Grid */
 .radar-metrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -351,6 +320,10 @@ html.light-mode h1.masthead-title {
   padding: 20px 16px;
   text-align: center;
   transition: transform 0.2s ease, border-color 0.2s ease;
+}
+html.light-mode .metric-box {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 .metric-box:hover {
   transform: translateY(-2px);
@@ -372,9 +345,7 @@ html.light-mode h1.masthead-title {
   letter-spacing: 0.06em;
 }
 
-/* --------------------------------------------------------------------------
-   Article Modules (2-Column Asymmetric Spreads)
-   -------------------------------------------------------------------------- */
+/* 6. Article Modules (2-Column Grid) */
 .article-container {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -382,6 +353,10 @@ html.light-mode h1.masthead-title {
   padding: 32px;
   margin-bottom: 48px;
   box-shadow: var(--shadow-md);
+}
+html.light-mode .article-container {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 
 .kicker-badge {
@@ -407,7 +382,7 @@ html.light-mode h1.masthead-title {
   margin-bottom: 18px;
 }
 html.light-mode .story-heading {
-  color: #0f172a;
+  color: #0f172a !important;
 }
 
 .story-columns-grid {
@@ -428,7 +403,7 @@ html.light-mode .story-heading {
   line-height: 1.7;
 }
 html.light-mode .story-main-col p {
-  color: #334155;
+  color: #334155 !important;
 }
 
 .analogy-callout {
@@ -441,7 +416,7 @@ html.light-mode .story-main-col p {
   color: #a3a3a3;
 }
 html.light-mode .analogy-callout {
-  color: #475569;
+  color: #475569 !important;
 }
 
 .infographic-frame {
@@ -456,7 +431,7 @@ html.light-mode .analogy-callout {
   display: block;
 }
 
-/* Sidebar Widgets Stack */
+/* Sidebar Widgets */
 .story-sidebar-col {
   display: flex;
   flex-direction: column;
@@ -469,6 +444,10 @@ html.light-mode .analogy-callout {
   border-radius: var(--radius-md);
   padding: 18px;
 }
+html.light-mode .widget-card {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
 .widget-title {
   font-size: 11px;
   font-weight: 800;
@@ -477,10 +456,13 @@ html.light-mode .analogy-callout {
   margin-bottom: 8px;
 }
 
-/* PR Bullshit Decoder Widget */
 .decoder-card {
   border-color: rgba(255, 51, 51, 0.25);
   background: rgba(255, 51, 51, 0.03);
+}
+html.light-mode .decoder-card {
+  background: rgba(255, 51, 51, 0.04) !important;
+  border-color: rgba(255, 51, 51, 0.25) !important;
 }
 .claim-text {
   font-size: 12px;
@@ -490,13 +472,15 @@ html.light-mode .analogy-callout {
   padding-bottom: 8px;
   border-bottom: 1px dashed var(--border-subtle);
 }
+html.light-mode .claim-text {
+  color: #475569 !important;
+}
 .reality-text {
   font-size: 12px;
   font-weight: 600;
   color: var(--accent-red);
 }
 
-/* Bull vs Bear Duel */
 .duel-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -518,10 +502,13 @@ html.light-mode .analogy-callout {
   color: var(--accent-red);
 }
 
-/* Cocktail Party Flex */
 .cocktail-flex-card {
   background: linear-gradient(135deg, rgba(121, 40, 202, 0.08) 0%, rgba(0, 112, 243, 0.08) 100%);
   border: 1px solid rgba(121, 40, 202, 0.3);
+}
+html.light-mode .cocktail-flex-card {
+  background: rgba(121, 40, 202, 0.04) !important;
+  border-color: rgba(121, 40, 202, 0.25) !important;
 }
 .flex-body-text {
   font-size: 12.5px;
@@ -530,27 +517,7 @@ html.light-mode .analogy-callout {
   color: #c084fc;
 }
 
-/* Technical Specification Table */
-.data-grid-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-  margin: 16px 0;
-}
-.data-grid-table th, .data-grid-table td {
-  padding: 10px 14px;
-  border: 1px solid var(--border-subtle);
-  text-align: left;
-}
-.data-grid-table th {
-  background: var(--bg-card);
-  font-weight: 800;
-  color: var(--accent-blue);
-}
-
-/* --------------------------------------------------------------------------
-   Interactive Executive Wager (Turns Green on Click)
-   -------------------------------------------------------------------------- */
+/* 7. Interactive Executive Wager */
 .wager-module {
   background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.12) 0%, rgba(10, 10, 10, 0.95) 80%);
   border: 2px solid var(--accent-amber);
@@ -564,6 +531,10 @@ html.light-mode .analogy-callout {
   color: #ffffff;
   margin: 12px 0 20px;
 }
+html.light-mode .wager-query {
+  color: #0f172a !important;
+}
+
 .wager-options-row {
   display: flex;
   gap: 16px;
@@ -582,6 +553,10 @@ html.light-mode .analogy-callout {
   cursor: pointer;
   transition: all 0.2s ease;
   user-select: none;
+}
+html.light-mode .wager-checkbox-card {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 .wager-checkbox-card:hover {
   border-color: #555555;
@@ -614,10 +589,11 @@ html.light-mode .analogy-callout {
   font-weight: 800;
   color: #ffffff;
 }
+html.light-mode .wager-option-text {
+  color: #0f172a !important;
+}
 
-/* --------------------------------------------------------------------------
-   Buried Easter Egg Reveal Pod
-   -------------------------------------------------------------------------- */
+/* 8. Easter Egg Discovery Pod */
 .easter-pod-container {
   background: rgba(121, 40, 202, 0.05);
   border: 1px dashed var(--accent-purple);
@@ -656,15 +632,17 @@ html.light-mode .analogy-callout {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --------------------------------------------------------------------------
-   Interactive Micro-Quiz Engine
-   -------------------------------------------------------------------------- */
+/* 9. Interactive Micro-Quiz Engine */
 .quiz-engine-wrapper {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 32px;
   margin-bottom: 48px;
+}
+html.light-mode .quiz-engine-wrapper {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 .quiz-card-row {
   margin-bottom: 24px;
@@ -678,7 +656,7 @@ html.light-mode .analogy-callout {
   margin-bottom: 12px;
 }
 html.light-mode .quiz-prompt {
-  color: #0f172a;
+  color: #0f172a !important;
 }
 .quiz-options-list {
   display: grid;
@@ -692,6 +670,11 @@ html.light-mode .quiz-prompt {
   cursor: pointer;
   font-size: 13px;
   transition: all 0.15s ease;
+}
+html.light-mode .quiz-choice-item {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
 }
 .quiz-choice-item:hover {
   border-color: var(--accent-blue);
@@ -709,9 +692,7 @@ html.light-mode .quiz-prompt {
   color: var(--accent-red) !important;
 }
 
-/* --------------------------------------------------------------------------
-   Executive Skim Mode Styles
-   -------------------------------------------------------------------------- */
+/* 10. Skim Mode Active Overrides */
 body.skim-view-active .story-main-col p:not(.skim-core) {
   opacity: 0.35;
 }
@@ -722,65 +703,7 @@ body.skim-view-active .story-main-col p b {
   border-radius: 3px;
 }
 
-/* Footer */
-.portal-footer-section {
-  text-align: center;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 40px;
-  font-size: 12px;
-  color: var(--text-muted);
-}
-
-/* --------------------------------------------------------------------------
-   In-Page Floating Toast Notifications (Zero Browser Alerts)
-   -------------------------------------------------------------------------- */
-#toast-container {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  pointer-events: none;
-}
-
-.toast-msg {
-  pointer-events: auto;
-  min-width: 280px;
-  max-width: 420px;
-  background: rgba(18, 18, 18, 0.95);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  animation: toastSlideIn 0.25s ease forwards;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-@keyframes toastSlideIn {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-.toast-msg.toast-success {
-  border-left: 4px solid var(--accent-emerald);
-}
-.toast-msg.toast-info {
-  border-left: 4px solid var(--accent-cyan);
-}
-.toast-msg.toast-amber {
-  border-left: 4px solid var(--accent-amber);
-}
-
-/* --------------------------------------------------------------------------
-   In-Page Archive & Calendar Modal Drawer
-   -------------------------------------------------------------------------- */
+/* 11. In-Page Calendar & Archive Modal Drawer */
 .drawer-backdrop {
   position: fixed;
   top: 0;
@@ -812,6 +735,10 @@ body.skim-view-active .story-main-col p b {
   overflow: hidden;
   animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+html.light-mode .archive-modal-card {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
 @keyframes modalPop {
   from { transform: scale(0.96); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
@@ -825,6 +752,9 @@ body.skim-view-active .story-main-col p b {
   align-items: center;
   background: #111111;
 }
+html.light-mode .modal-header-bar {
+  background: #f1f5f9 !important;
+}
 .modal-title-text {
   font-size: 16px;
   font-weight: 800;
@@ -832,6 +762,9 @@ body.skim-view-active .story-main-col p b {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+html.light-mode .modal-title-text {
+  color: #0f172a !important;
 }
 .btn-close-modal {
   background: #1a1a1a;
@@ -846,12 +779,10 @@ body.skim-view-active .story-main-col p b {
   cursor: pointer;
   font-size: 16px;
   font-weight: 800;
-  transition: all 0.15s ease;
 }
 .btn-close-modal:hover {
   color: #ffffff;
   background: #262626;
-  border-color: #555555;
 }
 
 .modal-content-scroll {
@@ -862,61 +793,6 @@ body.skim-view-active .story-main-col p b {
   gap: 20px;
 }
 
-/* In-Modal Calendar Month Grid */
-.calendar-widget-box {
-  background: #141414;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-}
-.calendar-month-title {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--accent-cyan);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-.calendar-days-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-  text-align: center;
-  font-size: 12px;
-}
-.cal-head-day {
-  color: var(--text-muted);
-  font-weight: 700;
-  padding: 4px;
-}
-.cal-date-cell {
-  background: #1a1a1a;
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 8px 4px;
-  color: var(--text-secondary);
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-.cal-date-cell.has-issue {
-  background: rgba(0, 229, 153, 0.1);
-  border-color: var(--accent-emerald);
-  color: #ffffff;
-  font-weight: 800;
-  cursor: pointer;
-}
-.cal-date-cell.has-issue:hover {
-  background: var(--accent-emerald);
-  color: #000000;
-  transform: translateY(-2px);
-}
-.cal-date-cell.is-selected {
-  outline: 2px solid var(--accent-cyan);
-}
-
-/* Issue List in Modal */
 .issue-item-card {
   background: #141414;
   border: 1px solid var(--border-subtle);
@@ -928,6 +804,10 @@ body.skim-view-active .story-main-col p b {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+html.light-mode .issue-item-card {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 .issue-item-card:hover {
   background: #1c1c1c;
@@ -948,6 +828,9 @@ body.skim-view-active .story-main-col p b {
   font-weight: 800;
   color: #ffffff;
 }
+html.light-mode .issue-card-title {
+  color: #0f172a !important;
+}
 .issue-card-meta {
   font-size: 11.5px;
   color: var(--text-muted);
@@ -958,4 +841,51 @@ body.skim-view-active .story-main-col p b {
   padding: 4px 10px;
   border-radius: var(--radius-full);
   white-space: nowrap;
+}
+
+/* 12. Floating In-Page Toasts */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+.toast-msg {
+  pointer-events: auto;
+  min-width: 280px;
+  max-width: 420px;
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: toastSlideIn 0.25s ease forwards;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+@keyframes toastSlideIn {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.toast-msg.toast-success { border-left: 4px solid var(--accent-emerald); }
+.toast-msg.toast-info { border-left: 4px solid var(--accent-cyan); }
+.toast-msg.toast-amber { border-left: 4px solid var(--accent-amber); }
+
+/* 13. Footer */
+.portal-footer-section {
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 40px;
+  font-size: 12px;
+  color: var(--text-muted);
 }
