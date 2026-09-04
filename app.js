@@ -174,7 +174,7 @@ class SparkPortalEngine {
 
   formatMarkdown(text) {
     if (!text) return "";
-    return text.replace(/\\*\\*(.*?)\\*\\*/g, "<b>$1</b>");
+    return text.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
   }
 
   // Resilient DOM Renderer
@@ -225,7 +225,7 @@ class SparkPortalEngine {
       const lc = document.getElementById("lead-catchup");
       if (lc) lc.innerHTML = this.formatMarkdown(ls.catch_up || "");
       
-      // Analogy Fallback
+      // Analogy & Mechanism Fallback
       const la = document.getElementById("lead-analogy");
       const analogyContent = ls.analogy || ls.mechanism;
       if (la) {
@@ -435,7 +435,3 @@ class SparkPortalEngine {
 document.addEventListener("DOMContentLoaded", () => {
   window.spark = new SparkPortalEngine();
 });
-
-// If analogy is missing, use mechanism. If neither exists, hide the box completely.
-const analogy = ls.analogy || ls.mechanism;
-analogyEl.style.display = analogy ? "block" : "none";
