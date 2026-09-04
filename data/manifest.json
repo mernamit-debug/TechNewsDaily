@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 0,
+    "date": "2026-08-31",
+    "headline": "Frontier Humanoid Robotics: The Sub-10s Sprint, Actuator Physics, and the Factory Floor Reality",
+    "file_path": "data/issues/2026-08-31.json"
+  },
+  {
     "issue_number": 1,
     "date": "2026-09-01",
     "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to 2.5GW Nuclear",
