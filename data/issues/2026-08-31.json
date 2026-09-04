@@ -65,6 +65,19 @@
       "sni": "8.7 / 10"
     }
   ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "Actuator Physics & Solid-State Realities: The Mechanical Ceiling on General-Purpose Humanoids",
+    "thesis": "A biological human walks at 1.4 m/s burning 80 Watts of chemical energy. An electric bipedal humanoid walking at the same speed consumes **1,200 Watts of electrical power**. The gap is not software; it is the non-linear physics of electric actuators versus biological muscle fibers.",
+    "physics_breakdown": "Planetary and strain-wave cycloidal gearboxes dissipate 20% of input torque as friction and heat. Under continuous dynamic balance, actuator coils heat to 95°C within 60 minutes, triggering thermal throttling to protect neodymium magnets from demagnetization.",
+    "matrix": {
+      "mechanism": "Distributed field-oriented control (FOC) motor drivers paired with ultra-low backlash cycloidal gearheads operating at 1,000Hz feedback loops.",
+      "audit": "Venture pitch decks treat humanoids as software models on legs. In reality, a factory warehouse requires an appliance with a 5,000-hour MTBF; current harmonic drive gearheads fail under 250 hours of continuous load.",
+      "cascades": "Commercial deployment will stall in pilot proofs-of-concept until solid-state batteries (400 Wh/kg) and high-durability gearboxes reach automotive economies of scale by 2028.",
+      "sni": "9.5 / 10 (STRUCTURAL RE-ALIGNMENT)"
+    },
+    "takeaway": "Software algorithms reached superhuman performance in 2 years; mechanical gearboxes and battery chemistry are bound by the slow laws of metallurgy and thermodynamics."
+  },
   "executive_wager": {
     "question": "Will a Tier-1 automotive OEM (Tesla, BMW, or Toyota) formally deploy more than 250 commercial bipedal humanoid robots into active factory production lines before June 30, 2027?",
     "consensus_yes_pct": 42,
@@ -74,51 +87,31 @@
     {
       "id": 1,
       "question": "What is the primary physical constraint limiting continuous factory deployment of sprinting humanoid robots?",
-      "options": [
-        "A) Operating system licenses",
-        "B) Battery endurance and actuator gearbox thermal degradation",
-        "C) Wifi latency"
-      ],
+      "options": ["A) Operating system licenses", "B) Battery endurance and actuator gearbox thermal degradation", "C) Wifi latency"],
       "correct_index": 1
     },
     {
       "id": 2,
       "question": "How much energy reduction do event-driven neuromorphic architectures achieve over clocked edge GPUs?",
-      "options": [
-        "A) Under 10%",
-        "B) Approximately 90% (from 12W down to 850mW)",
-        "C) 0%"
-      ],
+      "options": ["A) Under 10%", "B) Approximately 90% (from 12W down to 850mW)", "C) 0%"],
       "correct_index": 1
     },
     {
       "id": 3,
       "question": "What socket TDP threshold is forcing the industry toward direct-to-die two-phase vapor cooling?",
-      "options": [
-        "A) 250 Watts",
-        "B) 1,000+ Watts",
-        "C) 65 Watts"
-      ],
+      "options": ["A) 250 Watts", "B) 1,000+ Watts", "C) 65 Watts"],
       "correct_index": 1
     },
     {
       "id": 4,
       "question": "Which trade mechanism is Washington reviewing to expand tariffs on semiconductor packaging?",
-      "options": [
-        "A) Section 301 review",
-        "B) WTO Article 4",
-        "C) Federal reserve discount rate"
-      ],
+      "options": ["A) Section 301 review", "B) WTO Article 4", "C) Federal reserve discount rate"],
       "correct_index": 0
     },
     {
       "id": 5,
       "question": "Why does natural honey never spoil over centuries?",
-      "options": [
-        "A) Chemical irradiation",
-        "B) High osmotic pressure dehydrates bacteria instantly",
-        "C) Cryogenic freezing"
-      ],
+      "options": ["A) Chemical irradiation", "B) High osmotic pressure dehydrates bacteria instantly", "C) Cryogenic storage"],
       "correct_index": 1
     }
   ],
