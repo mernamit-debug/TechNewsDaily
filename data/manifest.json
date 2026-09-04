@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 4,
+    "date": "2026-09-04",
+    "headline": "California AI Omnibus Bill Lands on Newsom's Desk: Datacenter Grid Moratorium Threatens Hyperscale Western Expansion",
+    "file_path": "data/issues/2026-09-04.json"
+  },
+  {
     "issue_number": 3,
     "date": "2026-09-03",
     "headline": "NVIDIA's $13B Hugging Face Commitment: Open-Source Mindshare & Silicon Lock-In",
