@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 1,
+    "date": "2026-09-01",
+    "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to Behind-the-Meter 2.5GW Nuclear Generation",
+    "file_path": "data/issues/2026-09-01.json"
+  },
+  {
     "issue_number": 2,
     "date": "2026-09-02",
     "headline": "ONE Nuclear Energy Executes LOI for 2.88GWh BESS & Gas Co-Location at Louisiana AI Datacenter",
