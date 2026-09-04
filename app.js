@@ -1,6 +1,14 @@
 /**
  * SPARK NEWS LIVE — PRODUCTION CLIENT-SIDE ENGINE (RESILIENT V3.6)
- * Built with self-healing key aliases, broken image shielding, and auto-collapsing widgets.
+ * Features:
+ * - Dynamic Headless JSON Rendering from /data/issues/
+ * - Automatic Multi-Factor Manifest Sorting (Newest First) & Deduplication
+ * - Self-Healing Key Fallbacks (analogy || mechanism, pr_reality || reality_audit)
+ * - Auto-Hiding of Empty Containers & Shielded Image Loading
+ * - Zero Browser Popups (Floating Glassmorphic Toasts)
+ * - In-Page Historical Calendar Vault & Modal Drawer
+ * - Executive Skim Mode & Theme Toggle
+ * - Interactive Wager & 5-Question Micro-Quiz Engine
  */
 
 class SparkPortalEngine {
@@ -24,6 +32,7 @@ class SparkPortalEngine {
     await this.loadManifest();
   }
 
+  // 1. Reading Scroll Progress Bar
   bindScrollProgress() {
     window.addEventListener("scroll", () => {
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -34,6 +43,7 @@ class SparkPortalEngine {
     });
   }
 
+  // 2. In-Page Toast Notifications
   showToast(message, type = "success") {
     let container = document.getElementById("toast-container");
     if (!container) {
@@ -53,6 +63,7 @@ class SparkPortalEngine {
     }, 3000);
   }
 
+  // 3. Live Gamified XP Engine
   awardXP(amount, reason = "Activity") {
     this.xp += amount;
     const hudEl = document.getElementById("hud-xp-tracker");
@@ -61,6 +72,7 @@ class SparkPortalEngine {
     this.saveState();
   }
 
+  // 4. Executive Skim Mode Toggle
   toggleSkim() {
     this.isSkimMode = !this.isSkimMode;
     document.body.classList.toggle("skim-view-active", this.isSkimMode);
@@ -69,12 +81,14 @@ class SparkPortalEngine {
     this.showToast(this.isSkimMode ? "Executive Skim Mode ON" : "Full Depth View ON", "info");
   }
 
+  // 5. Theme Switcher (Dark / Light)
   toggleTheme() {
     this.isLightMode = !this.isLightMode;
     document.documentElement.classList.toggle("light-mode", this.isLightMode);
-    this.showToast(this.isLightMode ? "Light Theme" : "Dark Theme", "info");
+    this.showToast(this.isLightMode ? "Switched to Light Theme" : "Switched to Dark Theme", "info");
   }
 
+  // 6. In-Page Modal Drawer Controls
   openArchiveDrawer() {
     const drawer = document.getElementById("archive-drawer-modal");
     if (drawer) drawer.classList.add("is-open");
@@ -85,13 +99,14 @@ class SparkPortalEngine {
     if (drawer) drawer.classList.remove("is-open");
   }
 
+  // 7. Manifest Loader with Deduplication & Descending Sort
   async loadManifest() {
     try {
       const res = await fetch("data/manifest.json?t=" + Date.now());
       if (res.ok) {
         const rawManifest = await res.json();
         
-        // Deduplicate
+        // Deduplicate by issue_number / date
         const uniqueMap = new Map();
         rawManifest.forEach(item => {
           const key = String(item.issue_number || item.date);
@@ -99,7 +114,7 @@ class SparkPortalEngine {
         });
         const cleanList = Array.from(uniqueMap.values());
 
-        // Strict descending sort (Highest/Newest first)
+        // Sort descending (Highest/Newest Issue First)
         cleanList.sort((a, b) => {
           const numA = parseInt(a.issue_number, 10) || 0;
           const numB = parseInt(b.issue_number, 10) || 0;
@@ -119,6 +134,7 @@ class SparkPortalEngine {
     }
   }
 
+  // 8. Render Dropdown & Modal List
   renderManifestUI() {
     const select = document.getElementById("issue-archive-select");
     const modalList = document.getElementById("modal-issues-list");
@@ -154,6 +170,7 @@ class SparkPortalEngine {
     });
   }
 
+  // 9. Load Issue JSON File
   async loadIssueFile(filePath) {
     try {
       const res = await fetch(filePath + "?t=" + Date.now());
@@ -174,10 +191,10 @@ class SparkPortalEngine {
 
   formatMarkdown(text) {
     if (!text) return "";
-    return text.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
+    return text.replace(/\\*\\*(.*?)\\*\\*/g, "<b>$1</b>");
   }
 
-  // Resilient DOM Renderer
+  // 10. Resilient DOM Renderer with Fallbacks
   renderIssueDOM(data) {
     // Header
     const kickerEl = document.getElementById("issue-header-kicker");
@@ -212,7 +229,7 @@ class SparkPortalEngine {
       cheatUl.innerHTML = data.cheat_sheet.map(item => `<li>${this.formatMarkdown(item)}</li>`).join("");
     }
 
-    // Lead Story with Self-Healing Fallbacks
+    // Lead Story with Key Fallbacks
     if (data.lead_story) {
       const ls = data.lead_story;
       
@@ -225,7 +242,7 @@ class SparkPortalEngine {
       const lc = document.getElementById("lead-catchup");
       if (lc) lc.innerHTML = this.formatMarkdown(ls.catch_up || "");
       
-      // Analogy & Mechanism Fallback
+      // Analogy Fallback
       const la = document.getElementById("lead-analogy");
       const analogyContent = ls.analogy || ls.mechanism;
       if (la) {
@@ -237,7 +254,7 @@ class SparkPortalEngine {
         }
       }
 
-      // PR Decoder Fallbacks
+      // PR Decoder Fallback
       const prCard = document.querySelector(".decoder-card");
       const claimText = ls.pr_claim;
       const realityText = ls.pr_reality || ls.reality_audit;
@@ -253,17 +270,18 @@ class SparkPortalEngine {
         }
       }
 
-      // Bull vs Bear Fallbacks
-      const duelWrap = document.querySelector(".duel-container") ? document.querySelector(".duel-container").parentElement : null;
+      // Bull vs Bear Fallback
+      const duelContainer = document.querySelector(".duel-container");
+      const duelWrap = duelContainer ? duelContainer.parentElement : null;
       const bullText = ls.bull_take;
       const bearText = ls.bear_take;
       if (duelWrap) {
         if (bullText || bearText) {
           duelWrap.style.display = "block";
           const lbu = document.getElementById("lead-bull");
-          if (lbu) lbu.innerText = bullText || (ls.cascades ? "Market expansion accelerating." : "Strong ecosystem adoption.");
+          if (lbu) lbu.innerText = bullText || (ls.cascades ? "Market adoption accelerating." : "Strong compute demand.");
           const lbe = document.getElementById("lead-bear");
-          if (lbe) lbe.innerText = bearText || "Execution and thermal bottlenecks remain.";
+          if (lbe) lbe.innerText = bearText || "Physical hardware and thermal bottlenecks remain.";
         } else {
           duelWrap.style.display = "none";
         }
@@ -285,7 +303,7 @@ class SparkPortalEngine {
         }
       }
 
-      // Shielded Image Loader: Automatically hides if link is broken or blocked
+      // Image with auto-hiding shield on error
       const lim = document.getElementById("lead-image");
       if (lim) {
         const frame = lim.parentElement;
@@ -321,7 +339,7 @@ class SparkPortalEngine {
       if (wn) wn.innerText = `[ NO ] (${data.executive_wager.consensus_no_pct}% Consensus)`;
     }
 
-    // Rapid Micro-Quiz
+    // Micro-Quiz
     const quizContainer = document.getElementById("quiz-items-container");
     if (quizContainer && data.micro_quiz) {
       quizContainer.innerHTML = data.micro_quiz.map((q, qIdx) => `
@@ -342,7 +360,7 @@ class SparkPortalEngine {
       if (ee) ee.innerText = data.easter_egg;
     }
 
-    // Reset interactions
+    // Reset interaction states for new issue
     this.wagerPlaced = false;
     this.answeredQuestions = {};
     this.easterUnlocked = false;
