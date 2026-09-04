@@ -2,25 +2,25 @@
   {
     "issue_number": 1,
     "date": "2026-09-01",
-    "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to Behind-the-Meter 2.5GW Nuclear Generation",
+    "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to 2.5GW Nuclear",
     "file_path": "data/issues/2026-09-01.json"
   },
   {
     "issue_number": 2,
     "date": "2026-09-02",
-    "headline": "ONE Nuclear Energy Executes LOI for 2.88GWh BESS & Gas Co-Location at Louisiana AI Datacenter",
+    "headline": "ONE Nuclear Executes 2.88GWh BESS & Gas Co-Location for Louisiana Datacenter",
     "file_path": "data/issues/2026-09-02.json"
-  },
-  {
-    "issue_number": 4,
-    "date": "2026-09-04",
-    "headline": "California AI Omnibus Bill Lands on Newsom's Desk: Datacenter Grid Moratorium Threatens Hyperscale Western Expansion",
-    "file_path": "data/issues/2026-09-04.json"
   },
   {
     "issue_number": 3,
     "date": "2026-09-03",
-    "headline": "NVIDIA's $13B Hugging Face Commitment: Open-Source Mindshare & Silicon Lock-In",
+    "headline": "NVIDIA Commits $13B to Hugging Face Open-Source Platform & Compute Ecosystem",
     "file_path": "data/issues/2026-09-03.json"
+  },
+  {
+    "issue_number": 4,
+    "date": "2026-09-04",
+    "headline": "California AI Omnibus Bill Lands on Newsom's Desk: Datacenter Grid Moratorium",
+    "file_path": "data/issues/2026-09-04.json"
   }
 ]
