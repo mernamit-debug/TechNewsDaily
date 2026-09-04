@@ -80,13 +80,15 @@ html.light-mode #nav-hud {
   background: rgba(255, 255, 255, 0.88);
 }
 
+/* Fixed viewport scroll progress bar */
 #scroll-progress {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 2.5px;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue), var(--accent-emerald));
+  height: 3px;
+  background: linear-gradient(90deg, #00f0ff, #0070f3, #00e599);
   width: 0%;
+  z-index: 99999;
   transition: width 0.1s ease;
 }
 
@@ -285,6 +287,10 @@ html.light-mode .cheat-sheet-card {
   align-items: center;
   gap: 8px;
 }
+html.light-mode .cheat-header {
+  color: #92400e !important;
+}
+
 .cheat-items-list {
   list-style: none;
   display: grid;
@@ -337,12 +343,19 @@ html.light-mode .metric-box {
   margin-bottom: 6px;
   letter-spacing: -0.02em;
 }
+html.light-mode .metric-number {
+  color: #dc2626 !important;
+}
 .metric-caption {
   font-size: 10px;
   font-weight: 800;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+html.light-mode .metric-caption {
+  color: #475569 !important;
+  font-weight: 800 !important;
 }
 
 /* 6. Article Modules (2-Column Grid) */
@@ -371,6 +384,11 @@ html.light-mode .article-container {
   border: 1px solid rgba(0, 112, 243, 0.3);
   display: inline-block;
   margin-bottom: 12px;
+}
+html.light-mode .kicker-badge {
+  color: #0284c7 !important;
+  background: rgba(2, 132, 199, 0.1) !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
 }
 
 .story-heading {
@@ -416,7 +434,9 @@ html.light-mode .story-main-col p {
   color: #a3a3a3;
 }
 html.light-mode .analogy-callout {
-  color: #475569 !important;
+  background: rgba(2, 132, 199, 0.06) !important;
+  border-left-color: #0284c7 !important;
+  color: #334155 !important;
 }
 
 .infographic-frame {
@@ -461,8 +481,8 @@ html.light-mode .widget-card {
   background: rgba(255, 51, 51, 0.03);
 }
 html.light-mode .decoder-card {
-  background: rgba(255, 51, 51, 0.04) !important;
-  border-color: rgba(255, 51, 51, 0.25) !important;
+  background: rgba(239, 68, 68, 0.04) !important;
+  border-color: rgba(239, 68, 68, 0.25) !important;
 }
 .claim-text {
   font-size: 12px;
@@ -480,6 +500,9 @@ html.light-mode .claim-text {
   font-weight: 600;
   color: var(--accent-red);
 }
+html.light-mode .reality-text {
+  color: #b91c1c !important;
+}
 
 .duel-container {
   display: grid;
@@ -496,10 +519,20 @@ html.light-mode .claim-text {
   border: 1px solid rgba(0, 229, 153, 0.2);
   color: var(--accent-emerald);
 }
+html.light-mode .duel-bull-side {
+  background: rgba(16, 185, 129, 0.08) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  color: #065f46 !important;
+}
 .duel-bear-side {
   background: rgba(255, 51, 51, 0.05);
   border: 1px solid rgba(255, 51, 51, 0.2);
   color: var(--accent-red);
+}
+html.light-mode .duel-bear-side {
+  background: rgba(239, 68, 68, 0.08) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+  color: #991b1b !important;
 }
 
 .cocktail-flex-card {
@@ -507,14 +540,17 @@ html.light-mode .claim-text {
   border: 1px solid rgba(121, 40, 202, 0.3);
 }
 html.light-mode .cocktail-flex-card {
-  background: rgba(121, 40, 202, 0.04) !important;
-  border-color: rgba(121, 40, 202, 0.25) !important;
+  background: rgba(124, 58, 237, 0.05) !important;
+  border-color: rgba(124, 58, 237, 0.25) !important;
 }
 .flex-body-text {
   font-size: 12.5px;
   font-weight: 700;
   font-style: italic;
   color: #c084fc;
+}
+html.light-mode .flex-body-text {
+  color: #6d28d9 !important;
 }
 
 /* 7. Interactive Executive Wager */
@@ -524,6 +560,10 @@ html.light-mode .cocktail-flex-card {
   border-radius: var(--radius-lg);
   padding: 32px;
   margin-bottom: 48px;
+}
+html.light-mode .wager-module {
+  background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.15) 0%, #ffffff 80%) !important;
+  border-color: #f59e0b !important;
 }
 .wager-query {
   font-size: 18px;
@@ -566,6 +606,10 @@ html.light-mode .wager-checkbox-card {
   border-color: var(--accent-emerald) !important;
   background: rgba(0, 229, 153, 0.12) !important;
 }
+html.light-mode .wager-checkbox-card.is-green {
+  background: rgba(16, 185, 129, 0.12) !important;
+  border-color: #10b981 !important;
+}
 .wager-indicator-box {
   width: 22px;
   height: 22px;
@@ -601,6 +645,9 @@ html.light-mode .wager-option-text {
   padding: 20px;
   margin: 24px 0;
 }
+html.light-mode .easter-pod-container {
+  background: rgba(124, 58, 237, 0.04) !important;
+}
 .btn-secret-reveal {
   background: var(--accent-purple);
   color: #ffffff;
@@ -626,6 +673,9 @@ html.light-mode .wager-option-text {
   font-weight: 700;
   color: var(--accent-amber);
   animation: fadeIn 0.3s ease;
+}
+html.light-mode .secret-content-unveiled {
+  color: #b45309 !important;
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
@@ -686,21 +736,32 @@ html.light-mode .quiz-choice-item {
   color: var(--accent-emerald) !important;
   font-weight: 800;
 }
+html.light-mode .quiz-choice-item.correct-pick {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: #10b981 !important;
+  color: #065f46 !important;
+}
 .quiz-choice-item.incorrect-pick {
   background: rgba(255, 51, 51, 0.15) !important;
   border-color: var(--accent-red) !important;
   color: var(--accent-red) !important;
 }
 
-/* 10. Skim Mode Active Overrides */
+/* 10. Skim Mode Active Overrides (Glitch-Free) */
 body.skim-view-active .story-main-col p:not(.skim-core) {
   opacity: 0.35;
+  transition: opacity 0.2s ease;
 }
 body.skim-view-active .story-main-col p b {
   opacity: 1 !important;
-  background: rgba(0, 240, 255, 0.18);
-  padding: 1px 4px;
+  color: var(--accent-cyan) !important;
+  background: rgba(0, 240, 255, 0.12);
+  padding: 0 3px;
   border-radius: 3px;
+}
+html.light-mode body.skim-view-active .story-main-col p b {
+  color: #0284c7 !important;
+  background: rgba(2, 132, 199, 0.15) !important;
 }
 
 /* 11. In-Page Calendar & Archive Modal Drawer */
