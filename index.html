@@ -17,9 +17,12 @@
     </div>
     <div class="hud-actions-group">
       <span class="pill-status" id="streak-badge" style="color: var(--accent-emerald);">🔥 STREAK: DAY 4</span>
+      <span class="pill-status" id="hud-quiz-mastery-badge" style="color: var(--accent-cyan);">🎯 100% Mastery</span>
       <span class="pill-status" id="hud-xp-tracker" style="color: var(--accent-amber);">⭐ 100 XP [LVL 1]</span>
-      <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim: OFF</button>
-      <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode</button>
+      <button class="action-btn" onclick="spark.toggleClipboardDrawer()" id="hud-clips-badge">📌 0 Clips <kbd>C</kbd></button>
+      <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim <kbd>S</kbd></button>
+      <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode <kbd>M</kbd></button>
+      <button class="action-btn" onclick="spark.toggleShortcutsModal()">⌨️ Keys <kbd>?</kbd></button>
     </div>
   </nav>
 
@@ -99,6 +102,10 @@
             <img id="lead-image" src="" alt="Lead Story Visual" style="max-width: 100%; display: block;">
           </div>
           <div style="font-size: 13.5px; color: var(--accent-emerald); font-weight: 700; margin-top: 14px;" id="lead-why-matters"></div>
+          <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="intel-trigger-btn" onclick="spark.exploreDeepIntel('lead')">🔍 Explore Deep Intel & Primary Filings</button>
+            <button class="clip-trigger-btn" onclick="spark.clipInsight(document.getElementById('lead-headline').innerText, document.getElementById('lead-catchup').innerText)">📌 Save to Research Intel</button>
+          </div>
         </div>
         <div class="story-sidebar-col">
           <div class="widget-card decoder-card">
@@ -142,6 +149,10 @@
             <img id="deepdive-image" src="" alt="Case Study Technical Visual" style="max-width: 100%; display: block;">
           </div>
           <div id="deepdive-body-extra" style="font-size: 14.5px; color: #d1d5db; line-height: 1.7;"></div>
+          <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="intel-trigger-btn" onclick="spark.exploreDeepIntel('deepdive')">🔍 Explore Physics & Primary Equations</button>
+            <button class="clip-trigger-btn" onclick="spark.clipInsight(document.getElementById('deepdive-headline').innerText, document.getElementById('deepdive-thesis').innerText)">📌 Save Case Study to Intel</button>
+          </div>
         </div>
         <div class="story-sidebar-col">
           <div class="widget-card">
@@ -150,7 +161,7 @@
               <tr><td style="padding: 8px; border: 1px solid var(--border-subtle); width: 85px;"><b>Mechanism</b></td><td style="padding: 8px; border: 1px solid var(--border-subtle);" id="matrix-mechanism">—</td></tr>
               <tr><td style="padding: 8px; border: 1px solid var(--border-subtle); color: var(--accent-red);"><b>Savage Audit</b></td><td style="padding: 8px; border: 1px solid var(--border-subtle); color: var(--accent-red);" id="matrix-audit">—</td></tr>
               <tr><td style="padding: 8px; border: 1px solid var(--border-subtle);"><b>Cascades</b></td><td style="padding: 8px; border: 1px solid var(--border-subtle);" id="matrix-cascades">—</td></tr>
-              <tr><td style="padding: 8px; border: 1px solid var(--border-subtle);"><b>SNI Rating</b></td><td style="padding: 8px; border: 1px solid var(--border-subtle); color: var(--accent-red); font-weight: 800;" id="matrix-sni">—</td></tr>
+              <tr><td style="padding: 8px; border: 1px solid var(--border-subtle); color: var(--accent-red); font-weight: 800;"><b>SNI Rating</b></td><td style="padding: 8px; border: 1px solid var(--border-subtle); color: var(--accent-red); font-weight: 800;" id="matrix-sni">—</td></tr>
             </table>
           </div>
           <div class="widget-card cocktail-flex-card" id="deepdive-flex-card">
@@ -176,6 +187,10 @@
         </div>
       </div>
       <div id="wager-response-feedback" style="margin-top: 14px; font-weight: 700; color: var(--accent-emerald); font-size: 13px; display: none;"></div>
+      <div style="margin-top: 24px; border-top: 1px solid rgba(245, 166, 35, 0.2); padding-top: 16px;">
+        <div style="font-size: 11px; font-weight: 900; color: var(--accent-amber); text-transform: uppercase; letter-spacing: 0.08em;">📈 FORECASTER ACCURACY & LEDGER DASHBOARD</div>
+        <div id="forecasting-scorecard" class="ledger-dashboard-card"></div>
+      </div>
     </section>
 
     <!-- SECTION 5: RAPID MICRO-QUIZ -->
@@ -216,6 +231,68 @@
       <div class="modal-content-scroll">
         <div id="modal-issues-list" style="display: flex; flex-direction: column; gap: 12px;">
           <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESEARCH CLIPBOARD SLIDE-OUT DRAWER -->
+  <aside class="clipboard-drawer" id="clipboard-drawer">
+    <div class="clipboard-header">
+      <div style="font-size: 14px; font-weight: 900; color: var(--accent-amber); display: flex; align-items: center; gap: 8px;">
+        <span>📌</span> Personal Research Intel Clipboard
+      </div>
+      <button class="btn-close-modal" onclick="spark.toggleClipboardDrawer()">✕</button>
+    </div>
+    <div class="clipboard-body" id="clipboard-items-list">
+      <!-- Injected dynamically via app.js -->
+    </div>
+    <div class="clipboard-footer">
+      <button class="action-btn" style="flex: 1; background: var(--accent-amber); color: #000000; border: none;" onclick="spark.exportClipsMarkdown()">📋 Copy All as Markdown</button>
+    </div>
+  </aside>
+
+  <!-- DEEP INTEL EXPLORER MODAL -->
+  <div class="intel-modal-backdrop" id="intel-modal" onclick="if(event.target === this) spark.closeDeepIntelModal()">
+    <div class="intel-modal-box">
+      <div class="intel-modal-header">
+        <div id="intel-modal-title" style="font-size: 14px; font-weight: 800; color: #ffffff;">Deep Intel Explorer</div>
+        <button class="btn-close-modal" onclick="spark.closeDeepIntelModal()">✕</button>
+      </div>
+      <div class="intel-modal-body" id="intel-modal-content">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- KEYBOARD SHORTCUTS CHEATSHEET MODAL -->
+  <div class="intel-modal-backdrop" id="shortcuts-modal" onclick="if(event.target === this) spark.toggleShortcutsModal()">
+    <div class="intel-modal-box" style="max-width: 500px;">
+      <div class="intel-modal-header">
+        <div style="font-size: 14px; font-weight: 800; color: #ffffff;">⌨️ Power Reader Keyboard Shortcuts</div>
+        <button class="btn-close-modal" onclick="spark.toggleShortcutsModal()">✕</button>
+      </div>
+      <div class="intel-modal-body" style="gap: 12px;">
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Jump to Next Section</span> <kbd>J</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Jump to Previous Section</span> <kbd>K</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Toggle Executive Skim Mode</span> <kbd>S</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Toggle Dark / Light Mode</span> <kbd>M</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Toggle Research Clipboard</span> <kbd>C</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Previous / Next Issue</span> <span><kbd>[</kbd> <kbd>]</kbd></span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+          <span>Open this Shortcuts Cheatsheet</span> <kbd>?</kbd>
         </div>
       </div>
     </div>
