@@ -435,3 +435,7 @@ class SparkPortalEngine {
 document.addEventListener("DOMContentLoaded", () => {
   window.spark = new SparkPortalEngine();
 });
+
+// If analogy is missing, use mechanism. If neither exists, hide the box completely.
+const analogy = ls.analogy || ls.mechanism;
+analogyEl.style.display = analogy ? "block" : "none";
