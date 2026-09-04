@@ -21,11 +21,13 @@
   "lead_story": {
     "kicker": "AUGUST 31 // INAUGURAL ALPHA DISPATCH (ISSUE #0)",
     "headline": "Frontier Humanoid Robotics: The Sub-10s Sprint, Actuator Physics, and the Factory Floor Reality",
-    "image_url": "https://www.google.com/url?q=https://press.asus.com/assets/w_1920,h_640/20fce49f-d3b3-4c69-9cbc-7eaa67c768f3/4.png&source=gmail&ust=1788586147030000&sa=E",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Namma_metro.svg/250px-Namma_metro.svg.png",
     "catch_up": "Over the final weekend of August 2026, robotics labs published milestone locomotion benchmarks showing autonomous bipedal humanoids achieving sprinting velocities previously restricted to Olympic athletes. Yet behind the staged video demos lies a brutal physical reality: continuous dynamic balance burns battery capacity at an exponential rate.",
-    "mechanism": "High-speed bipedal locomotion relies on cycloidal planetary drive actuators operating at 1,000Hz feedback loops. Instead of pre-programmed gait sequences, on-board vision-language-action (VLA) models predict foot placement in real time, adjusting torque vectoring across 28 degrees of freedom to prevent catastrophic dynamic tip-over.",
-    "reality_audit": "Venture pitch decks love showing robots doing backflips and sprinting down test tracks. What they quietly crop out of the frame: the robot's battery dies after 72 minutes of dynamic movement, the planetary gearboxes run at 85?C requiring active chilling between takes, and mean-time-between-failure (MTBF) on harmonic drives is under 200 hours. A warehouse doesn't need an Olympic sprinter; it needs an appliance that runs 16 hours without stripping its gears.",
-    "cascades": "Over the next 12 to 24 months, automotive manufacturers will deploy humanoids strictly in stationary sorting and fixed inspection cells, while commercial mass deployment is delayed until solid-state batteries and high-durability strain-wave gearboxes drop 60% in cost.",
+    "analogy": "Imagine a marathon sprinter forced to carry a car battery while running full tilt. The mechanical limbs can achieve explosive sub-10s velocity, but continuous dynamic torque vectoring drains lithium-ion cells 4x faster than rolling on wheels.",
+    "pr_claim": "Humanoid robots will achieve general-purpose warehouse autonomy by late 2026.",
+    "pr_reality": "Actuator gearboxes overheat after 72 minutes of dynamic movement. Mean-time-between-failures (MTBF) on strain-wave drives is under 200 hours, making continuous factory shifts economically non-viable until solid-state batteries mature.",
+    "bull_take": "Automotive assembly lines will deploy humanoids in stationary sorting cells, proving early ROI.",
+    "bear_take": "Actuator wear-and-tear and thermal throttling limit continuous operation to under 90 minutes per charge.",
     "why_it_matters": "Humanoid robotics is reaching the end of its pure software demo phase and entering the punishing reality of hardware endurance, thermal cycling, and factory unit economics.",
     "cocktail_flex": "Next time someone tells you humanoids will replace all warehouse workers next month, ask them if they've ever seen a robot work an 8-hour shift without catching on fire or running out of battery."
   },
@@ -115,7 +117,7 @@
       "options": [
         "A) Chemical irradiation",
         "B) High osmotic pressure dehydrates bacteria instantly",
-        "C) Cryogenic freezing"
+        "C) Cryogenic storage"
       ],
       "correct_index": 1
     }
