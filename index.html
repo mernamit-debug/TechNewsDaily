@@ -16,7 +16,7 @@
       <div class="brand-text">SPARK NEWS LIVE // PORTAL OS</div>
     </div>
     <div class="hud-actions-group">
-      <span class="pill-status" id="streak-badge" style="color: var(--accent-emerald);">🔥 STREAK: DAY 3</span>
+      <span class="pill-status" id="streak-badge" style="color: var(--accent-emerald);">🔥 STREAK: DAY 4</span>
       <span class="pill-status" id="hud-xp-tracker" style="color: var(--accent-amber);">⭐ 100 XP [LVL 1]</span>
       <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim: OFF</button>
       <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode</button>
@@ -29,10 +29,10 @@
     <header class="portal-header">
       <div class="header-row">
         <div>
-          <div class="kicker-overline" id="issue-header-kicker">DAILY INTELLIGENCE // ISSUE #3</div>
+          <div class="kicker-overline" id="issue-header-kicker">DAILY INTELLIGENCE // ISSUE #4</div>
           <h1 class="masthead-title" id="issue-header-title">DAILY INVESTIGATIVE NEWS DIGEST</h1>
           <div class="header-subtitle">
-            <span id="issue-header-date">VOLUME IV • SEPTEMBER 3, 2026 • ISSUE #3</span>
+            <span id="issue-header-date">VOLUME IV • SEPTEMBER 4, 2026 • ISSUE #4</span>
             <span style="color: var(--accent-emerald); font-weight: 700;">HEADLESS DATA ENGINE: LIVE</span>
           </div>
         </div>
@@ -47,7 +47,7 @@
       <div class="archive-left">
         <span class="archive-label">📅 CALENDAR & ARCHIVE NAVIGATOR:</span>
         <select class="archive-selector" id="issue-archive-select" onchange="spark.loadIssueFile(this.value)">
-          <option value="data/issues/2026-09-03.json" selected>Issue #3 — September 3, 2026 (Latest)</option>
+          <!-- Injected dynamically via app.js -->
         </select>
       </div>
       <div class="archive-quick-tags">
@@ -184,7 +184,7 @@
       </div>
       <div class="modal-content-scroll">
         <div id="modal-issues-list" style="display: flex; flex-direction: column; gap: 12px;">
-          <!-- Dynamically populated from data/manifest.json -->
+          <!-- Injected dynamically via app.js -->
         </div>
       </div>
     </div>
