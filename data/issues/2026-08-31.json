@@ -21,7 +21,7 @@
   "lead_story": {
     "kicker": "AUGUST 31 // INAUGURAL ALPHA DISPATCH (ISSUE #0)",
     "headline": "Frontier Humanoid Robotics: The Sub-10s Sprint, Actuator Physics, and the Factory Floor Reality",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Namma_metro.svg/250px-Namma_metro.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HONDA_ASIMO.jpg/640px-HONDA_ASIMO.jpg",
     "catch_up": "Over the final weekend of August 2026, robotics labs published milestone locomotion benchmarks showing autonomous bipedal humanoids achieving sprinting velocities previously restricted to Olympic athletes. Yet behind the staged video demos lies a brutal physical reality: continuous dynamic balance burns battery capacity at an exponential rate.",
     "analogy": "Imagine a marathon sprinter forced to carry a car battery while running full tilt. The mechanical limbs can achieve explosive sub-10s velocity, but continuous dynamic torque vectoring drains lithium-ion cells 4x faster than rolling on wheels.",
     "pr_claim": "Humanoid robots will achieve general-purpose warehouse autonomy by late 2026.",
@@ -117,7 +117,7 @@
       "options": [
         "A) Chemical irradiation",
         "B) High osmotic pressure dehydrates bacteria instantly",
-        "C) Cryogenic storage"
+        "C) Cryogenic freezing"
       ],
       "correct_index": 1
     }
