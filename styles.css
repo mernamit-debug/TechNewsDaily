@@ -1,6 +1,8 @@
 /* ==========================================================================
-   SPARK NEWS LIVE — PRODUCTION DESIGN SYSTEM (V3.6 CONSOLIDATED)
+   SPARK NEWS LIVE — PRODUCTION DESIGN SYSTEM (FULL CONSOLIDATED V4.0)
    Theme: Vercel / Apple High-Contrast Dark Modern Aesthetic with Light Mode
+   Includes: Base Layout, Glassmorphic HUD, Articles, Widgets, Deep Dive,
+   Calendar Vault, Research Clipboard, Deep Intel Explorer & Forecasting Ledger
    ========================================================================== */
 
 :root {
@@ -22,6 +24,7 @@
   --accent-red: #ff3333;
   --accent-purple: #7928ca;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -80,7 +83,7 @@ html.light-mode #nav-hud {
   background: rgba(255, 255, 255, 0.88);
 }
 
-/* Fixed viewport scroll progress bar */
+/* Fixed Viewport Scroll Progress Bar */
 #scroll-progress {
   position: fixed;
   top: 0;
@@ -122,7 +125,8 @@ html.light-mode .brand-text {
 .hud-actions-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .pill-status {
@@ -137,6 +141,11 @@ html.light-mode .brand-text {
   align-items: center;
   gap: 6px;
 }
+html.light-mode .pill-status {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #334155;
+}
 
 .action-btn {
   background: #171717;
@@ -147,10 +156,14 @@ html.light-mode .brand-text {
   font-size: 11px;
   font-weight: 700;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   transition: all 0.2s ease;
 }
 html.light-mode .action-btn {
   background: #f1f5f9;
+  color: #0f172a;
 }
 .action-btn:hover {
   background: #222222;
@@ -158,7 +171,26 @@ html.light-mode .action-btn {
   transform: translateY(-1px);
 }
 
-/* 2. Main Container */
+/* Keyboard Shortcut Badges */
+kbd {
+  background-color: #1f1f1f;
+  color: #ededed;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  margin-left: 4px;
+}
+html.light-mode kbd {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+/* 2. Main Layout Container */
 .app-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -185,6 +217,9 @@ html.light-mode .action-btn {
   text-transform: uppercase;
   color: var(--accent-cyan);
   margin-bottom: 8px;
+}
+html.light-mode .kicker-overline {
+  color: #0284c7;
 }
 
 h1.masthead-title {
@@ -225,7 +260,8 @@ html.light-mode h1.masthead-title {
   gap: 16px;
 }
 html.light-mode .archive-navigator {
-  background: #ffffff !important;
+  background: #ffffff;
+  border-color: #e2e8f0;
 }
 
 .archive-left {
@@ -244,6 +280,9 @@ html.light-mode .archive-navigator {
   align-items: center;
   gap: 6px;
 }
+html.light-mode .archive-label {
+  color: #0369a1;
+}
 
 .archive-selector {
   background: var(--bg-card);
@@ -257,11 +296,16 @@ html.light-mode .archive-navigator {
   cursor: pointer;
   transition: border-color 0.2s ease;
 }
+html.light-mode .archive-selector {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
 .archive-selector:hover, .archive-selector:focus {
   border-color: var(--accent-cyan);
 }
 
-/* 4. 30-Second Week-in-Review Card */
+/* 4. 30-Second Week-in-Review Card (High Contrast) */
 .cheat-sheet-card {
   background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.10) 0%, rgba(12, 12, 12, 0.96) 75%);
   border: 1px solid rgba(245, 166, 35, 0.35);
@@ -553,7 +597,48 @@ html.light-mode .flex-body-text {
   color: #6d28d9 !important;
 }
 
-/* 7. Interactive Executive Wager */
+/* 7. Deep Intel & Research Trigger Buttons */
+.intel-trigger-btn {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--accent-cyan);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.intel-trigger-btn:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: var(--accent-cyan);
+  transform: translateY(-1px);
+}
+
+.clip-trigger-btn {
+  background: rgba(245, 166, 35, 0.08);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  color: var(--accent-amber);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.clip-trigger-btn:hover {
+  background: rgba(245, 166, 35, 0.2);
+  border-color: var(--accent-amber);
+  transform: translateY(-1px);
+}
+
+/* 8. Interactive Executive Wager */
 .wager-module {
   background: radial-gradient(circle at top left, rgba(245, 166, 35, 0.12) 0%, rgba(10, 10, 10, 0.95) 80%);
   border: 2px solid var(--accent-amber);
@@ -637,7 +722,35 @@ html.light-mode .wager-option-text {
   color: #0f172a !important;
 }
 
-/* 8. Easter Egg Discovery Pod */
+/* Forecasting Ledger Scorecard */
+.ledger-dashboard-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  text-align: center;
+}
+html.light-mode .ledger-dashboard-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+.ledger-stat-val {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--accent-emerald);
+}
+.ledger-stat-lbl {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* 9. Easter Egg Discovery Pod */
 .easter-pod-container {
   background: rgba(121, 40, 202, 0.05);
   border: 1px dashed var(--accent-purple);
@@ -682,7 +795,7 @@ html.light-mode .secret-content-unveiled {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 9. Interactive Micro-Quiz Engine */
+/* 10. Interactive Micro-Quiz Engine */
 .quiz-engine-wrapper {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -747,7 +860,7 @@ html.light-mode .quiz-choice-item.correct-pick {
   color: var(--accent-red) !important;
 }
 
-/* 10. Skim Mode Active Overrides (Glitch-Free) */
+/* 11. Skim Mode Active Overrides */
 body.skim-view-active .story-main-col p:not(.skim-core) {
   opacity: 0.35;
   transition: opacity 0.2s ease;
@@ -764,7 +877,7 @@ html.light-mode body.skim-view-active .story-main-col p b {
   background: rgba(2, 132, 199, 0.15) !important;
 }
 
-/* 11. In-Page Calendar & Archive Modal Drawer */
+/* 12. In-Page Calendar & Archive Modal Drawer */
 .drawer-backdrop {
   position: fixed;
   top: 0;
@@ -904,7 +1017,163 @@ html.light-mode .issue-card-title {
   white-space: nowrap;
 }
 
-/* 12. Floating In-Page Toasts */
+/* 13. Research Clipboard Slide-Out Drawer */
+.clipboard-drawer {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 400px;
+  height: 100vh;
+  background: rgba(12, 12, 12, 0.96);
+  backdrop-filter: blur(24px);
+  border-left: 1px solid var(--border-medium);
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.8);
+  transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.clipboard-drawer.is-active {
+  right: 0;
+}
+html.light-mode .clipboard-drawer {
+  background: rgba(255, 255, 255, 0.96);
+  border-left-color: #cbd5e1;
+}
+
+.clipboard-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clipboard-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.clipboard-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  position: relative;
+}
+html.light-mode .clipboard-card {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+.clipboard-card-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+html.light-mode .clipboard-card-title {
+  color: #0f172a;
+}
+.clipboard-card-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.btn-remove-clip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn-remove-clip:hover {
+  color: var(--accent-red);
+}
+
+.clipboard-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 10px;
+}
+
+/* 14. Deep Intel Explorer Modal */
+.intel-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  z-index: 3500;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.intel-modal-backdrop.is-open {
+  display: flex;
+}
+.intel-modal-box {
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  background: #0d0d0d;
+  border: 1px solid var(--accent-cyan);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 240, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalPop 0.2s ease forwards;
+}
+html.light-mode .intel-modal-box {
+  background: #ffffff;
+  border-color: var(--accent-blue);
+}
+.intel-modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+}
+html.light-mode .intel-modal-header {
+  background: #f1f5f9;
+}
+.intel-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.intel-section-title {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.intel-chip {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  color: var(--text-primary);
+  font-size: 12.5px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  line-height: 1.5;
+}
+
+/* 15. Floating In-Page Toasts */
 #toast-container {
   position: fixed;
   bottom: 24px;
@@ -942,7 +1211,7 @@ html.light-mode .issue-card-title {
 .toast-msg.toast-info { border-left: 4px solid var(--accent-cyan); }
 .toast-msg.toast-amber { border-left: 4px solid var(--accent-amber); }
 
-/* 13. Footer */
+/* 16. Footer */
 .portal-footer-section {
   text-align: center;
   border-top: 1px solid var(--border-subtle);
