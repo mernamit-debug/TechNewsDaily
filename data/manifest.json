@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 5,
+    "date": "2026-09-05",
+    "headline": "OpenAI Launches GPT-6 Astra: Recursive Self-Correction, Multi-Modal Reasoning & The Enterprise Inference Bill Shock",
+    "file_path": "data/issues/2026-09-05.json"
+  },
+  {
     "issue_number": 0,
     "date": "2026-08-31",
     "headline": "Frontier Humanoid Robotics: The Sub-10s Sprint, Actuator Physics, and the Factory Floor Reality",
