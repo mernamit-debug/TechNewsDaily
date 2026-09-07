@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 7,
+    "date": "2026-09-07",
+    "headline": "Upstream Monopoly Foreclosure: FTC Shifts Antitrust Crosshairs from LLM Weights to Power & Substation Capacity",
+    "file_path": "data/issues/2026-09-07.json"
+  },
+  {
     "issue_number": 6,
     "date": "2026-09-06",
     "headline": "The Custom Silicon Revolt: Broadcom's AI Revenue Triples as Hyperscalers Escape the NVIDIA GPU Tax",
