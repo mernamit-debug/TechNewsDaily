@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 8,
+    "date": "2026-09-08",
+    "headline": "Samsung & Arm Form 2nm GAA Foundry Alliance: The Race to Build Custom Silicon for OpenAI & Break TSMC's Monopoly",
+    "file_path": "data/issues/2026-09-08.json"
+  },
+  {
     "issue_number": 7,
     "date": "2026-09-07",
     "headline": "Upstream Monopoly Foreclosure: FTC Shifts Antitrust Crosshairs from LLM Weights to Power & Substation Capacity",
