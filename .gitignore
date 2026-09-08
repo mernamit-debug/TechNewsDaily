@@ -10,3 +10,6 @@ dist/
 
 # Local config
 config.local.js
+
+firebase-applet-config.json
+
