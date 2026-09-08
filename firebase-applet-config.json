@@ -1,5 +1,4 @@
 {
-  const firebaseConfig = {
     "projectId": "compelling-button-wlk09",
     "appId": "1:574239598176:web:68733ada664ab735cc4505",
     "apiKey": process.env.FIREBASE_API_KEY, 
@@ -10,7 +9,4 @@
     "measurementId": "",
     "oAuthClientId": "574239598176-3gnhh0vpoqcnh8tl23sgaviioll2h5b1.apps.googleusercontent.com",
     "recaptchaSiteKey": ""
-  };
-
-  export default firebaseConfig;
 }
