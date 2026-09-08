@@ -1,5 +1,4 @@
-// firebaseConfig.js
-const firebaseConfig = {
+const firebase-applet-config.json = {
   projectId: "compelling-button-wlk09",
   appId: "1:574239598176:web:68733ada664ab735cc4505",
   apiKey: process.env.FIREBASE_API_KEY, 
@@ -12,4 +11,4 @@ const firebaseConfig = {
   recaptchaSiteKey: ""
 };
 
-export default firebaseConfig;
+export default firebase-applet-config.json;
