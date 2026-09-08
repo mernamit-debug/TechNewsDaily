@@ -1,4 +1,4 @@
-# Spark News Live — Headless Intelligence Web Portal
+# Tech News Live — Headless Intelligence Web Portal
 
 This repository powers the live GitHub Pages website for **Spark News Live**.
 
