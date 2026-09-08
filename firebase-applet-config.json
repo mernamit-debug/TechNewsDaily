@@ -1,14 +1,16 @@
-const firebase-applet-config.json = {
-  projectId: "compelling-button-wlk09",
-  appId: "1:574239598176:web:68733ada664ab735cc4505",
-  apiKey: process.env.FIREBASE_API_KEY, 
-  authDomain: "compelling-button-wlk09.firebaseapp.com",
-  firestoreDatabaseId: "ai-studio-technewsdaily-27dbee41-9512-4faf-9236-093c542c446e",
-  storageBucket: "compelling-button-wlk09.firebasestorage.app",
-  messagingSenderId: "574239598176",
-  measurementId: "",
-  oAuthClientId: "574239598176-3gnhh0vpoqcnh8tl23sgaviioll2h5b1.apps.googleusercontent.com",
-  recaptchaSiteKey: ""
-};
+{
+  const firebaseConfig = {
+    projectId: "compelling-button-wlk09",
+    appId: "1:574239598176:web:68733ada664ab735cc4505",
+    apiKey: process.env.FIREBASE_API_KEY, 
+    authDomain: "compelling-button-wlk09.firebaseapp.com",
+    firestoreDatabaseId: "ai-studio-technewsdaily-27dbee41-9512-4faf-9236-093c542c446e",
+    storageBucket: "compelling-button-wlk09.firebasestorage.app",
+    messagingSenderId: "574239598176",
+    measurementId: "",
+    oAuthClientId: "574239598176-3gnhh0vpoqcnh8tl23sgaviioll2h5b1.apps.googleusercontent.com",
+    recaptchaSiteKey: ""
+  };
 
-export default firebase-applet-config.json;
+  export default firebaseConfig;
+}
