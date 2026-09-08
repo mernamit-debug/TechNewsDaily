@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user reading streak, XP, quiz comprehension score, saved research clips, and wager forecasts by email ID.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "User's email identifier"
+        },
+        "xp": {
+          "type": "number",
+          "description": "Total accumulated executive reading XP"
+        },
+        "streak": {
+          "type": "number",
+          "description": "Consecutive days read"
+        },
+        "lastActive": {
+          "type": "string",
+          "description": "Last active timestamp"
+        },
+        "wagers": {
+          "type": "object",
+          "description": "Recorded executive wagers and market predictions"
+        },
+        "quizStats": {
+          "type": "object",
+          "description": "Quiz performance tracking total and correct picks"
+        },
+        "duelVotes": {
+          "type": "object",
+          "description": "Bull vs Bear sentiment votes per issue"
+        },
+        "answeredQuestions": {
+          "type": "object",
+          "description": "Permanent log of answered micro-quiz questions with verification status and one-time XP timestamps"
+        },
+        "unlockedEasterEggs": {
+          "type": "object",
+          "description": "Log of revealed easter eggs per issue preventing duplicate XP award"
+        },
+        "exploredTopics": {
+          "type": "object",
+          "description": "Log of explored deep intelligence dossiers preventing duplicate XP award"
+        },
+        "clips": {
+          "type": "array",
+          "description": "Personal research clipboard items"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["email", "xp"]
+    }
+  },
+  "firestore": {
+    "/users/{userEmail}": {
+      "schema": "UserProfile",
+      "description": "Stores individual reader profiles, research clips, and XP progress keyed by email."
+    }
+  }
+}

@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spark News Live — Executive Intelligence Portal</title>
+  <meta name="description" content="Executive intelligence portal and daily investigative news digest featuring radar metrics, case study analysis, and interactive research tools.">
+  <meta property="og:title" content="Spark News Live — Executive Intelligence Portal">
+  <meta property="og:description" content="Executive intelligence portal and daily investigative news digest featuring radar metrics, case study analysis, and interactive research tools.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,15 +19,79 @@
       <div class="brand-text">SPARK NEWS LIVE // PORTAL OS</div>
     </div>
     <div class="hud-actions-group">
-      <span class="pill-status" id="streak-badge" style="color: var(--accent-emerald);">🔥 STREAK: DAY 4</span>
-      <span class="pill-status" id="hud-quiz-mastery-badge" style="color: var(--accent-cyan);">🎯 100% Mastery</span>
-      <span class="pill-status" id="hud-xp-tracker" style="color: var(--accent-amber);">⭐ 100 XP [LVL 1]</span>
-      <button class="action-btn" onclick="spark.toggleClipboardDrawer()" id="hud-clips-badge">📌 0 Clips <kbd>C</kbd></button>
-      <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim <kbd>S</kbd></button>
-      <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode <kbd>M</kbd></button>
-      <button class="action-btn" onclick="spark.toggleShortcutsModal()">⌨️ Keys <kbd>?</kbd></button>
+      <!-- 1. EDITION READING CONTEXT ENTITY (Current Active Issue) -->
+      <div class="hud-entity-block hud-edition-entity" title="Currently Active Edition">
+        <span class="hud-entity-label">EDITION:</span>
+        <span class="pill-status pill-edition-num" id="hud-edition-badge" style="color: var(--accent-cyan); font-weight: 800;">⚡ ISSUE #7</span>
+        <button class="action-btn" onclick="spark.openArchiveDrawer()" id="hud-archive-toggle-btn" title="Browse Edition Archives">📚 Archives</button>
+      </div>
+
+      <!-- 2. USER RESEARCH PROFILE ENTITY (Gamified User Account & Cloud Sync) -->
+      <div class="hud-entity-block hud-user-entity" title="Executive Reader Account & Cloud Telemetry">
+        <span class="hud-entity-label">ACCOUNT:</span>
+        <button class="action-btn action-btn-identity" onclick="spark.toggleIdentityModal()" id="hud-identity-btn" title="Executive Profile & Cloud Sync">👤 <span id="hud-user-email-label">Sign In / Sync</span></button>
+        <span class="pill-status pill-user-streak" id="streak-badge" style="color: var(--accent-emerald); font-weight: 800;">🔥 STREAK: DAY 1</span>
+        <span class="pill-status" id="hud-xp-tracker" style="color: var(--accent-amber);">⭐ 100 XP [LVL 1]</span>
+        <span class="pill-status" id="hud-quiz-mastery-badge" style="color: var(--accent-cyan);">🎯 100% Mastery</span>
+        <button class="action-btn" onclick="spark.toggleClipboardDrawer()" id="hud-clips-badge">📌 0 Clips <kbd>C</kbd></button>
+      </div>
+
+      <!-- 3. TERMINAL TOOLS & WORKFLOW CONTROLS -->
+      <div class="hud-entity-block hud-tools-entity">
+        <button class="action-btn action-btn-search" onclick="spark.openCommandPalette()" id="hud-search-btn">🔍 Search <kbd>⌘K</kbd></button>
+        <button class="action-btn action-btn-audio" onclick="spark.toggleAudioBriefing()" id="hud-audio-btn">🎧 Listen <kbd>A</kbd></button>
+        <button class="action-btn" onclick="spark.openNewsletterModal()" id="hud-newsletter-btn" title="Generate Email Newsletter Memo">📬 Newsletter</button>
+        <button class="action-btn" id="skim-toggle-btn" onclick="spark.toggleSkim()">⚡ Skim <kbd>S</kbd></button>
+        <button class="action-btn" onclick="spark.toggleAudioFX()" id="hud-sfx-btn" title="Toggle Terminal Sound Effects">🔊 SFX: ON</button>
+        <button class="action-btn" onclick="spark.printExecutiveBriefing()" id="hud-print-btn" title="Print / Export Executive Briefing Memo">🖨️ PDF</button>
+        <button class="action-btn" onclick="spark.toggleTheme()">🌗 Mode <kbd>M</kbd></button>
+        <button class="action-btn" onclick="spark.toggleShortcutsModal()">⌨️ Keys <kbd>?</kbd></button>
+      </div>
     </div>
   </nav>
+
+  <!-- High-Frequency Live Tech News Telemetry Ticker -->
+  <div id="macro-ticker-bar" class="macro-ticker-bar">
+    <div class="ticker-badge">DAILY TECH PULSE // 24H</div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track" id="ticker-track">
+        <span class="ticker-item"><span class="ticker-dot"></span><b>GPU CLOUD SPOT (H100 SXM5):</b> $1.85/hr <span class="ticker-down">▼ -3.2%</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>TECH MEGA-CAP NET MOMENTUM:</b> +1.8% (Mag 7) <span class="ticker-up">▲ +$120B</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>TSMC 3nm CoWoS PACKAGING YIELD:</b> 94.2% <span class="ticker-up">▲ +2.4%</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>GLOBAL CLOUD STATUS:</b> 99.98% (AWS/CF/GCP/OAI) <span class="ticker-up">🟢 OPTIMAL</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>DAILY VC AI VOLUME:</b> $1.4B Seed/Series A <span class="ticker-up">▲ 18 DEALS</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>OPEN-SOURCE BENCHMARK:</b> DeepSeek-V2.5 & Llama-3.1 <span class="ticker-up">▲ #1 TRENDING</span></span>
+        <span class="ticker-item"><span class="ticker-dot"></span><b>ANTITRUST DOCKET:</b> DOJ Google remedies & EU DMA audit <span class="ticker-neutral">▬ ACTIVE</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collapsible Executive Audio Synthesizer Player HUD -->
+  <div id="audio-player-hud" class="audio-player-hud">
+    <div class="audio-player-left">
+      <div class="audio-waveform-bars" id="audio-waveform-bars">
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+      </div>
+      <div class="audio-meta">
+        <div class="audio-tag">EXECUTIVE AUDIO BRIEFING // SYNTHESIZED</div>
+        <div class="audio-title" id="audio-player-text">Ready to synthesize today's executive intelligence...</div>
+      </div>
+    </div>
+    <div class="audio-player-controls">
+      <button class="audio-ctrl-btn" id="audio-play-pause-btn" onclick="spark.audioPlayPause()">▶ Play</button>
+      <button class="audio-ctrl-btn" onclick="spark.audioStop()">⏹ Stop</button>
+      <div class="audio-speed-group">
+        <button class="speed-btn is-active" onclick="spark.setAudioSpeed(1.0, this)">1.0x</button>
+        <button class="speed-btn" onclick="spark.setAudioSpeed(1.25, this)">1.25x</button>
+        <button class="speed-btn" onclick="spark.setAudioSpeed(1.5, this)">1.5x</button>
+      </div>
+      <button class="audio-close-btn" onclick="spark.hideAudioPlayer()">✕</button>
+    </div>
+  </div>
 
   <main class="app-container">
 
@@ -45,16 +112,31 @@
       </div>
     </header>
 
-    <!-- Archive & Calendar Navigator -->
-    <section class="archive-navigator">
-      <div class="archive-left">
-        <span class="archive-label">📅 CALENDAR & ARCHIVE NAVIGATOR:</span>
-        <select class="archive-selector" id="issue-archive-select" onchange="spark.loadIssueFile(this.value)">
-          <!-- Injected dynamically via app.js -->
-        </select>
+    <!-- High-Tech Archive & Calendar Navigator Console -->
+    <section class="archive-navigator" id="archive-navigator">
+      <div class="archive-nav-left">
+        <div class="archive-nav-title">
+          <span class="archive-nav-icon">📅</span>
+          <span class="archive-label">EDITION NAVIGATOR:</span>
+        </div>
+        <div class="archive-stepper-group">
+          <button class="action-btn nav-step-btn" id="nav-step-prev" onclick="spark.stepIssue(1)" title="Previous Older Edition (Shortcut: [)">◀ Older</button>
+          <select class="archive-selector" id="issue-archive-select" onchange="spark.loadIssueFile(this.value)">
+            <!-- Injected dynamically via app.js -->
+          </select>
+          <button class="action-btn nav-step-btn" id="nav-step-next" onclick="spark.stepIssue(-1)" title="Next Newer Edition (Shortcut: ])">Newer ▶</button>
+        </div>
       </div>
-      <div class="archive-quick-tags">
-        <button class="action-btn" style="background: rgba(0, 240, 255, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);" onclick="spark.openArchiveDrawer()">🏛️ Open Full Calendar Vault</button>
+
+      <!-- Quick Issue Jump Scrubber (Fast-jump interactive pills) -->
+      <div class="archive-quick-scrubber" id="archive-quick-scrubber" title="Quick Jump Directly to Edition">
+        <!-- Injected dynamically via app.js -->
+      </div>
+
+      <div class="archive-nav-right">
+        <button class="action-btn vault-launch-btn" onclick="spark.openArchiveDrawer()" title="Open Comprehensive Historical Vault Matrix (Press V)">
+          <span>🏛️</span> Vault Matrix <span class="vault-count-pill" id="vault-total-count">8</span> <kbd>V</kbd>
+        </button>
       </div>
     </section>
 
@@ -66,43 +148,68 @@
       </ul>
     </section>
 
-    <!-- Macro Radar KPI Grid -->
+    <!-- Daily Tech News KPI Radar with Interactive Telemetry Sparklines -->
     <section class="radar-metrics-grid">
-      <div class="metric-box">
-        <div class="metric-number" id="kpi-nuclear">2.88 GWh</div>
-        <div class="metric-caption">Baseload / BESS</div>
+      <div class="metric-box" onclick="spark.openMetricDetail('compute_spot')" title="Click to view 8-issue historical trajectory">
+        <div class="metric-top-row">
+          <div class="metric-number" id="kpi-compute_spot">$1.85 / hr</div>
+          <span class="metric-trend-badge" style="color: var(--accent-emerald);" id="trend-compute_spot">▼ -3.2%</span>
+        </div>
+        <div class="metric-caption">GPU Cloud Spot Rate (H100)</div>
+        <div class="metric-sparkline-wrap" id="sparkline-compute_spot"></div>
       </div>
-      <div class="metric-box">
-        <div class="metric-number" id="kpi-leadtime">185 WKS</div>
-        <div class="metric-caption">Transformer Lead Time</div>
+      <div class="metric-box" onclick="spark.openMetricDetail('tech_pulse')" title="Click to view 8-issue historical trajectory">
+        <div class="metric-top-row">
+          <div class="metric-number" id="kpi-tech_pulse">+1.8%</div>
+          <span class="metric-trend-badge" id="trend-tech_pulse">▲ BULLISH</span>
+        </div>
+        <div class="metric-caption">Tech Mega-Cap Momentum</div>
+        <div class="metric-sparkline-wrap" id="sparkline-tech_pulse"></div>
       </div>
-      <div class="metric-box">
-        <div class="metric-number" id="kpi-bandwidth">3.6 Tbps</div>
-        <div class="metric-caption">Optical CPO Bandwidth</div>
+      <div class="metric-box" onclick="spark.openMetricDetail('vc_deals')" title="Click to view 8-issue historical trajectory">
+        <div class="metric-top-row">
+          <div class="metric-number" id="kpi-vc_deals">$1.4B</div>
+          <span class="metric-trend-badge" id="trend-vc_deals">▲ 18 DEALS</span>
+        </div>
+        <div class="metric-caption">Daily VC & AI Capital Flow</div>
+        <div class="metric-sparkline-wrap" id="sparkline-vc_deals"></div>
       </div>
-      <div class="metric-box">
-        <div class="metric-number" id="kpi-pue">1.06</div>
-        <div class="metric-caption">Target Facility PUE</div>
+      <div class="metric-box" onclick="spark.openMetricDetail('open_source')" title="Click to view 8-issue historical trajectory">
+        <div class="metric-top-row">
+          <div class="metric-number" id="kpi-open_source">DeepSeek-V2.5</div>
+          <span class="metric-trend-badge" id="trend-open_source">▲ #1 TRENDING</span>
+        </div>
+        <div class="metric-caption">Open-Source Model Velocity</div>
+        <div class="metric-sparkline-wrap" id="sparkline-open_source"></div>
       </div>
-      <div class="metric-box">
-        <div class="metric-number" id="kpi-sni">9.8 / 10</div>
-        <div class="metric-caption">Structural SNI Vector</div>
+      <div class="metric-box" onclick="spark.openMetricDetail('cloud_health')" title="Click to view 8-issue historical trajectory">
+        <div class="metric-top-row">
+          <div class="metric-number" id="kpi-cloud_health">99.98%</div>
+          <span class="metric-trend-badge" style="color: var(--accent-emerald);" id="trend-cloud_health">🟢 OPTIMAL</span>
+        </div>
+        <div class="metric-caption">Global Cloud API Reliability</div>
+        <div class="metric-sparkline-wrap" id="sparkline-cloud_health"></div>
       </div>
     </section>
 
     <!-- SECTION 1: LEAD STORY -->
     <article class="article-container">
-      <span class="kicker-badge" id="lead-kicker">LEAD INVESTIGATIVE ANCHOR</span>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <span class="kicker-badge" id="lead-kicker">LEAD INVESTIGATIVE ANCHOR</span>
+        <span class="pill-status" style="border-color: rgba(0, 240, 255, 0.3); color: var(--accent-cyan); font-size: 10px;">EST. READ: 3 MIN // HIGH STRUCTURAL SEVERITY</span>
+      </div>
       <h2 class="story-heading" id="lead-headline">Loading Lead Story...</h2>
       <div class="story-columns-grid">
         <div class="story-main-col">
           <p class="skim-core" id="lead-catchup">Loading narrative breakdown...</p>
           <div class="analogy-callout" id="lead-analogy"><b>The Intuitive Bridge:</b> Loading analogy...</div>
-          <div class="infographic-frame">
+          <div class="infographic-frame" id="lead-image-frame" style="display: none;">
             <img id="lead-image" src="" alt="Lead Story Visual" style="max-width: 100%; display: block;">
+            <div id="lead-image-caption" class="infographic-caption" style="display: none;"></div>
           </div>
           <div style="font-size: 13.5px; color: var(--accent-emerald); font-weight: 700; margin-top: 14px;" id="lead-why-matters"></div>
           <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="action-btn" style="background: rgba(0, 240, 255, 0.12); border-color: var(--accent-cyan); color: var(--accent-cyan);" onclick="spark.audioReadSection('lead')">🎧 Listen to Story</button>
             <button class="intel-trigger-btn" onclick="spark.exploreDeepIntel('lead')">🔍 Explore Deep Intel & Primary Filings</button>
             <button class="clip-trigger-btn" onclick="spark.clipInsight(document.getElementById('lead-headline').innerText, document.getElementById('lead-catchup').innerText)">📌 Save to Research Intel</button>
           </div>
@@ -114,10 +221,28 @@
             <div class="reality-text" id="lead-pr-reality">Loading savage reality audit...</div>
           </div>
           <div class="widget-card">
-            <div class="widget-title">⚖️ Bull vs. Bear Arena</div>
+            <div class="widget-title" style="display: flex; justify-content: space-between; align-items: center;">
+              <span>⚖️ Bull vs. Bear Arena</span>
+              <span id="duel-voted-tag" style="font-size: 10px; color: var(--accent-amber); font-weight: 700;"></span>
+            </div>
             <div class="duel-container">
               <div class="duel-box duel-bull-side" id="lead-bull">Loading bull case...</div>
               <div class="duel-box duel-bear-side" id="lead-bear">Loading bear case...</div>
+            </div>
+            <!-- Interactive Sentiment Voting Meter -->
+            <div class="duel-voting-box">
+              <div class="duel-vote-buttons">
+                <button class="vote-btn vote-bull-btn" onclick="spark.voteDuelSentiment('bull')">▲ Vote Bull (+20 XP)</button>
+                <button class="vote-btn vote-bear-btn" onclick="spark.voteDuelSentiment('bear')">▼ Vote Bear (+20 XP)</button>
+              </div>
+              <div class="sentiment-meter-wrap">
+                <div class="sentiment-meter-bar" id="sentiment-meter-bar" style="width: 62%;"></div>
+              </div>
+              <div class="sentiment-stats-row">
+                <span id="sentiment-bull-label">🟢 Bullish 62%</span>
+                <span style="color: var(--text-muted); font-size: 10px;">COMMUNITY PULSE</span>
+                <span id="sentiment-bear-label">🔴 Bearish 38%</span>
+              </div>
             </div>
           </div>
           <div class="widget-card cocktail-flex-card">
@@ -128,10 +253,41 @@
       </div>
     </article>
 
-    <!-- SECTION 2: QUICK HITS -->
-    <article class="article-container">
-      <span class="kicker-badge" style="background: rgba(121, 40, 202, 0.15); color: var(--accent-purple); border-color: rgba(121, 40, 202, 0.3);">SECTION 2 // STRATEGIC BRIEFS</span>
-      <h2 class="story-heading">High-Density Multi-Domain Intelligence Matrix</h2>
+    <!-- SECTION: COMPANY-WISE STRATEGIC INTELLIGENCE (1 COMPANY NEWS PER EDITION) -->
+    <article class="article-container" id="company-spotlight-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+        <div>
+          <span class="kicker-badge" style="background: rgba(0, 240, 255, 0.12); color: var(--accent-cyan); border-color: rgba(0, 240, 255, 0.3);">CORPORATE INTELLIGENCE // 1 COMPANY NEWS PER EDITION</span>
+          <h2 class="story-heading" style="margin-bottom: 0;">Featured Tech Titan Intelligence Dossier</h2>
+        </div>
+        <div class="company-edition-badge" id="company-edition-badge">
+          EDITION SPOTLIGHT: <span id="featured-company-name" style="color: var(--accent-cyan); font-weight: 800;">AMAZON AWS</span>
+        </div>
+      </div>
+
+      <!-- Active Company Intelligence Dossier Card (1 Company News Published in this Edition's JSON) -->
+      <div class="company-intel-card" id="company-intel-display">
+        <!-- Rendered dynamically by app.js from current edition's company_spotlight -->
+      </div>
+    </article>
+
+    <!-- SECTION 2: QUICK HITS WITH MULTI-DOMAIN FILTER TABS -->
+    <article class="article-container" id="quick-hits-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+        <div>
+          <span class="kicker-badge" style="background: rgba(121, 40, 202, 0.15); color: var(--accent-purple); border-color: rgba(121, 40, 202, 0.3);">SECTION 2 // STRATEGIC BRIEFS</span>
+          <h2 class="story-heading" style="margin-bottom: 0;">Multi-Domain Intelligence Matrix</h2>
+        </div>
+        <!-- Quick Hits Domain Filter Tabs -->
+        <div class="qh-filter-tabs" id="qh-filter-tabs">
+          <button class="qh-tab-btn is-active" data-domain="all" onclick="spark.filterQuickHits('all', this)">ALL (<span id="qh-count-all">0</span>)</button>
+          <button class="qh-tab-btn" data-domain="energy" onclick="spark.filterQuickHits('energy', this)">⚡ GRID & ENERGY (<span id="qh-count-energy">0</span>)</button>
+          <button class="qh-tab-btn" data-domain="silicon" onclick="spark.filterQuickHits('silicon', this)">🔬 SILICON & OPTICS (<span id="qh-count-silicon">0</span>)</button>
+          <button class="qh-tab-btn" data-domain="policy" onclick="spark.filterQuickHits('policy', this)">🏛️ REGULATION (<span id="qh-count-policy">0</span>)</button>
+          <button class="qh-tab-btn" data-domain="compute" onclick="spark.filterQuickHits('compute', this)">🤖 COMPUTE & AGENTS (<span id="qh-count-compute">0</span>)</button>
+          <button class="qh-tab-btn qh-sni-toggle" id="qh-sni-toggle-btn" onclick="spark.toggleHighSignalOnly()">⚡ HIGH SIGNAL (SNI ≥ 9.0)</button>
+        </div>
+      </div>
       <div id="quick-hits-container">
         <!-- Injected dynamically via JSON -->
       </div>
@@ -147,6 +303,7 @@
           <div class="analogy-callout" id="deepdive-physics"><b>Technical Physics Breakdown:</b> Loading physics...</div>
           <div class="infographic-frame" id="deepdive-image-frame" style="display: none;">
             <img id="deepdive-image" src="" alt="Case Study Technical Visual" style="max-width: 100%; display: block;">
+            <div id="deepdive-image-caption" class="infographic-caption" style="display: none;"></div>
           </div>
           <div id="deepdive-body-extra" style="font-size: 14.5px; color: #d1d5db; line-height: 1.7;"></div>
           <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
@@ -193,9 +350,26 @@
       </div>
     </section>
 
-    <!-- SECTION 5: RAPID MICRO-QUIZ -->
+    <!-- SECTION 5: RAPID MICRO-QUIZ (PERMANENT VERIFICATION & CLOUD XP) -->
     <section class="quiz-engine-wrapper">
-      <div class="cheat-header" style="color: var(--accent-emerald); margin-bottom: 20px;">🧠 DAILY RAPID INTELLIGENCE QUIZ (+200 XP)</div>
+      <div class="cheat-header" style="color: var(--accent-emerald); margin-bottom: 12px;">🧠 DAILY RAPID INTELLIGENCE QUIZ (+200 XP)</div>
+      
+      <div class="quiz-header-banner" id="quiz-header-banner">
+        <div class="quiz-banner-meta">
+          <div class="quiz-banner-title">Executive Knowledge Verification Dossier</div>
+          <div class="quiz-banner-subtitle" id="quiz-banner-subtitle">Each question can only award XP once. Verification state is permanently synced to Cloud Firestore.</div>
+        </div>
+        <div class="quiz-banner-stats">
+          <div style="text-align: right;">
+            <div style="font-size: 11px; font-weight: 800; color: var(--accent-emerald); font-family: var(--font-mono);" id="quiz-progress-text">0 / 5 VERIFIED</div>
+            <div style="font-size: 10px; color: var(--accent-amber); font-family: var(--font-mono);" id="quiz-xp-claimed-text">+0 XP CLAIMED</div>
+          </div>
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+
       <div id="quiz-items-container">
         <!-- Injected dynamically via JSON -->
       </div>
@@ -219,17 +393,60 @@
 
   </main>
 
-  <!-- IN-PAGE ARCHIVE & CALENDAR MODAL DRAWER -->
+  <!-- IN-PAGE ARCHIVE & CALENDAR VAULT MODAL (HIGH-TECH MULTI-VIEW CONSOLE) -->
   <div class="drawer-backdrop" id="archive-drawer-modal" onclick="if(event.target === this) spark.closeArchiveDrawer()">
-    <div class="archive-modal-card">
+    <div class="archive-modal-card" id="archive-modal-container">
       <div class="modal-header-bar">
         <div class="modal-title-text">
-          <span>📅</span> Historical Calendar Vault & Issue Archive
+          <span style="color: var(--accent-cyan); font-size: 18px;">🏛️</span>
+          <span>HISTORICAL INTELLIGENCE VAULT // ARCHIVE REGISTRY</span>
+          <span class="pill-status" id="archive-vault-volume-pill" style="border-color: var(--accent-cyan); color: var(--accent-cyan); font-size: 11px;">VOLUME IV</span>
         </div>
-        <button class="btn-close-modal" onclick="spark.closeArchiveDrawer()">✕</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span class="active-edition-indicator" id="vault-active-indicator" style="font-size: 11.5px; color: var(--accent-emerald); font-family: var(--font-mono); font-weight: 700;">⚡ Active: Issue #7</span>
+          <button class="btn-close-modal" onclick="spark.closeArchiveDrawer()" title="Close Vault (Esc)">✕</button>
+        </div>
       </div>
-      <div class="modal-content-scroll">
-        <div id="modal-issues-list" style="display: flex; flex-direction: column; gap: 12px;">
+
+      <!-- Controls & Filter Toolbar (High-Tech Terminal Bar) -->
+      <div class="vault-toolbar">
+        <!-- Search Input -->
+        <div class="vault-search-container">
+          <span class="vault-search-icon">🔍</span>
+          <input type="text" id="vault-search-input" class="vault-search-input" placeholder="Quick search editions by headline, company, topic (e.g. OpenAI, Broadcom, nuclear, FTC)..." oninput="spark.onArchiveSearch(this.value)">
+          <button class="vault-search-clear" id="vault-search-clear-btn" onclick="spark.clearArchiveSearch()" style="display: none;">✕</button>
+        </div>
+
+        <!-- Filter Chips & View Mode Switcher -->
+        <div class="vault-controls-row">
+          <div class="vault-filter-chips" id="vault-filter-chips">
+            <button class="vault-chip is-active" data-filter="all" onclick="spark.setArchiveFilter('all')">All Editions</button>
+            <button class="vault-chip" data-filter="2026-09" onclick="spark.setArchiveFilter('2026-09')">September 2026</button>
+            <button class="vault-chip" data-filter="2026-08" onclick="spark.setArchiveFilter('2026-08')">August 2026</button>
+          </div>
+
+          <div class="vault-view-modes">
+            <button class="vault-view-btn is-active" id="btn-view-grid" onclick="spark.setArchiveViewMode('grid')" title="Matrix Cards View">▦ Grid</button>
+            <button class="vault-view-btn" id="btn-view-table" onclick="spark.setArchiveViewMode('table')" title="Dense Terminal Table View (Zero Endless Scroll)">☵ Table</button>
+            <button class="vault-view-btn" id="btn-view-timeline" onclick="spark.setArchiveViewMode('timeline')" title="Chronological Timeline View">🗓️ Timeline</button>
+            <button class="vault-view-btn" id="btn-vault-sort" onclick="spark.toggleArchiveSort()" title="Toggle chronological sort order">↓ Newest First</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content Container with Virtualized / Clean Multi-View Display -->
+      <div class="modal-content-scroll" id="vault-modal-content-scroll">
+        <div id="modal-issues-list">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+
+      <!-- Footer Telemetry & Direct Jumper -->
+      <div class="vault-footer-bar">
+        <div class="vault-footer-meta" id="vault-footer-meta">
+          Showing 8 of 8 Archived Intel Editions
+        </div>
+        <div class="vault-footer-jumper" id="vault-footer-jumper">
           <!-- Injected dynamically via app.js -->
         </div>
       </div>
@@ -274,6 +491,18 @@
       </div>
       <div class="intel-modal-body" style="gap: 12px;">
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Global Omni-Search (Command Palette)</span> <span><kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd></span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Toggle Executive Audio Briefing</span> <kbd>A</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Print / Export PDF Memorandum</span> <kbd>P</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Cycle Quick Hits Domain Filters</span> <kbd>F</kbd>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
           <span>Jump to Next Section</span> <kbd>J</kbd>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
@@ -291,8 +520,160 @@
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
           <span>Previous / Next Issue</span> <span><kbd>[</kbd> <kbd>]</kbd></span>
         </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">
+          <span>Open Archive Vault Matrix</span> <kbd>V</kbd>
+        </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0;">
           <span>Open this Shortcuts Cheatsheet</span> <kbd>?</kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE & OMNI-SEARCH MODAL (⌘K / Ctrl+K) -->
+  <div class="intel-modal-backdrop" id="command-palette-modal" onclick="if(event.target === this) spark.closeCommandPalette()">
+    <div class="command-palette-box">
+      <div class="command-search-bar">
+        <span class="command-search-icon">⚡</span>
+        <input type="text" id="command-search-input" placeholder="Type to search all issues, quick hits, nuclear, optics, FERC, TSMC..." oninput="spark.handleCommandSearch(this.value)" autocomplete="off">
+        <kbd class="command-kbd-badge">ESC</kbd>
+      </div>
+      <div class="command-filters-row">
+        <span class="command-filter-chip is-active" data-filter="all" onclick="spark.setCommandFilter('all', this)">ALL INTEL</span>
+        <span class="command-filter-chip" data-filter="lead" onclick="spark.setCommandFilter('lead', this)">LEAD STORIES</span>
+        <span class="command-filter-chip" data-filter="quick_hits" onclick="spark.setCommandFilter('quick_hits', this)">QUICK HITS</span>
+        <span class="command-filter-chip" data-filter="deep_dive" onclick="spark.setCommandFilter('deep_dive', this)">DEEP DIVES</span>
+        <span class="command-filter-chip" data-filter="cheat" onclick="spark.setCommandFilter('cheat', this)">CHEAT SHEETS</span>
+      </div>
+      <div class="command-results-list" id="command-results-list">
+        <!-- Injected dynamically via app.js -->
+      </div>
+      <div class="command-palette-footer">
+        <span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span>
+        <span><kbd>ENTER</kbd> Jump to Article</span>
+        <span><kbd>ESC</kbd> Close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RADAR METRIC HISTORICAL DETAIL MODAL -->
+  <div class="intel-modal-backdrop" id="metric-detail-modal" onclick="if(event.target === this) spark.closeMetricDetail()">
+    <div class="intel-modal-box" style="max-width: 680px;">
+      <div class="intel-modal-header">
+        <div id="metric-modal-title" style="font-size: 14px; font-weight: 800; color: #ffffff;">📊 Metric Historical Trajectory</div>
+        <button class="btn-close-modal" onclick="spark.closeMetricDetail()">✕</button>
+      </div>
+      <div class="intel-modal-body" id="metric-modal-body">
+        <div id="metric-modal-chart-wrap" style="width: 100%; height: 220px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px;"></div>
+        <div id="metric-modal-table-wrap" style="margin-top: 16px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXECUTIVE CLOUD IDENTITY & SYNC MODAL -->
+  <div class="intel-modal-backdrop" id="identity-modal" onclick="if(event.target === this) spark.closeIdentityModal()">
+    <div class="identity-card-box">
+      <div class="intel-modal-header" style="margin-bottom: 16px;">
+        <div>
+          <div style="font-size: 15px; font-weight: 800; color: #ffffff;">👤 Executive Identity & Cloud Sync</div>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Your personal XP, streaks, clips, and forecasts across devices.</div>
+        </div>
+        <button class="btn-close-modal" onclick="spark.closeIdentityModal()">✕</button>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+        <span class="cloud-status-indicator" id="cloud-sync-status-badge">
+          <span class="beacon-dot" style="width: 6px; height: 6px;"></span>
+          <span id="cloud-status-text">CLOUD CONNECTED (FIRESTORE)</span>
+        </span>
+        <span style="font-size: 11px; color: var(--text-muted);" id="cloud-last-synced-text">Synced: Just now</span>
+      </div>
+
+      <div style="margin-bottom: 16px;">
+        <label for="identity-email-input" style="font-size: 11px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Corporate / Executive Email ID:</label>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" id="identity-email-input" placeholder="e.g. mernamit@gmail.com" style="flex: 1; background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 8px 12px; color: #ffffff; font-size: 13px;">
+          <button class="action-btn" style="background: rgba(0, 229, 153, 0.2); border-color: var(--accent-emerald); color: var(--accent-emerald); font-weight: 800;" onclick="spark.saveAndSwitchEmail()">Switch / Save</button>
+        </div>
+      </div>
+
+      <!-- Rank Seniority Progression Bar -->
+      <div style="background: rgba(0,0,0,0.25); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; margin-bottom: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 11px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase;" id="profile-rank-name">LEVEL 1 • CADET ANALYST</span>
+          <span style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);" id="profile-rank-pct">0% TO NEXT TIER</span>
+        </div>
+        <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden;">
+          <div id="profile-rank-bar-fill" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald)); border-radius: 3px; transition: width 0.4s ease;"></div>
+        </div>
+      </div>
+
+      <div class="identity-stats-grid">
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-xp">100</div>
+          <div class="identity-stat-lbl">Total XP</div>
+        </div>
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-streak">4</div>
+          <div class="identity-stat-lbl">Day Streak</div>
+        </div>
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-questions">0 / 40</div>
+          <div class="identity-stat-lbl">Questions Solved</div>
+        </div>
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-quiz">100%</div>
+          <div class="identity-stat-lbl">Quiz Mastery</div>
+        </div>
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-wagers">0</div>
+          <div class="identity-stat-lbl">Wagers Placed</div>
+        </div>
+        <div class="identity-stat-card">
+          <div class="identity-stat-val" id="profile-stat-clips">0</div>
+          <div class="identity-stat-lbl">Saved Clips</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button class="action-btn" onclick="spark.forceCloudSync()" style="background: rgba(0, 240, 255, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);" title="Synchronize telemetry with Firestore">🔄 Sync to Cloud</button>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button class="action-btn" onclick="spark.exportProfileBackup()" title="Download JSON file of all your data">💾 Export Backup</button>
+          <label class="action-btn" style="cursor: pointer; margin: 0;" title="Restore backup from a JSON file">
+            📥 Import
+            <input type="file" id="profile-backup-upload" accept=".json" style="display: none;" onchange="spark.importProfileBackup(event)">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAILY EXECUTIVE TECH MEMO GENERATOR MODAL -->
+  <div class="intel-modal-backdrop" id="newsletter-modal" onclick="if(event.target === this) spark.closeNewsletterModal()">
+    <div class="intel-modal-box" style="max-width: 760px;">
+      <div class="intel-modal-header">
+        <div>
+          <div style="font-size: 15px; font-weight: 800; color: #ffffff;">📬 Daily Executive Tech Memo Generator</div>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Export formatted newsletter HTML or Markdown for Substack, Beehiiv, Gmail, or Notion.</div>
+        </div>
+        <button class="btn-close-modal" onclick="spark.closeNewsletterModal()">✕</button>
+      </div>
+      <div class="intel-modal-body">
+        <div class="newsletter-subject-box" id="newsletter-subject-display">
+          Subject: SPARK NEWS LIVE // Volume IV — High-Tech Intelligence Briefing
+        </div>
+        <div class="newsletter-preview-container" id="newsletter-rendered-preview">
+          <!-- Rendered live via app.js -->
+        </div>
+        <div style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="action-btn" style="background: rgba(0, 229, 153, 0.15); border-color: var(--accent-emerald); color: var(--accent-emerald); font-weight: 800;" onclick="spark.copyNewsletterHTML()">📋 Copy Formatted HTML</button>
+            <button class="action-btn" style="background: rgba(0, 240, 255, 0.15); border-color: var(--accent-cyan); color: var(--accent-cyan); font-weight: 800;" onclick="spark.copyNewsletterMarkdown()">📋 Copy Markdown</button>
+            <button class="action-btn" onclick="spark.openInMailClient()">✉️ Open in Mail Client</button>
+          </div>
+          <button class="action-btn" onclick="spark.closeNewsletterModal()">Close</button>
         </div>
       </div>
     </div>

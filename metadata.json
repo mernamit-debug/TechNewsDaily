@@ -1,0 +1,6 @@
+{
+  "name": "Spark News Live — Executive Intelligence Portal",
+  "description": "Executive intelligence portal and daily investigative news digest featuring radar metrics, case study analysis, and interactive research tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
