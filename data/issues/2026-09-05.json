@@ -270,5 +270,81 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "semiconductor_die",
+    "title": "Dedicated Neural KV-Cache Accelerator Core",
+    "subtitle": "Interactive 3D Compute Die, On-Package SRAM Banks, HBM Stacks & Liquid Heat Spreader",
+    "badge": "AI SILICON HARDWARE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 230,
+      "pitch": 0.45,
+      "yaw": 0.6
+    },
+    "contextual_labels": {
+      "logic_die": {
+        "name": "Tensor Key-Value Cache Engine Die",
+        "desc": "Specialized memory-compute tile streaming attention keys and values with sub-nanosecond latency."
+      },
+      "hbm_stack_1": {
+        "name": "HBM3e High-Density Memory Pool A",
+        "desc": "High-capacity buffer storing hundreds of gigabytes of conversational context."
+      },
+      "hbm_stack_2": {
+        "name": "HBM3e High-Density Memory Pool B",
+        "desc": "Symmetric memory stack eliminating pipeline stalls during 100k-token sequence generation."
+      }
+    },
+    "controls": [
+      {
+        "id": "core_vdd",
+        "label": "Core Voltage (Vdd)",
+        "min": 0.5,
+        "max": 1.15,
+        "step": 0.05,
+        "default": 0.75,
+        "unit": "V"
+      },
+      {
+        "id": "clock_ghz",
+        "label": "Core Clock Frequency",
+        "min": 1.2,
+        "max": 5.5,
+        "step": 0.1,
+        "default": 3.8,
+        "unit": "GHz"
+      },
+      {
+        "id": "junction_temp",
+        "label": "Junction Temp (Tj)",
+        "min": 25,
+        "max": 105,
+        "step": 5,
+        "default": 65,
+        "unit": "°C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "power_density",
+        "label": "Power Density",
+        "unit": "W/cm²"
+      },
+      {
+        "id": "ir_drop",
+        "label": "Parasitic IR Drop",
+        "unit": "mV"
+      },
+      {
+        "id": "drive_ion",
+        "label": "Drive Current (Ion)",
+        "unit": "mA/μm"
+      },
+      {
+        "id": "clock_ceil",
+        "label": "Max Clock Ceiling",
+        "unit": "GHz"
+      }
+    ]
+  }
 }

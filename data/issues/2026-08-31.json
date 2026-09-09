@@ -268,5 +268,85 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "rotary_actuator",
+    "title": "Humanoid High-Torque Quasi-Direct Drive (QDD) Actuator",
+    "subtitle": "Interactive 3D BLDC Motor Stator, Halbach Rotor, Strain-Wave Gear & Cross-Roller Bearing",
+    "badge": "ROBOTICS HARDWARE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 220,
+      "pitch": 0.4,
+      "yaw": 0.6
+    },
+    "contextual_labels": {
+      "stator_housing": {
+        "name": "High-Slot Frameless BLDC Motor Stator",
+        "desc": "High-density concentrated copper stator coils delivering 140 Nm peak burst torque."
+      },
+      "rotor_magnets": {
+        "name": "Halbach Permanent Magnet Inner Rotor",
+        "desc": "Precision neodymium rotor yielding uniform magnetic flux and 94% electromechanical efficiency."
+      },
+      "harmonic_gear": {
+        "name": "Strain-Wave Harmonic Flexspline Reducer",
+        "desc": "Compact 10:1 to 50:1 low-backlash reduction gear with high torsional stiffness."
+      },
+      "output_flange": {
+        "name": "Cross-Roller Output Bearing Hub",
+        "desc": "High-rigidity ring bearing supporting simultaneous radial, axial, and moment loads during dynamic locomotion."
+      }
+    },
+    "controls": [
+      {
+        "id": "torque_req",
+        "label": "Commanded Torque",
+        "min": 20,
+        "max": 160,
+        "step": 10,
+        "default": 85,
+        "unit": "Nm"
+      },
+      {
+        "id": "gear_ratio",
+        "label": "Harmonic Gear Ratio",
+        "min": 5,
+        "max": 50,
+        "step": 5,
+        "default": 10,
+        "unit": "ratio"
+      },
+      {
+        "id": "thermal_load",
+        "label": "Joint Operating Temp",
+        "min": 20,
+        "max": 80,
+        "step": 2,
+        "default": 45,
+        "unit": "°C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "bandwidth",
+        "label": "Torque Loop Bandwidth",
+        "unit": "Hz"
+      },
+      {
+        "id": "power_density",
+        "label": "Joint Power Density",
+        "unit": "kW/kg"
+      },
+      {
+        "id": "backlash",
+        "label": "Angular Backlash",
+        "unit": "arcsec"
+      },
+      {
+        "id": "p_eff",
+        "label": "Electro-Mech Efficiency",
+        "unit": "%"
+      }
+    ]
+  }
 }

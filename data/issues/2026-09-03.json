@@ -268,5 +268,89 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "server_rack",
+    "title": "NVL72 132kW Liquid-Cooled AI Supercomputer Rack",
+    "subtitle": "Interactive 3D 42U Heavy Chassis, Liquid Manifolds, Compute Blades & Copper Busbars",
+    "badge": "COMPUTE INFRASTRUCTURE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 260,
+      "pitch": 0.35,
+      "yaw": 0.65
+    },
+    "contextual_labels": {
+      "compute_blade_1": {
+        "name": "Blackwell GPU Compute Node Tray 1",
+        "desc": "Direct-to-chip cold plate tray extracting 1,200W from dual B200 accelerators."
+      },
+      "compute_blade_2": {
+        "name": "Blackwell GPU Compute Node Tray 2",
+        "desc": "Mid-tier compute blade linked via 1.8 TB/s NVLink copper switch backplane."
+      },
+      "tor_switch": {
+        "name": "NVLink Spine Switch Fabric (9x Trays)",
+        "desc": "High-radix interconnect enabling all 72 GPUs to act as a single unified accelerator."
+      },
+      "liquid_manifold": {
+        "name": "Blind-Mate Liquid Cooling Manifolds",
+        "desc": "Stainless steel warm-water distribution tubes circulating 80 liters per minute."
+      },
+      "power_busbar": {
+        "name": "48V / 400V Solid Copper Power Busbar",
+        "desc": "Massive solid busbar delivering 3,000 amps across all rack tiers with 99% efficiency."
+      }
+    },
+    "controls": [
+      {
+        "id": "gpu_tdp",
+        "label": "Node Power Draw",
+        "min": 400,
+        "max": 1800,
+        "step": 50,
+        "default": 1200,
+        "unit": "W"
+      },
+      {
+        "id": "coolant_inlet",
+        "label": "Coolant Inlet Temp",
+        "min": 15,
+        "max": 45,
+        "step": 1,
+        "default": 24,
+        "unit": "°C"
+      },
+      {
+        "id": "cluster_scale",
+        "label": "Active Rack Nodes",
+        "min": 16,
+        "max": 72,
+        "step": 4,
+        "default": 72,
+        "unit": "nodes"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "total_kw",
+        "label": "Total Rack Power",
+        "unit": "kW"
+      },
+      {
+        "id": "fp8_pflops",
+        "label": "AI Compute Throughput",
+        "unit": "PFLOPS"
+      },
+      {
+        "id": "water_flow",
+        "label": "Coolant Flow Rate",
+        "unit": "LPM"
+      },
+      {
+        "id": "pue_impact",
+        "label": "Cooling PUE Overhead",
+        "unit": "PUE"
+      }
+    ]
+  }
 }

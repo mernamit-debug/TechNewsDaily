@@ -270,5 +270,85 @@
       "correct_index": 0
     }
   ],
-  "easter_egg": "Honey recovered from the tombs of ancient Egyptian pharaohs remains chemically edible after over 3,000 years, preserved entirely by an osmotic pressure of nearly 100 atmospheres that ruptures any microbial cell attempting to colonize it."
+  "easter_egg": "Honey recovered from the tombs of ancient Egyptian pharaohs remains chemically edible after over 3,000 years, preserved entirely by an osmotic pressure of nearly 100 atmospheres that ruptures any microbial cell attempting to colonize it.",
+  "interactive_model": {
+    "archetype": "power_transformer",
+    "title": "750MVA High-Voltage Autotransformer & Substation Intertie",
+    "subtitle": "Interactive 3D Laminated Magnetic Core, High-Voltage Windings, Bushings & Radiators",
+    "badge": "GRID THERMODYNAMICS // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 250,
+      "pitch": 0.4,
+      "yaw": 0.6
+    },
+    "contextual_labels": {
+      "core_limbs": {
+        "name": "Grain-Oriented Laminated Steel Core",
+        "desc": "Ultra-low-loss core steel minimizing hysteresis losses across 750MVA throughput."
+      },
+      "hv_windings_1": {
+        "name": "500kV Phase A Transposed Copper Windings",
+        "desc": "Heavy copper conductor stack cooled by forced ester dielectric oil."
+      },
+      "hv_bushings": {
+        "name": "765kV RIP Capacitor Bushings",
+        "desc": "Resin-impregnated paper high-voltage insulator terminals."
+      },
+      "cooling_radiators": {
+        "name": "Forced-Oil Forced-Air (OFAF) Radiator Bank",
+        "desc": "Direct heat dissipation fins shedding 1,200 kW of copper ohmic losses."
+      }
+    },
+    "controls": [
+      {
+        "id": "mva_load",
+        "label": "Apparent MVA Load",
+        "min": 150,
+        "max": 1000,
+        "step": 25,
+        "default": 650,
+        "unit": "MVA"
+      },
+      {
+        "id": "oil_cooling",
+        "label": "Oil Cooling Stage",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 2,
+        "unit": "stage"
+      },
+      {
+        "id": "ambient_c",
+        "label": "Ambient Temperature",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "default": 32,
+        "unit": "°C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "top_oil_temp",
+        "label": "Top-Oil Temp",
+        "unit": "°C"
+      },
+      {
+        "id": "winding_hotspot",
+        "label": "Winding Hotspot",
+        "unit": "°C"
+      },
+      {
+        "id": "efficiency",
+        "label": "Transmission Efficiency",
+        "unit": "%"
+      },
+      {
+        "id": "loss_kw",
+        "label": "Transformer Losses",
+        "unit": "kW"
+      }
+    ]
+  }
 }

@@ -3,60 +3,100 @@
     "issue_number": 9,
     "date": "2026-09-09",
     "headline": "The $329 Capacity Price Spike: PJM's 220GW Interconnection Queue Exposes the Thermodynamics of AI Baseload Inflation",
-    "file_path": "data/issues/2026-09-09.json"
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 9 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-09.json",
+    "reading_streak": 9,
+    "domain_tags": []
   },
   {
     "issue_number": 8,
     "date": "2026-09-08",
     "headline": "Samsung & Arm Form 2nm GAA Foundry Alliance: The Race to Build Custom Silicon for OpenAI & Break TSMC's Monopoly",
-    "file_path": "data/issues/2026-09-08.json"
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 8 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-08.json",
+    "reading_streak": 8,
+    "domain_tags": []
   },
   {
     "issue_number": 7,
     "date": "2026-09-07",
     "headline": "Upstream Monopoly Foreclosure: FTC Shifts Antitrust Crosshairs from LLM Weights to Power & Substation Capacity",
-    "file_path": "data/issues/2026-09-07.json"
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 7 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-07.json",
+    "reading_streak": 7,
+    "domain_tags": []
   },
   {
     "issue_number": 6,
     "date": "2026-09-06",
     "headline": "The Custom Silicon Revolt: Broadcom's AI Revenue Triples as Hyperscalers Escape the NVIDIA GPU Tax",
-    "file_path": "data/issues/2026-09-06.json"
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 6 // SUNDAY EXECUTIVE LEAD INVESTIGATIVE",
+    "file_path": "data/issues/2026-09-06.json",
+    "reading_streak": 6,
+    "domain_tags": []
   },
   {
     "issue_number": 5,
     "date": "2026-09-05",
     "headline": "OpenAI Launches GPT-6 Astra: Recursive Self-Correction, Multi-Modal Reasoning & The Enterprise Inference Bill Shock",
-    "file_path": "data/issues/2026-09-05.json"
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 5 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-05.json",
+    "reading_streak": 5,
+    "domain_tags": []
   },
   {
     "issue_number": 4,
     "date": "2026-09-04",
-    "headline": "California AI Omnibus Bill Lands on Newsom's Desk: Datacenter Grid Moratorium",
-    "file_path": "data/issues/2026-09-04.json"
+    "headline": "California AI Omnibus Bill Lands on Newsom's Desk: Datacenter Grid Moratorium Threatens Hyperscale Western Expansion",
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 4 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-04.json",
+    "reading_streak": 4,
+    "domain_tags": []
   },
   {
     "issue_number": 3,
     "date": "2026-09-03",
-    "headline": "NVIDIA Commits $13B to Hugging Face Open-Source Platform & Compute Ecosystem",
-    "file_path": "data/issues/2026-09-03.json"
+    "headline": "NVIDIA's $13B Hugging Face Commitment: The Battle for Open-Source Model Mindshare & Silicon Lock-In",
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 3 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-03.json",
+    "reading_streak": 3,
+    "domain_tags": []
   },
   {
     "issue_number": 2,
     "date": "2026-09-02",
-    "headline": "ONE Nuclear Executes 2.88GWh BESS & Gas Co-Location for Louisiana Datacenter",
-    "file_path": "data/issues/2026-09-02.json"
+    "headline": "ONE Nuclear Energy Executes LOI for 2.88GWh BESS & Gas Co-Location at Louisiana AI Datacenter",
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 2 // LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-02.json",
+    "reading_streak": 2,
+    "domain_tags": []
   },
   {
     "issue_number": 1,
     "date": "2026-09-01",
-    "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to 2.5GW Nuclear Generation",
-    "file_path": "data/issues/2026-09-01.json"
+    "headline": "Hyperscale Energy Decoupling: Frontier AI Clusters Pivot to Behind-the-Meter 2.5GW Nuclear Generation",
+    "volume": "VOLUME IV",
+    "kicker": "SEPTEMBER 1 // INAUGURAL LEAD INVESTIGATIVE ANCHOR",
+    "file_path": "data/issues/2026-09-01.json",
+    "reading_streak": 1,
+    "domain_tags": []
   },
   {
     "issue_number": 0,
     "date": "2026-08-31",
     "headline": "Frontier Humanoid Robotics: The Sub-10s Sprint, Actuator Physics, and the Factory Floor Reality",
-    "file_path": "data/issues/2026-08-31.json"
+    "volume": "VOLUME IV",
+    "kicker": "AUGUST 31 // INAUGURAL ALPHA DISPATCH (ISSUE #0)",
+    "file_path": "data/issues/2026-08-31.json",
+    "reading_streak": 0,
+    "domain_tags": []
   }
 ]

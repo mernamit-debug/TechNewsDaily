@@ -270,5 +270,85 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "optical_transceiver",
+    "title": "3.2Tbps Co-Packaged Optics (CPO) Switch Package",
+    "subtitle": "Interactive 3D Silicon Photonic PIC, CW Micro-Laser Array & High-Density Fiber Ribbon",
+    "badge": "PHOTONIC FABRIC // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 220,
+      "pitch": 0.45,
+      "yaw": 0.6
+    },
+    "contextual_labels": {
+      "pic_die": {
+        "name": "Broadcom Bailly Silicon Photonic PIC",
+        "desc": "Monolithic optical transceiver die routing 64 optical channels with integrated Mach-Zehnder modulators."
+      },
+      "laser_array": {
+        "name": "External CW Laser Diode Source",
+        "desc": "Remote high-power distributed feedback laser preventing thermal drift inside the switch core."
+      },
+      "fiber_ferrule": {
+        "name": "High-Density MPO Optical Fiber Ribbon",
+        "desc": "Single-mode optical ribbon cable conveying 3.2 Terabits per second."
+      },
+      "electrical_connector": {
+        "name": "224G PAM4 Substrate Ball Grid Array",
+        "desc": "Sub-millimeter solder balls providing short-reach electrical interconnects with under 1.5pJ/bit."
+      }
+    },
+    "controls": [
+      {
+        "id": "port_speed",
+        "label": "Port Data Rate",
+        "min": 50,
+        "max": 224,
+        "step": 8,
+        "default": 106,
+        "unit": "Gbps"
+      },
+      {
+        "id": "laser_power",
+        "label": "CW Laser Optical Power",
+        "min": 20,
+        "max": 120,
+        "step": 5,
+        "default": 80,
+        "unit": "mW"
+      },
+      {
+        "id": "fiber_length",
+        "label": "Optical Link Distance",
+        "min": 10,
+        "max": 500,
+        "step": 10,
+        "default": 100,
+        "unit": "m"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "switch_bw",
+        "label": "Aggregate Bandwidth",
+        "unit": "Tbps"
+      },
+      {
+        "id": "energy_per_bit",
+        "label": "Interconnect Energy",
+        "unit": "pJ/bit"
+      },
+      {
+        "id": "insertion_loss",
+        "label": "Total Optical Loss",
+        "unit": "dB"
+      },
+      {
+        "id": "thermal_dissip",
+        "label": "Module Heat Dissipation",
+        "unit": "W"
+      }
+    ]
+  }
 }

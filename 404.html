@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark News Live — Redirecting...</title>
+  <script>
+    // GitHub Pages SPA router redirect
+    (function() {
+      var pathname = window.location.pathname;
+      var repoMatch = pathname.match(/^\/([^/]+)/);
+      var basePath = repoMatch ? '/' + repoMatch[1] + '/' : '/';
+      // If user landed on /#date=YYYY-MM-DD or deep route, redirect back to index.html with query/hash intact
+      window.location.replace(basePath + 'index.html' + window.location.search + window.location.hash);
+    })();
+  </script>
+</head>
+<body style="background: #070b14; color: #00f0ff; font-family: monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+  <div>Redirecting to Spark News Live Intelligence Feed...</div>
+</body>
+</html>

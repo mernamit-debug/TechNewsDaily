@@ -21,8 +21,10 @@
   "lead_story": {
     "kicker": "SEPTEMBER 9 // LEAD INVESTIGATIVE ANCHOR",
     "headline": "The $329 Capacity Price Spike: PJM's 220GW Interconnection Queue Exposes the Thermodynamics of AI Baseload Inflation",
-    "image_url": "https://www.google.com/url?q=https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w%3D1600%26h%3D900%26fit%3Dfill&source=gmail&ust=1788993742649000&sa=E",
-    "catch_up": "PJM Interconnection's landmark Cycle 1 disclosure revealed an unprecedented 220 GW queue across 811 projects. Propelled by multi-gigawatt AI datacenter interconnect requests across northern Virginia and Ohio, PJM's regional capacity auction prices spiked to $329 per MW-day?a tenfold increase that is passing billions in wholesale capacity charges directly onto 65 million consumers across 13 eastern states.",
+    "image_url": "assets/pjm-substation-anchor.jpg",
+    "image_caption": "High-voltage 500kV electrical transmission infrastructure and regional grid interconnect lines delivering baseload power to hyperscale datacenter corridors.",
+    "image_alt": "High-voltage 500kV electrical transmission infrastructure and power grid towers",
+    "catch_up": "PJM Interconnection's landmark Cycle 1 disclosure revealed an unprecedented 220 GW queue across 811 projects. Propelled by multi-gigawatt AI datacenter interconnect requests across northern Virginia and Ohio, PJM's regional capacity auction prices spiked to $329 per MW-day — a tenfold increase that is passing billions in wholesale capacity charges directly onto 65 million consumers across 13 eastern states.",
     "mechanism": "Under wholesale capacity market design (the Reliability Pricing Model), grid operators contract firm reserve capacity 1-to-3 years forward to prevent blackouts. When hyperscalers divert gigawatts of firm baseload generation off-grid or tie up transmission headrooms with flat-line compute loads, available merchant reserve margins fall below statutory reliability cushions. This drives the market directly into the vertical, inelastic price ceiling of the Net CONE (Cost of New Entry) curve.",
     "analogy": "Imagine a city municipal hospital with 1,000 emergency beds built for the public. If a wealthy private concierge surgery clinic contracts 400 of those ICU beds permanently on retainer 'just in case', the hospital is forced to build emergency overflow wards at exorbitant rush rates. The public funded the underlying infrastructure, but private compute took all the reserve safety margin.",
     "pr_claim": "Our investments in clean energy certificates and local community funds support long-term regional grid modernization.",
@@ -31,16 +33,97 @@
     "bear_take": "State utility commissions in Virginia and Pennsylvania face intense consumer backlash over 20-30% residential electricity bill inflation, making discriminatory datacenter tariffs politically inevitable.",
     "cascades": "Hyperscalers shift non-real-time training workloads to off-grid gas turbine microgrids in the Midwest; RTOs across North America mandate separate interconnect queues for heavy industrial compute.",
     "why_it_matters": "AI model training speed is no longer bounded by chip supply or algorithmic cleverness; it is directly tethered to RTO capacity market mechanics and public political tolerance for rate hikes.",
-    "cocktail_flex": "Silicon Valley spent fifteen years complaining about Apple's 30% App Store tax; now regional electrical grid operators are charging a 1,000% capacity toll just to keep the server fans spinning."
+    "cocktail_flex": "Silicon Valley spent fifteen years complaining about Apple's 30% App Store tax; now regional electrical grid operators are charging a 1,000% capacity toll just to keep the server fans spinning.",
+    "web_investigation": {
+      "overview": "PJM Interconnection Reliability Pricing Model (RPM) 2025/2026 Base Residual Auction results, Cycle 1 queue reform metrics, and FERC wholesale capacity filings.",
+      "sources": [
+        {
+          "title": "PJM Interconnection 2025/2026 Base Residual Auction Report: Clearing Prices and Capacity Resource Performance",
+          "publisher": "PJM Market Operations",
+          "url": "https://www.pjm.com/markets-and-operations/rpm",
+          "type": "Wholesale Market Report",
+          "snippet": "Discloses regional clearing prices hitting $329.17/MW-day across RTO footprint and EMAAC locational deliverability areas."
+        },
+        {
+          "title": "FERC Order on PJM Interconnection Queue Reform: Transition Cycle 1 Evaluation & Cluster Study Allocations",
+          "publisher": "Federal Energy Regulatory Commission (FERC.gov)",
+          "url": "https://www.ferc.gov/",
+          "type": "Regulatory Docket",
+          "snippet": "Details the 220 GW queue backlog across 811 projects and revised readiness deposit requirements for large load additions."
+        },
+        {
+          "title": "S&P Global Commodity Insights: AI Datacenter Demand Shocks PJM Capacity Market Reserves",
+          "publisher": "S&P Global Market Intelligence",
+          "url": "https://www.spglobal.com/commodityinsights",
+          "type": "Energy Economics Analysis",
+          "snippet": "Analyzes the Net CONE demand curve shift and billions in retail pass-through costs facing mid-Atlantic utilities."
+        }
+      ],
+      "search_queries": [
+        "PJM capacity auction 329 MW day Net CONE curve 2026",
+        "PJM 220 GW cycle 1 queue AI datacenter interconnect",
+        "PJM reliability pricing model residential ratepayer impact"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "Talen Energy & Constellation Surge as PJM $329/MW-Day Capacity Auction Yields Multi-Billion Dollar Merchant Windfall",
+    "image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1000&auto=format&fit=crop",
+    "image_caption": "High-voltage nuclear switchyard and step-up transformer bay supplying behind-the-meter hyperscale AI compute.",
+    "image_alt": "High-voltage nuclear generator step-up substation switchyard",
+    "company": "Talen Energy / Constellation",
+    "ticker": "NASDAQ: TLN / NASDAQ: CEG",
+    "market_cap": "$11.8B (TLN) / $82.4B (CEG)",
+    "summary": "Merchant nuclear and baseload power generators emerged as the premier financial beneficiaries of PJM's $329/MW-day capacity auction spike. Anchored by AWS's 960MW co-location at Talen's Susquehanna plant and Microsoft's restart of Three Mile Island Unit 1 with Constellation, firm baseload generation in PJM has decoupled from legacy utility power purchase agreements into high-margin proprietary AI compute assets.",
+    "mechanism": "Bilateral behind-the-meter nuclear interconnection bypassing regulated transmission queue delays while monetizing uncapped RTO capacity reserve pricing.",
+    "metrics": {
+      "capex": "$1.6B Crane Restart / $650M Susquehanna Data Center Expansion",
+      "moat": "Grandfathered 500kV Nuclear Substation Switchyards & Firm Baseload",
+      "regulatory": "FERC Co-Location Hearings & State PUC Ratepayer Intervention",
+      "velocity": "9.8 / 10"
+    },
+    "takeaway": "In a power-constrained compute cycle, owning grandfathered high-voltage nuclear interties in PJM generates higher operating leverage than building new semiconductor fabs.",
+    "web_investigation": {
+      "overview": "Talen Energy and Constellation Energy SEC disclosures, nuclear asset valuations, and PJM wholesale capacity revenue projections.",
+      "sources": [
+        {
+          "title": "Talen Energy Corporation Form 10-Q: Susquehanna Nuclear Station Capacity Valuation & AWS Offtake",
+          "publisher": "SEC EDGAR / Talen Energy IR",
+          "url": "https://www.talenenergy.com/",
+          "type": "SEC Filing",
+          "snippet": "Details capacity revenue upsides from PJM 2025/2026 auction clearing prices and behind-the-meter campus expansions."
+        },
+        {
+          "title": "Constellation Energy Group Form 8-K: Nuclear Fleet Capacity Market Realizations",
+          "publisher": "SEC EDGAR / Constellation IR",
+          "url": "https://investors.constellationenergy.com/",
+          "type": "Material Event Disclosure",
+          "snippet": "Discloses annualized gross margin uplift from merchant nuclear generation clearing at $329/MW-day."
+        }
+      ],
+      "search_queries": [
+        "Talen Energy PJM capacity auction 329 MW day Susquehanna AWS",
+        "Constellation Energy merchant nuclear gross margin uplift PJM"
+      ]
+    }
   },
   "quick_hits": [
     {
       "id": 1,
       "headline": "BESTE 2026 Summit Convenes in Barcelona on Multi-Gigawatt Industrial BESS",
-      "facts": "At the Battery & Energy Storage Tech Europe (BESTE) summit in Barcelona on September 8?9, over 100 utilities, IPPs, and datacenter developers formalized standardized procurement frameworks for 4-to-8-hour grid-forming battery storage systems.",
+      "facts": "At the Battery & Energy Storage Tech Europe (BESTE) summit in Barcelona on September 8–9, over 100 utilities, IPPs, and datacenter developers formalized standardized procurement frameworks for 4-to-8-hour grid-forming battery storage systems.",
       "reality_audit": "Gigawatt storage pipelines look great in conference keynote decks, but utility-scale inverter delivery backlogs of 160 weeks mean most of these batteries will sit in warehouses waiting for transformers.",
       "why_it_matters": "Positions grid-forming BESS as the non-negotiable baseload stabilizer for European AI campus deployments.",
-      "sni": "9.3 / 10"
+      "sni": "9.3 / 10",
+      "web_sources": [
+        {
+          "title": "BESTE 2026 Summit Communique: Standardized Frameworks for Grid-Forming Inverter & BESS Procurement",
+          "publisher": "Battery & Energy Storage Tech Europe",
+          "url": "https://www.besternrg.eu/",
+          "type": "Industry Summit Communique"
+        }
+      ],
+      "search_query": "BESTE 2026 summit Barcelona grid-forming BESS procurement"
     },
     {
       "id": 2,
@@ -48,7 +131,16 @@
       "facts": "SEC and FTC disclosures regarding Anthropic's confidential S-1 filing reveal intensified scrutiny of exclusive cloud compute commitments with Amazon and Google, probing whether multi-billion-dollar compute credit structures function as de facto market foreclosure.",
       "reality_audit": "Big Tech structured investments as cloud credits to evade antitrust scrutiny; regulators are now piercing the corporate veil to treat captive compute allocations as illegal tying arrangements.",
       "why_it_matters": "Could force hyperscalers to unbundle subsidized compute credits, establishing portability across competing cloud fabrics.",
-      "sni": "9.5 / 10"
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "Federal Trade Commission Inquiry: Cloud Hyperscaler Investments and Exclusive AI Compute Agreements",
+          "publisher": "FTC.gov",
+          "url": "https://www.ftc.gov/",
+          "type": "Antitrust Inquiry Notice"
+        }
+      ],
+      "search_query": "Anthropic S-1 confidential filing FTC scrutiny cloud compute credits"
     },
     {
       "id": 3,
@@ -56,7 +148,16 @@
       "facts": "At the 2nd Edition of the DSCI Cyber GCC Summit in Bengaluru on September 9, over 900 cybersecurity leaders inaugurated a collaborative sandbox for testing autonomous defensive AI agents against automated state-sponsored cyber incursions.",
       "reality_audit": "Autonomous agentic defense is essential for sub-second incident response, but enterprise CISOs remain terrified of letting LLM-based agents alter firewall routing tables without human sign-off.",
       "why_it_matters": "Elevates Bengaluru's Global Capability Centers from IT maintenance operations into the premier engineering cockpit for autonomous enterprise cyber doctrine.",
-      "sni": "8.9 / 10"
+      "sni": "8.9 / 10",
+      "web_sources": [
+        {
+          "title": "Data Security Council of India (DSCI): 2nd Cyber GCC Summit Blueprint for Autonomous Cyber Defense",
+          "publisher": "DSCI Press Room",
+          "url": "https://www.dsci.in/",
+          "type": "Summit Technical Blueprint"
+        }
+      ],
+      "search_query": "DSCI 2nd Cyber GCC Summit Bengaluru autonomous AI defense testbed"
     },
     {
       "id": 4,
@@ -64,12 +165,24 @@
       "facts": "With high-voltage 500kV step-down transformer lead times holding at 185 weeks, private equity funds are buying shuttered heavy industrial plants strictly for their grandfathered utility switchyard capacity, flipping the energized sites to AI developers at a 400% premium.",
       "reality_audit": "When a rusted-out midwestern industrial mill sells for more than a profitable software startup, the venture capital universe has collided with the laws of electrical engineering.",
       "why_it_matters": "Confirmed that energized high-voltage switchyard real estate is the single most valuable physical bottleneck in global AI infrastructure.",
-      "sni": "9.4 / 10"
+      "sni": "9.4 / 10",
+      "web_sources": [
+        {
+          "title": "North American Electric Reliability Corporation (NERC): Supply Chain Lead Times for Bulk Power Equipment",
+          "publisher": "NERC Publications",
+          "url": "https://www.nerc.com/",
+          "type": "Infrastructure Risk Assessment"
+        }
+      ],
+      "search_query": "500kV transformer lead times 185 weeks substation private equity arbitrage"
     }
   ],
   "deep_dive": {
     "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
     "headline": "The Reliability Pricing Model (RPM) Net CONE Wall: How AI Compute Trips the RTO Inelastic Demand Curve",
+    "image_url": "assets/power-station.jpg",
+    "image_caption": "Figure 3.1: Thermal power generation station and cooling infrastructure supporting regional firm capacity reserves.",
+    "image_alt": "Thermal power generation station and cooling infrastructure",
     "thesis": "Wholesale electric capacity markets are engineered with steep, near-vertical demand curves designed to incentivize new generation when reserve margins drop below 15%. When AI data centers inject gigawatts of continuous, non-curtailable baseload demand into regional grids, they drive capacity clearing prices exponentially higher, exposing the systemic financial fragility of deregulated RTOs.",
     "physics_breakdown": "Unlike residential load, which cycles predictably between daytime peaks and nocturnal valleys, a 1GW AI cluster represents an invariant, flat-line baseload with zero thermal elasticity. In PJM's Reliability Pricing Model, when total projected peak demand plus target reserve margins exceeds uncommitted generation, the clearing price shifts from the variable Net CONE (Cost of New Entry) slope directly into the statutory maximum price cap ($329/MW-day). Because capacity costs are socialized across all load-serving entities, municipal utilities serving ordinary homes must pay the same surge pricing triggered by hyperscale datacenter interconnection.",
     "matrix": {
@@ -78,7 +191,30 @@
       "cascades": "PUCs in Virginia and Maryland initiate formal proceedings to bifurcate industrial AI tariffs from municipal rate bases; cloud providers face $1.2B in annual unbudgeted capacity pass-through fees.",
       "sni": "9.9 / 10 (MACRO FINANCIAL-PHYSICS COUPLING)"
     },
-    "takeaway": "Software companies calculated the cost of AI in floating-point operations per second; regional power grids are now billing them in the brutal arithmetic of capacity reserve margins."
+    "takeaway": "Software companies calculated the cost of AI in floating-point operations per second; regional power grids are now billing them in the brutal arithmetic of capacity reserve margins.",
+    "web_investigation": {
+      "overview": "Mathematical analysis of Variable Resource Requirement (VRR) demand curves, Net Cost of New Entry (Net CONE), and capacity reserve margin thresholds in PJM.",
+      "sources": [
+        {
+          "title": "PJM Manual 18: PJM Capacity Market - Variable Resource Requirement Curves & Net CONE Specifications",
+          "publisher": "PJM Operating Agreement Accounting",
+          "url": "https://www.pjm.com/",
+          "type": "Technical Operating Manual",
+          "snippet": "Mathematical equations defining the downward-sloping VRR curve and price caps based on reference combustion turbine costs."
+        },
+        {
+          "title": "Monitoring Analytics: State of the Market Report for PJM (Capacity Market Assessment)",
+          "publisher": "Independent Market Monitor for PJM",
+          "url": "https://www.monitoringanalytics.com/",
+          "type": "Market Monitor Assessment",
+          "snippet": "Evaluates market power, locational price spikes, and capacity cost allocation across Eastern MAAC and Western Hub."
+        }
+      ],
+      "search_queries": [
+        "PJM RPM VRR curve Net CONE price cap formula",
+        "AI datacenter flat-line baseload capacity reserve margin depletion"
+      ]
+    }
   },
   "executive_wager": {
     "question": "Will at least two US state public utility commissions (PUCs) establish a distinct, mandatory surge tariff structure for datacenters >100MW to insulate residential ratepayers from capacity auction price spikes before June 30, 2027?",
@@ -94,7 +230,8 @@
         "B) Gigawatt-scale AI load demand tripping the inelastic portion of the capacity reserve curve",
         "C) Decreased residential air conditioning"
       ],
-      "correct_index": 1
+      "correct_index": 1,
+      "explanation": "Gigawatt-scale continuous AI datacenter load additions depleted regional reserve margins below reliability targets, forcing the clearing price into the vertical inelastic Net CONE ceiling of $329.17/MW-day."
     },
     {
       "id": 2,
@@ -104,7 +241,8 @@
         "B) 220 GW across 811 projects",
         "C) 12 GW"
       ],
-      "correct_index": 1
+      "correct_index": 1,
+      "explanation": "PJM's Cycle 1 interconnection disclosure revealed an astonishing 220 GW queue spread across 811 projects seeking grid intertie authorization."
     },
     {
       "id": 3,
@@ -114,7 +252,8 @@
         "B) Smartphone retail discounts",
         "C) Office real estate leasing"
       ],
-      "correct_index": 0
+      "correct_index": 0,
+      "explanation": "Over 900 cybersecurity leaders convened in Bengaluru to test autonomous defensive AI agents capable of sub-second incident response against automated cyber incursions."
     },
     {
       "id": 4,
@@ -124,7 +263,8 @@
         "B) To acquire grandfathered energized 500kV utility switchyards amid 185-week transformer lead times",
         "C) For urban farming"
       ],
-      "correct_index": 1
+      "correct_index": 1,
+      "explanation": "Because high-voltage 500kV step-down transformers take 185 weeks to deliver, shuttered factories with grandfathered energized switchyards represent immediate turnkey grid access."
     },
     {
       "id": 5,
@@ -134,8 +274,97 @@
         "B) The male carries the eggs in a specialized brood pouch and gives birth to live young",
         "C) Asexual division"
       ],
-      "correct_index": 1
+      "correct_index": 1,
+      "explanation": "Seahorses are the only known animal species where the male carries embryos in an abdominal brood pouch supplied with nutrients before giving live birth."
     }
   ],
-  "easter_egg": "Seahorses are the only known animal species on Earth where the male undergoes pregnancy, carrying up to 2,000 embryos in an abdominal brood pouch complete with a placenta-like fluid that provides nutrients and oxygen before giving muscular live birth."
+  "easter_egg": "Seahorses are the only known animal species on Earth where the male undergoes pregnancy, carrying up to 2,000 embryos in an abdominal brood pouch complete with a placenta-like fluid that provides nutrients and oxygen before giving muscular live birth.",
+  "interactive_model": {
+    "archetype": "lattice_tower",
+    "title": "500kV High-Voltage Transmission Intertie & PJM 220GW Queue",
+    "subtitle": "Interactive 3D 500kV Galvanized Steel Lattice Pylon, Insulator Strings & ACSR Conductor Bundles",
+    "badge": "GRID INFRASTRUCTURE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 260,
+      "pitch": 0.35,
+      "yaw": 0.65
+    },
+    "contextual_labels": {
+      "lattice_base": {
+        "name": "500kV Structural Steel Lattice Pylon Base",
+        "desc": "Deep reinforced concrete foundations engineered to resist 150 km/h wind shear."
+      },
+      "tower_waist": {
+        "name": "Diagonal Bracing Waist Column",
+        "desc": "Distributes multi-ton mechanical tension from heavy conductor bundles."
+      },
+      "crossarm_truss": {
+        "name": "Cantilever Suspension Cross-Arms",
+        "desc": "Maintains mandatory 6-meter phase-to-phase electrical clearance."
+      },
+      "insulator_strings": {
+        "name": "Toughened Porcelain Insulator Strings",
+        "desc": "Shields 500kV transmission potential from structural grounding flashovers."
+      },
+      "conductor_bundles": {
+        "name": "Quad-Bundle ACSR Conductor Lines",
+        "desc": "Aluminum conductors steel reinforced carrying gigawatts of bulk baseload power."
+      },
+      "shield_ground": {
+        "name": "Optical Ground Wire (OPGW)",
+        "desc": "Apex lightning shield integrated with high-density dark fiber telemetry."
+      }
+    },
+    "controls": [
+      {
+        "id": "line_kv",
+        "label": "Transmission Voltage",
+        "min": 230,
+        "max": 765,
+        "step": 15,
+        "default": 500,
+        "unit": "kV"
+      },
+      {
+        "id": "current_load",
+        "label": "Queue Current Load",
+        "min": 500,
+        "max": 3000,
+        "step": 50,
+        "default": 2100,
+        "unit": "A"
+      },
+      {
+        "id": "ambient_wind",
+        "label": "Crosswind Velocity",
+        "min": 5,
+        "max": 120,
+        "step": 5,
+        "default": 28,
+        "unit": "km/h"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "line_capacity",
+        "label": "Line Capacity",
+        "unit": "MVA"
+      },
+      {
+        "id": "corona_loss",
+        "label": "Corona Discharge Loss",
+        "unit": "kW/km"
+      },
+      {
+        "id": "thermal_sag",
+        "label": "Mid-Span Cable Sag",
+        "unit": "m"
+      },
+      {
+        "id": "fault_margin",
+        "label": "Structural Fault Margin",
+        "unit": "kA"
+      }
+    ]
+  }
 }

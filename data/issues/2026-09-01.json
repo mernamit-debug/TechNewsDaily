@@ -270,5 +270,85 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "reactor_vessel",
+    "title": "Small Modular Reactor (SMR) Pressure Vessel & Nuclear Core",
+    "subtitle": "Interactive 3D Heavy Forged Steel Vessel, Reactor Core, Control Rods & Primary Coolant Nozzles",
+    "badge": "NUCLEAR THERMAL // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 260,
+      "pitch": 0.35,
+      "yaw": 0.65
+    },
+    "contextual_labels": {
+      "pressure_vessel": {
+        "name": "Heavy-Forged Steel Reactor Pressure Vessel",
+        "desc": "Integral reactor vessel containing the reactor core and steam generators in a single pressure boundary."
+      },
+      "fuel_core": {
+        "name": "TRISO Ceramic Fuel Assembly Core",
+        "desc": "Walkaway-safe fuel pebble/pin core resistant to meltdowns up to 1,600°C."
+      },
+      "control_rods": {
+        "name": "Control Rod Drive Mechanism (CRDM)",
+        "desc": "Gravity-actuated boron carbide safety rods designed for passive emergency scram."
+      },
+      "inlet_nozzles": {
+        "name": "Primary Loop Coolant Inlet & Outlet Nozzles",
+        "desc": "High-pressure forged nozzles delivering 300°C water to secondary heat exchangers."
+      }
+    },
+    "controls": [
+      {
+        "id": "thermal_mw",
+        "label": "Core Thermal Output",
+        "min": 100,
+        "max": 1000,
+        "step": 50,
+        "default": 550,
+        "unit": "MWth"
+      },
+      {
+        "id": "core_temp",
+        "label": "Moderator Outlet Temp",
+        "min": 450,
+        "max": 850,
+        "step": 10,
+        "default": 720,
+        "unit": "°C"
+      },
+      {
+        "id": "coolant_flow",
+        "label": "Primary Loop Mass Flow",
+        "min": 40,
+        "max": 120,
+        "step": 5,
+        "default": 95,
+        "unit": "%"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "elec_output",
+        "label": "Electric Generation",
+        "unit": "MWe"
+      },
+      {
+        "id": "thermal_eff",
+        "label": "Thermal Efficiency",
+        "unit": "%"
+      },
+      {
+        "id": "dnbr",
+        "label": "DNBR Safety Margin",
+        "unit": "DNBR"
+      },
+      {
+        "id": "co2_avoided",
+        "label": "Annual CO2 Avoided",
+        "unit": "kt/yr"
+      }
+    ]
+  }
 }

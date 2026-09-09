@@ -7,6 +7,8 @@
     "dev": "node server.js",
     "start": "node server.js",
     "build": "node build.js",
+    "manifest": "node scripts/generate-manifest.js",
+    "validate": "node scripts/validate-issue.js",
     "lint": "node --check server.js build.js app.js"
   },
   "dependencies": {

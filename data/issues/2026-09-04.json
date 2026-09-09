@@ -270,5 +270,85 @@
       "correct_index": 1
     }
   ],
-  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria."
+  "easter_egg": "Curiously, honey is the only natural food substance on Earth that never spoils because its low moisture content and high acidity create osmotic pressure that instantly dehydrates bacteria.",
+  "interactive_model": {
+    "archetype": "lattice_tower",
+    "title": "500kV High-Voltage Transmission Pylon & Line Suspension",
+    "subtitle": "Interactive 3D Galvanized Steel Lattice Mast, Suspension Crossarms & Conductor Bundles",
+    "badge": "GRID INFRASTRUCTURE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 260,
+      "pitch": 0.35,
+      "yaw": 0.65
+    },
+    "contextual_labels": {
+      "lattice_base": {
+        "name": "Heavy-Duty Galvanized Steel Lattice Base",
+        "desc": "High-strength angle iron structure engineered for 180 km/h wind shear and seismic resilience."
+      },
+      "crossarm_truss": {
+        "name": "High-Tension Suspension Cross-Arms",
+        "desc": "Cantilevered structural steel arms maintaining 6m electrical clearance between phases."
+      },
+      "conductor_bundles": {
+        "name": "Quad-Bundle 500kV ACSR Conductors",
+        "desc": "Four-conductor bundle geometry suppressing corona discharge losses below 6 kW/km."
+      },
+      "insulator_strings": {
+        "name": "Toughened Glass Insulator Discs",
+        "desc": "High-dielectric suspension strings preventing high-voltage flashovers."
+      }
+    },
+    "controls": [
+      {
+        "id": "line_kv",
+        "label": "Line Transmission Voltage",
+        "min": 230,
+        "max": 765,
+        "step": 15,
+        "default": 500,
+        "unit": "kV"
+      },
+      {
+        "id": "current_load",
+        "label": "Conductor Current Load",
+        "min": 500,
+        "max": 3000,
+        "step": 50,
+        "default": 1800,
+        "unit": "A"
+      },
+      {
+        "id": "ambient_wind",
+        "label": "Crosswind Velocity",
+        "min": 5,
+        "max": 120,
+        "step": 5,
+        "default": 25,
+        "unit": "km/h"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "line_capacity",
+        "label": "Line Capacity",
+        "unit": "MVA"
+      },
+      {
+        "id": "corona_loss",
+        "label": "Corona Discharge Loss",
+        "unit": "kW/km"
+      },
+      {
+        "id": "thermal_sag",
+        "label": "Mid-Span Cable Sag",
+        "unit": "m"
+      },
+      {
+        "id": "fault_margin",
+        "label": "Structural Fault Margin",
+        "unit": "kA"
+      }
+    ]
+  }
 }
