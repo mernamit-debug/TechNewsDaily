@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 10,
+    "date": "2026-09-10",
+    "headline": "The 4,000MW Sudden-Trip Shock: FERC & NERC Mandate Fast-Ride-Through Inverters as AI Datacenter Frequency Swings Threaten Eastern Grid Stability",
+    "file_path": "data/issues/2026-09-10.json"
+  },
+  {
     "issue_number": 9,
     "date": "2026-09-09",
     "headline": "The $329 Capacity Price Spike: PJM's 220GW Interconnection Queue Exposes the Thermodynamics of AI Baseload Inflation",
