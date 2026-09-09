@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 10,
+    "date": "2026-09-10",
+    "reading_streak": 10
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The 4,000MW Sudden-Trip Shock: FERC and NERC prepare emergency ride-through mandates after 4GW of Northern Virginia AI compute load sheds simultaneously during a minor line fault.",
+    "Gas Turbine 2031 Backlog: GE Vernova and Siemens Energy order books hit 220 GW, cementing on-site heavy turbines as a scarcer physical bottleneck than frontier GPUs.",
+    "GSU Transformers at 144 Weeks: Generator step-up transformer delivery queues push commercial operation dates of newly planned AI campuses past 2029.",
+    "Taiwan Physical AI Silicon Forum: TSMC ecosystem and Counterpoint Research unveil sub-0.5V low-power neuromorphic accelerators tailored for autonomous robotics.",
+    "ELCIA Tech Summit in Bengaluru: 1,200+ leaders convene in Electronics City to integrate physical industrial robotics and edge automation into global capability centers."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 10 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The 4,000MW Sudden-Trip Shock: FERC & NERC Mandate Fast-Ride-Through Inverters as AI Datacenter Frequency Swings Threaten Eastern Grid Stability",
+    "image_url": "assets/substation-transient.jpg",
+    "image_caption": "High-voltage 230kV transmission corridor and substation switchyard in Northern Virginia, site of cascading multi-gigawatt datacenter load disconnect events.",
+    "image_alt": "High-voltage utility transmission lines and substation transformers",
+    "catch_up": "Following an unprecedented grid transient where nearly 4,000 MW of hyperscale AI compute load simultaneously tripped off-grid during a routine 230kV transmission fault in Northern Virginia, federal regulators at FERC issued an emergency order directing NERC to file the nation's first legally binding Large-Load Ride-Through Reliability Standards by December 31, 2026.",
+    "mechanism": "Unlike legacy inductive industrial machinery that rides through momentary voltage dips via physical rotational inertia, modern AI server clusters rely on static uninterruptible power supplies (UPS) with solid-state thyristor switches set to disconnect servers in 8 to 16 milliseconds. When a localized transmission fault depresses busbar voltage by just 10%, dozens of hyperscale campuses switch to battery backup in the exact same millisecond. Shedding 4,000 MW of instantaneous load drives electrical demand below generation, triggering a severe overfrequency surge (>60.15 Hz) that forces regional generator protection relays to trip.",
+    "analogy": "Imagine an 80,000-seat stadium parking lot where every driver simultaneously slams their emergency handbrake because one driver dropped a soda cup. The traffic jam isn't caused by the soda cup; it is caused by the uncoordinated, instantaneous overreaction of thousands of automated braking systems triggering a multi-lane pileup.",
+    "pr_claim": "Our automated dual-cord power architectures and microsecond UPS systems protect sensitive generative AI clusters from public utility disruptions.",
+    "pr_reality": "Hyperscalers configured their UPS transfer switches with selfish zero-tolerance thresholds to protect $40,000 GPUs, completely ignoring that dumping 4,000 MW of instantaneous load back into the public grid nearly crashed the entire PJM Eastern Interconnection.",
+    "bull_take": "Creates a mandatory $4.5B retrofit market for grid-forming smart inverters, dynamic volt-VAR compensators, and on-site synchronous condensers across all Tier-3 and Tier-4 datacenters.",
+    "bear_take": "NERC compliance deadlines will force hyperscalers to throttle peak training workloads or face statutory non-compliance fines reaching up to $1.5M per day per non-compliant substation.",
+    "cascades": "PJM, ERCOT, and CAISO mandate that all data centers exceeding 50 MW install utility-grade ride-through buffers before receiving final interconnect commissioning.",
+    "why_it_matters": "The boundary separating datacenter facility engineering from bulk electric grid reliability has evaporated; localized software workloads now have the physical power to destabilize interstate electrical grids.",
+    "cocktail_flex": "Silicon Valley spent billions training frontier models to solve quantum gravity, but forgot that if 100,000 GPUs slam their power brakes in the same millisecond, they blow up the state of Virginia's electrical grid.",
+    "web_investigation": {
+      "overview": "FERC Docket RM24-15 on Large-Load Inverter Reliability Standards, PJM Operating Committee event disclosures on Northern Virginia load rejection, and NERC voltage ride-through technical guidelines.",
+      "sources": [
+        {
+          "title": "FERC Directive on Inverter-Based Resource & Large-Load Ride-Through Standards",
+          "publisher": "Federal Energy Regulatory Commission (FERC.gov)",
+          "url": "https://www.google.com/url?q=https://www.ferc.gov/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Federal Regulatory Order",
+          "snippet": "Mandates NERC file enforceable bulk-power ride-through rules for single-point loads exceeding 75MW by December 31, 2026."
+        },
+        {
+          "title": "PJM Operating Committee Event Analysis: Northern Virginia 230kV Transient & 4,000MW Load Rejection",
+          "publisher": "PJM Interconnection",
+          "url": "https://www.google.com/url?q=https://www.pjm.com/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Grid Event Report",
+          "snippet": "Evaluates rapid voltage sag propagation and simultaneous UPS battery transfer across 18 hyperscale campuses."
+        },
+        {
+          "title": "NERC Reliability Guideline: Voltage and Frequency Ride-Through Requirements for High-Density Data Centers",
+          "publisher": "North American Electric Reliability Corporation",
+          "url": "https://www.google.com/url?q=https://www.nerc.com/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Technical Reliability Standard",
+          "snippet": "Specifies no-trip operational boundaries for 0.85 to 1.15 per-unit voltage durations up to 1.5 seconds."
+        }
+      ],
+      "search_queries": [
+        "PJM 4000MW data center load trip Northern Virginia 2026",
+        "FERC NERC large-load ride-through standard datacenter inverter",
+        "PJM frequency excursion UPS disconnect simultaneous failure"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "GE Vernova & Siemens Energy Command 220GW Turbine Backlog as AI Infrastructure Shifts from Silicon to Steel",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1581092160607-ee22621dd758?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789082515477000&sa=E",
+    "image_caption": "Heavy-duty 500MW gas turbine rotor and compressor casing undergoing factory testing for utility baseload deployment.",
+    "image_alt": "Heavy-duty gas turbine rotor assembly in manufacturing facility",
+    "company": "GE Vernova / Siemens Energy",
+    "ticker": "NYSE: GEV / ETR: ENR",
+    "market_cap": "$68.5B (GEV) / ?42.1B (ENR)",
+    "summary": "The physical bottleneck bounding generative compute has decisively migrated from GPUs to gas turbines. With an equipment oligopoly holding an unprecedented combined backlog of 220 GW, GE Vernova and Siemens Energy have effectively sold out commercial factory production slots through 2030, commanding 45% equipment gross margins and massive cash reservation deposits from desperate hyperscale developers.",
+    "mechanism": "Heavy-duty combined-cycle gas turbines (CCGT) and aeroderivative peaking turbines providing deterministic on-site microgrid generation for behind-the-meter AI campus clusters.",
+    "metrics": {
+      "capex": "$8.5B Combined Manufacturing Capacity Expansion (2025?2027)",
+      "moat": "Single-Crystal Superalloy Turbine Blade Metallurgy & 6-Year Order Backlog",
+      "regulatory": "EPA Section 111(b) Carbon Capture Rules & NOx Emissions Permitting",
+      "velocity": "9.9 / 10"
+    },
+    "takeaway": "In 2024, Wall Street valued AI through GPU shipments; in 2026, the ultimate monopoly is holding a confirmed factory production slot for an H-Class heavy-duty gas turbine.",
+    "web_investigation": {
+      "overview": "GE Vernova Form 10-Q disclosures, Siemens Energy gas services backlog reports, and global heavy-duty gas turbine lead-time indices.",
+      "sources": [
+        {
+          "title": "GE Vernova Q2 2026 Financial Results: Power Segment Backlog & Aeroderivative Turbine Shipments",
+          "publisher": "GE Vernova Investor Relations",
+          "url": "https://www.google.com/url?q=https://www.gevernova.com/investors&source=gmail&ust=1789082515477000&sa=E",
+          "type": "SEC Form 10-Q Filing",
+          "snippet": "Discloses record gas turbine order intake and commercial production slots committed through 2030."
+        },
+        {
+          "title": "Siemens Energy Global Gas Services Order Book: Hyperscaler On-Site Generation Commitments",
+          "publisher": "Siemens Energy Global",
+          "url": "https://www.google.com/url?q=https://www.siemens-energy.com/global/en/company/investor-relations.html&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Financial Disclosure",
+          "snippet": "Highlights multi-gigawatt turbine supply agreements for off-grid US data center microgrids."
+        }
+      ],
+      "search_queries": [
+        "GE Vernova gas turbine backlog AI data center 2026",
+        "heavy duty gas turbine 2031 delivery lead time hyperscaler"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "Counterpoint Forum in Taiwan Spotlights Sub-0.5V Physical AI Edge Silicon",
+      "facts": "At the Semiconductor Forum Taiwan in Hsinchu on September 10, analysts and TSMC ecosystem partners unveiled sub-0.5V neuromorphic inference architectures engineered for robotics and Physical AI without active cooling fans.",
+      "reality_audit": "Sub-0.5V logic cuts switching power by 60%, but threshold voltage variation across process corners ruins manufacturing yields on anything larger than a postage stamp.",
+      "why_it_matters": "Shifts AI silicon development from massive cloud training monoliths to battery-constrained physical robotics edge nodes.",
+      "sni": "9.2 / 10",
+      "web_sources": [
+        {
+          "title": "Counterpoint Research: Semiconductor Forum Taiwan 2026 Executive Summary",
+          "publisher": "Counterpoint Technology Market Research",
+          "url": "https://www.google.com/url?q=https://counterpointresearch.com/en/insights/semiconductor-forum-taiwan-2026&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Semiconductor Industry Analysis"
+        }
+      ],
+      "search_query": "Counterpoint Semiconductor Forum Taiwan Hsinchu September 10 2026"
+    },
+    {
+      "id": 2,
+      "headline": "ELCIA Tech Summit in Bengaluru Spotlights Industrial Robotics & GCC Automation",
+      "facts": "The ELCIA Tech Summit 2026 kicked off on September 10 at The Oterra in Electronics City, Bengaluru, convening over 1,200 industrial leaders to deploy autonomous edge robotics and smart manufacturing testbeds across South Bengaluru.",
+      "reality_audit": "Electronics City has top-tier robotics talent, but the perpetual gridlock at Silk Board and Outer Ring Road remains the single biggest operational drag on localized supply chain velocity.",
+      "why_it_matters": "Catalyzes the convergence of Bengaluru's enterprise software GCCs with physical hardware and precision manufacturing.",
+      "sni": "8.8 / 10",
+      "web_sources": [
+        {
+          "title": "ELCIA Tech Summit 2026: Intellect, Insights & Impact Official Schedule",
+          "publisher": "Electronics City Industries Association (ELCIA)",
+          "url": "https://www.google.com/url?q=https://elciatechsummit.in/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Industry Summit Portal"
+        }
+      ],
+      "search_query": "ELCIA Tech Summit Electronics City Bengaluru September 10 2026"
+    },
+    {
+      "id": 3,
+      "headline": "Federal AI Summit at Stanford Explores Autonomous Infrastructure Protection",
+      "facts": "Co-hosted by the Society of American Military Engineers (SAME) and Stanford University on September 9?10, military engineers and tech leaders established guidelines for AI-managed national energy and defense infrastructure resilience.",
+      "reality_audit": "Federal agencies want automated self-healing power grids, but legacy air-gapped SCADA systems running 30-year-old firmware cannot safely communicate with modern neural APIs.",
+      "why_it_matters": "Bridges national defense doctrine with civilian utility grid cyber protection against automated state-sponsored sabotage.",
+      "sni": "9.1 / 10",
+      "web_sources": [
+        {
+          "title": "Federal AI Summit 2026: AI for Architecture, Engineering, and Construction (A/E/C)",
+          "publisher": "Society of American Military Engineers (SAME)",
+          "url": "https://www.google.com/url?q=https://www.same.org/event/federal-ai-summit-2026/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Federal Technical Summit"
+        }
+      ],
+      "search_query": "Federal AI Summit 2026 Stanford SAME CIFE"
+    },
+    {
+      "id": 4,
+      "headline": "Generator Step-Up (GSU) Transformer Backlogs Hit 144 Weeks Nationwide",
+      "facts": "Supply chain indices confirmed average factory lead times for 230kV/500kV Generator Step-Up (GSU) transformers reached 144 weeks, forcing developers without pre-ordered hardware to push commercial operation dates past 2029.",
+      "reality_audit": "No amount of venture capital can speed up the curing time of specialized grain-oriented electrical steel (GOES) or the winding of multi-ton copper coils.",
+      "why_it_matters": "GSU transformers remain the absolute physical pacing item for interconnecting new generation to North American data centers.",
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "AI Data Center Energy Crisis: The Megawatt Wall and High-Voltage Equipment Backlogs",
+          "publisher": "CES Intelligence Energy Analysis",
+          "url": "https://www.google.com/url?q=https://www.ces-intelligence.com/analysis/ai-data-center-energy-crisis-2026-geopolitical-risk-assessment&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Geopolitical Energy Risk Assessment"
+        }
+      ],
+      "search_query": "Generator step-up transformers 144 weeks lead time GSU backlog 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Dynamics of Inverter Tripping: Why Static UPS Systems Destabilize Regional Grid Frequency",
+    "image_url": "assets/inverter-schematic.jpg",
+    "image_caption": "Figure 3.2: Solid-state static UPS inverter architecture and rapid thyristor transfer switch mechanics under transient busbar voltage sags.",
+    "image_alt": "Circuit schematic of static UPS transfer switch and capacitor bank",
+    "thesis": "Traditional power system stability relies on the physical rotational inertia of multi-ton turbine generators to damp out transient electrical faults. When hyper-dense AI data centers replace synchronous electrical motors with solid-state rectifier power supplies that disconnect instantaneously during voltage dips, they turn benign transmission faults into catastrophic systemic frequency excursions.",
+    "physics_breakdown": "Under IEEE 1547 and standard industrial electrical codes, uninterruptible power supplies (UPS) are programmed to protect sensitive server silicon by transferring load to internal batteries whenever AC busbar voltage drops below 0.90 per-unit (pu) for longer than 10 milliseconds. In high-density datacenter clusters (such as Data Center Alley in Ashburn, VA), a lightning strike or mechanical fault on a 230kV line causes a transient voltage sag propagating across a 30-mile radius. Within 12 milliseconds, 4,000 MW of server load disconnects simultaneously. Under the swing equation (2H d?f/dt = Pm - Pe), when electrical load (Pe) plummets while mechanical turbine power (Pm) remains constant, system frequency (df/dt) spikes violently upward (>60.15 Hz). This overfrequency event trips off local generation, creating a secondary underfrequency collapse.",
+    "matrix": {
+      "mechanism": "Voltage-sag-triggered instantaneous thyristor transfer in static server UPS systems shedding gigawatts in under 16ms.",
+      "audit": "Datacenter operators market '99.999% facility uptime' while exporting massive voltage instability onto public utility substations.",
+      "cascades": "NERC enforces mandatory low-voltage ride-through (LVRT) requiring datacenters to sustain 0.70 pu voltage for 1.5 seconds; hyperscalers forced to deploy on-site synchronous condensers.",
+      "sni": "9.9 / 10 (POWER ELECTRONICS & GRID PHYSICS CONVERGENCE)"
+    },
+    "takeaway": "A power supply that disconnects to save a $40,000 GPU can trigger a $500M regional grid collapse if 100,000 servers do it at the exact same millisecond.",
+    "web_investigation": {
+      "overview": "Mathematical modeling of the swing equation, low-voltage ride-through (LVRT) curves, and fast frequency response (FFR) in high-density inverter environments.",
+      "sources": [
+        {
+          "title": "IEEE Std 2800: Standard for Interconnection and Interoperability of Inverter-Based Resources Interconnecting with Associated Transmission Systems",
+          "publisher": "IEEE Standards Association",
+          "url": "https://www.google.com/url?q=https://standards.ieee.org/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "Engineering Standard",
+          "snippet": "Defines fault ride-through requirements and dynamic voltage support during transmission line faults."
+        },
+        {
+          "title": "PJM Manual 14D: Generator Operational Requirements and Frequency Control Guidelines",
+          "publisher": "PJM System Operations",
+          "url": "https://www.google.com/url?q=https://www.pjm.com/&source=gmail&ust=1789082515477000&sa=E",
+          "type": "System Operations Manual",
+          "snippet": "Outlines rate-of-change-of-frequency (RoCoF) protection settings and overfrequency trip limits."
+        }
+      ],
+      "search_queries": [
+        "IEEE 2800 inverter ride through large load voltage sag",
+        "swing equation overfrequency transient datacenter load trip"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will NERC's upcoming December 2026 reliability rules mandate that all US datacenters >50MW install synchronous condensers or grid-forming inverters with 1.5-second low-voltage ride-through capabilities before Q4 2027?",
+    "consensus_yes_pct": 78,
+    "consensus_no_pct": 22
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "Why did 4,000 MW of data center load trip offline simultaneously during a routine transmission fault in Northern Virginia?",
+      "options": [
+        "A) Server cooling fans stopped spinning",
+        "B) Static UPS systems with fast thyristor switches disconnected simultaneously when busbar voltage sagged 10%",
+        "C) Cyberattack on fiber optic lines"
+      ],
+      "correct_index": 1,
+      "explanation": "Static UPS systems in high-density server racks are programmed to disconnect within 8?16 milliseconds during minor voltage sags to protect server power supplies, causing massive simultaneous load rejection across dozens of facilities."
+    },
+    {
+      "id": 2,
+      "question": "What physical consequence occurs when 4,000 MW of electrical load suddenly disconnects from an electric grid while turbine generators are spinning?",
+      "options": [
+        "A) System frequency drops to 50 Hz",
+        "B) System frequency spikes violently upward due to the sudden surplus of mechanical generation over electrical load",
+        "C) Voltage drops to zero"
+      ],
+      "correct_index": 1,
+      "explanation": "Under the power system swing equation, when electrical load drops while mechanical input power remains constant, generators accelerate, causing a sudden and dangerous overfrequency spike (>60.15 Hz)."
+    },
+    {
+      "id": 3,
+      "question": "What is the current delivery lead time for heavy-duty gas turbines ordered in 2026?",
+      "options": [
+        "A) 6 months",
+        "B) Delivery in 2031 due to a 220 GW global manufacturer order backlog",
+        "C) 18 months"
+      ],
+      "correct_index": 1,
+      "explanation": "Heavy-duty gas turbine OEMs like GE Vernova and Siemens Energy hold combined order backlogs approaching 220 GW, pushing delivery dates out to 2031 for new orders."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary focus of the ELCIA Tech Summit held in Electronics City, Bengaluru on September 10, 2026?",
+      "options": [
+        "A) Autonomous robotics, Industrial IoT, and smart manufacturing integration with GCCs",
+        "B) E-commerce consumer coupons",
+        "C) Social media marketing"
+      ],
+      "correct_index": 0,
+      "explanation": "The ELCIA Tech Summit convenes over 1,200 leaders in Electronics City to integrate physical industrial IoT, robotics, and advanced automation into India's enterprise capability centers."
+    },
+    {
+      "id": 5,
+      "question": "Why can the immortal jellyfish (Turritopsis dohrnii) technically live forever?",
+      "options": [
+        "A) It has a titanium exoskeleton",
+        "B) When stressed or aged, it reverts its cells back to their earliest polyp stage through transdifferentiation",
+        "C) It stops breathing"
+      ],
+      "correct_index": 1,
+      "explanation": "When faced with physical damage or starvation, Turritopsis dohrnii undergoes cellular transdifferentiation, transforming its adult medusa cells back into juvenile polyps and restarting its life cycle indefinitely."
+    }
+  ],
+  "easter_egg": "The immortal jellyfish (Turritopsis dohrnii) can cheat death indefinitely: whenever it suffers physical trauma or starvation, it completely resets its adult cells back into juvenile polyps through cellular transdifferentiation, effectively reverting from an adult back into a baby.",
+  "interactive_model": {
+    "archetype": "transformer_substation",
+    "title": "500kV / 230kV Generator Step-Up (GSU) Transformer & Substation Switchyard",
+    "subtitle": "Interactive 3D High-Voltage Oil-Immersed Substation Transformer, Conservator Tank, Bushings & Radiator Banks",
+    "badge": "GRID HARDWARE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 280,
+      "pitch": 0.4,
+      "yaw": 0.75
+    },
+    "contextual_labels": {
+      "gsu_core": {
+        "name": "Grain-Oriented Electrical Steel (GOES) Core",
+        "desc": "High-permeability magnetic core laminated to minimize eddy-current core losses under continuous 500MVA flux."
+      },
+      "primary_bushings": {
+        "name": "500kV Oil-Impregnated Paper (OIP) Bushings",
+        "desc": "High-creepage porcelain insulating bushings connecting high-voltage overhead transmission lines."
+      },
+      "secondary_bushings": {
+        "name": "230kV / 34.5kV Secondary Step-Down Bushings",
+        "desc": "Feeds medium-voltage underground collector busbars routed directly to datacenter switchgear."
+      },
+      "conservator_tank": {
+        "name": "Oil Expansion Conservator Tank & Breather",
+        "desc": "Compensates for dielectric transformer oil thermal expansion between winter valleys and peak summer AI loads."
+      },
+      "radiator_fans": {
+        "name": "Forced-Air / Forced-Oil (ODAF) Cooling Radiator Bank",
+        "desc": "Dual-stage cooling radiators designed to dissipate multi-megawatt resistive copper heating losses."
+      },
+      "buchholz_relay": {
+        "name": "Buchholz Protective Gas Relay",
+        "desc": "Top-mounted safety sentinel that detects internal dielectric breakdown and arcing before explosive tank failure."
+      }
+    },
+    "controls": [
+      {
+        "id": "mva_rating",
+        "label": "Transformer Rating",
+        "min": 250,
+        "max": 1000,
+        "step": 25,
+        "default": 500,
+        "unit": "MVA"
+      },
+      {
+        "id": "load_ratio",
+        "label": "Datacenter Load Factor",
+        "min": 20,
+        "max": 130,
+        "step": 5,
+        "default": 88,
+        "unit": "%"
+      },
+      {
+        "id": "oil_temp",
+        "label": "Core Oil Temperature",
+        "min": 35,
+        "max": 115,
+        "step": 1,
+        "default": 72,
+        "unit": "?C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "core_flux",
+        "label": "Magnetic Flux Density",
+        "unit": "Tesla"
+      },
+      {
+        "id": "copper_loss",
+        "label": "I?R Winding Losses",
+        "unit": "MW"
+      },
+      {
+        "id": "hotspot_rise",
+        "label": "Winding Hotspot Gradient",
+        "unit": "?C"
+      },
+      {
+        "id": "insulation_life",
+        "label": "Remaining Cellulose Life",
+        "unit": "%"
+      }
+    ]
+  }
+}
