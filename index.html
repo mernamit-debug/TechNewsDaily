@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spark News Live — Executive Intelligence Portal</title>
-  <meta name="description" content="Executive intelligence portal and daily investigative news digest featuring radar metrics, case study analysis, and interactive research tools.">
-  <meta property="og:title" content="Spark News Live — Executive Intelligence Portal">
-  <meta property="og:description" content="Executive intelligence portal and daily investigative news digest featuring radar metrics, case study analysis, and interactive research tools.">
+  <title>Spark News Live</title>
+  <meta name="description" content="High-signal daily tech intelligence platform delivering physics-grounded investigative reporting, 3D interactive engineering schematics, and an executive briefing archive.">
+  <meta property="og:title" content="Spark News Live">
+  <meta property="og:description" content="High-signal daily tech intelligence platform delivering physics-grounded investigative reporting, 3D interactive engineering schematics, and an executive briefing archive.">
   <link rel="stylesheet" href="styles.css">
   <script>
     // Suppress benign ResizeObserver loop limit warnings from browser layout passes
@@ -439,7 +439,7 @@
             <img id="deepdive-image" src="" alt="Case Study Technical Visual" style="max-width: 100%; display: block;">
             <div id="deepdive-image-caption" class="infographic-caption" style="display: none;"></div>
           </div>
-          <div id="deepdive-body-extra" style="font-size: 14.5px; color: #d1d5db; line-height: 1.7;"></div>
+          <div id="deepdive-body-extra" style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.7;"></div>
           <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
             <button class="intel-trigger-btn" onclick="spark.exploreDeepIntel('deepdive')">🔍 Explore Physics & Primary Equations</button>
             <button class="clip-trigger-btn" onclick="spark.clipInsight(document.getElementById('deepdive-headline').innerText, document.getElementById('deepdive-thesis').innerText)">📌 Save Case Study to Intel</button>
@@ -522,7 +522,7 @@
     <!-- Editorial Signoff -->
     <footer class="portal-footer-section">
       <p>The global computing paradigm has completed an irreversible transition from pure mathematical abstraction to heavy industrial thermodynamics. The organizations that dominate the next decade will not just write the best algorithms—they will own the transmission substations, secure the reactor busbars, engineer the micro-channel liquid cold plates, and master sovereign regulatory physics.</p>
-      <p style="margin-top: 14px; font-weight: 800; color: #ffffff;">— The Daily Intelligence Pipeline Editorial Board • Spark News Live</p>
+      <p style="margin-top: 14px; font-weight: 800; color: var(--text-primary);">— The Daily Intelligence Pipeline Editorial Board • Spark News Live</p>
     </footer>
 
   </main>
@@ -607,7 +607,7 @@
   <div class="intel-modal-backdrop" id="intel-modal" onclick="if(event.target === this) spark.closeDeepIntelModal()">
     <div class="intel-modal-box">
       <div class="intel-modal-header">
-        <div id="intel-modal-title" style="font-size: 14px; font-weight: 800; color: #ffffff;">Deep Intel Explorer</div>
+        <div id="intel-modal-title" style="font-size: 14px; font-weight: 800; color: var(--text-primary);">Deep Intel Explorer</div>
         <button class="btn-close-modal" onclick="spark.closeDeepIntelModal()">✕</button>
       </div>
       <div class="intel-modal-body" id="intel-modal-content">
@@ -620,7 +620,7 @@
   <div class="intel-modal-backdrop" id="shortcuts-modal" onclick="if(event.target === this) spark.toggleShortcutsModal()">
     <div class="intel-modal-box" style="max-width: 500px;">
       <div class="intel-modal-header">
-        <div style="font-size: 14px; font-weight: 800; color: #ffffff;">⌨️ Power Reader Keyboard Shortcuts</div>
+        <div style="font-size: 14px; font-weight: 800; color: var(--text-primary);">⌨️ Power Reader Keyboard Shortcuts</div>
         <button class="btn-close-modal" onclick="spark.toggleShortcutsModal()">✕</button>
       </div>
       <div class="intel-modal-body" style="gap: 12px;">
@@ -699,11 +699,11 @@
   <div class="intel-modal-backdrop" id="metric-detail-modal" onclick="if(event.target === this) spark.closeMetricDetail()">
     <div class="intel-modal-box" style="max-width: 680px;">
       <div class="intel-modal-header">
-        <div id="metric-modal-title" style="font-size: 14px; font-weight: 800; color: #ffffff;">📊 Metric Historical Trajectory</div>
+        <div id="metric-modal-title" style="font-size: 14px; font-weight: 800; color: var(--text-primary);">📊 Metric Historical Trajectory</div>
         <button class="btn-close-modal" onclick="spark.closeMetricDetail()">✕</button>
       </div>
       <div class="intel-modal-body" id="metric-modal-body">
-        <div id="metric-modal-chart-wrap" style="width: 100%; height: 220px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px;"></div>
+        <div id="metric-modal-chart-wrap" class="metric-chart-wrap"></div>
         <div id="metric-modal-table-wrap" style="margin-top: 16px;"></div>
       </div>
     </div>
@@ -771,7 +771,7 @@
     <div class="identity-card-box">
       <div class="intel-modal-header" style="margin-bottom: 16px;">
         <div>
-          <div style="font-size: 15px; font-weight: 800; color: #ffffff;">👤 Executive Identity & Telemetry Manager</div>
+          <div style="font-size: 15px; font-weight: 800; color: var(--text-primary);">👤 Executive Identity & Telemetry Manager</div>
           <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Your verified XP, continuous streaks, clips, and forecasts isolated to your identity.</div>
         </div>
         <button class="btn-close-modal" onclick="spark.closeIdentityModal()">✕</button>
@@ -785,13 +785,13 @@
         <span style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);" id="identity-device-sig-text">Device: SPARK-DEV-LOCAL</span>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; margin-bottom: 16px;">
+      <div class="identity-section-box">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
           <span style="font-size: 11px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">Active Profile Account:</span>
           <span style="font-size: 11px; font-family: var(--font-mono); color: var(--accent-cyan); font-weight: 700;" id="identity-current-email-display">Not Signed In</span>
         </div>
         <div style="display: flex; gap: 8px;">
-          <input type="email" id="identity-email-input" placeholder="e.g. executive@organization.com" style="flex: 1; background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 8px 12px; color: #ffffff; font-size: 13px;">
+          <input type="email" id="identity-email-input" class="identity-email-input" placeholder="e.g. executive@organization.com">
           <button class="action-btn" style="background: rgba(0, 229, 153, 0.2); border-color: var(--accent-emerald); color: var(--accent-emerald); font-weight: 800;" onclick="spark.saveAndSwitchEmail()">Switch / Sign In</button>
         </div>
         <div style="margin-top: 8px; display: flex; align-items: center; gap: 8px;">
@@ -801,7 +801,7 @@
       </div>
 
       <!-- Rank Seniority Progression Bar -->
-      <div style="background: rgba(0,0,0,0.25); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; margin-bottom: 16px;">
+      <div class="identity-section-box">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
           <span style="font-size: 11px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase;" id="profile-rank-name">LEVEL 1 • CADET ANALYST</span>
           <span style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);" id="profile-rank-pct">0% TO NEXT TIER</span>
@@ -864,7 +864,7 @@
     <div class="intel-modal-box" style="max-width: 760px;">
       <div class="intel-modal-header">
         <div>
-          <div style="font-size: 15px; font-weight: 800; color: #ffffff;">📬 Daily Executive Tech Memo Generator</div>
+          <div style="font-size: 15px; font-weight: 800; color: var(--text-primary);">📬 Daily Executive Tech Memo Generator</div>
           <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Export formatted newsletter HTML or Markdown for Substack, Beehiiv, Gmail, or Notion.</div>
         </div>
         <button class="btn-close-modal" onclick="spark.closeNewsletterModal()">✕</button>
@@ -893,7 +893,7 @@
     <div class="intel-modal-box" style="max-width: 840px;">
       <div class="intel-modal-header">
         <div>
-          <div style="font-size: 15px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px;">
+          <div style="font-size: 15px; font-weight: 800; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
             <span>🖨️</span>
             <span>Executive Intelligence Memorandum // PDF Export Suite</span>
           </div>

@@ -4357,6 +4357,225 @@ html.light-mode .pdf-preview-scroll-wrapper {
   gap: 6px;
 }
 
+/* ==========================================================================
+   29. QUICK HITS & REALITY CHECKS (LIGHT & DARK PARITY)
+   ========================================================================== */
+.quick-hit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  transition: all 0.2s ease;
+}
+.quick-hit-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-1px);
+}
+.quick-hit-headline {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin: 0;
+}
+.quick-hit-facts {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 8px 0 10px;
+}
+.quick-hit-audit {
+  background: rgba(245, 166, 35, 0.08);
+  border-left: 3px solid var(--accent-amber);
+  padding: 8px 12px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.quick-hit-audit b {
+  color: var(--accent-amber);
+}
+
+html.light-mode .quick-hit-card {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+html.light-mode .quick-hit-card:hover {
+  border-color: #0284c7;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+}
+html.light-mode .quick-hit-headline {
+  color: #0f172a;
+}
+html.light-mode .quick-hit-facts {
+  color: #334155;
+}
+html.light-mode .quick-hit-audit {
+  background: #fffbeb;
+  border-left-color: #d97706;
+  color: #78350f;
+}
+html.light-mode .quick-hit-audit b {
+  color: #b45309;
+}
+
+/* Company Spotlight Header Polish */
+.company-intel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 16px;
+}
+.company-name-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+.company-ticker-pill {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-cyan);
+  margin-top: 4px;
+}
+html.light-mode .company-name-title {
+  color: #0f172a;
+}
+html.light-mode .company-ticker-pill {
+  color: #0284c7;
+}
+
+/* Identity Modal Section & Input */
+.identity-section-box {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+html.light-mode .identity-section-box {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+.identity-email-input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+}
+html.light-mode .identity-email-input {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+html.light-mode .identity-email-input:focus {
+  border-color: #0284c7;
+}
+
+/* Metric Detail Modal Chart Container */
+.metric-chart-wrap {
+  width: 100%;
+  min-height: 220px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html.light-mode .metric-chart-wrap {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Toast Notifications Light Mode */
+html.light-mode .toast-msg {
+  background: rgba(255, 255, 255, 0.98);
+  color: #0f172a;
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Light Mode Overrides for Intel & Clip Buttons */
+html.light-mode .intel-trigger-btn {
+  background: #f0f9ff;
+  border-color: #7dd3fc;
+  color: #0284c7;
+}
+html.light-mode .intel-trigger-btn:hover {
+  background: #e0f2fe;
+  border-color: #0284c7;
+}
+html.light-mode .clip-trigger-btn {
+  background: #fffbeb;
+  border-color: #fcd34d;
+  color: #b45309;
+}
+html.light-mode .clip-trigger-btn:hover {
+  background: #fef3c7;
+  border-color: #d97706;
+}
+html.light-mode .intel-chip {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0c4a6e;
+}
+html.light-mode .intel-section-title {
+  color: #0284c7;
+}
+html.light-mode .company-status-badge.is-featured {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #b45309;
+}
+html.light-mode .company-status-badge.is-dossier {
+  background: #f0f9ff;
+  border-color: #38bdf8;
+  color: #0284c7;
+}
+html.light-mode .company-ticker-tag {
+  background: #f0f9ff;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+html.light-mode .qh-sni-toggle.is-active {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #f59e0b;
+}
+html.light-mode .speed-btn {
+  background: #ffffff;
+  color: #64748b;
+  border-color: #cbd5e1;
+}
+html.light-mode .speed-btn.is-active {
+  background: #0284c7;
+  color: #ffffff;
+}
+html.light-mode .audio-close-btn {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #64748b;
+}
+html.light-mode .audio-close-btn:hover {
+  background: #fee2e2;
+  border-color: #f87171;
+  color: #ef4444;
+}
+
+
 
 
 

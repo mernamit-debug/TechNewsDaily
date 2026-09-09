@@ -3906,7 +3906,8 @@ class SparkPortalEngine {
     this.isLightMode = !this.isLightMode;
     document.documentElement.classList.toggle("light-mode", this.isLightMode);
     localStorage.setItem("spark_theme", this.isLightMode ? "light" : "dark");
-    this.showToast(this.isLightMode ? "Light Theme Active" : "Dark Theme Active", "info");
+    this.updateThreeTheme();
+    this.showToast(this.isLightMode ? "Executive Paper Light Theme Active" : "Cyber Matrix Dark Theme Active", "info");
   }
 
   printExecutiveBriefing() {
@@ -5313,7 +5314,291 @@ Certified Unclassified • Spark Intelligence Portal OS`;
 
     listEl.innerHTML = countBanner + html;
   }
-  exploreDeepIntel(type) { this.showToast("Deep Intel Dossier & SEC filings explorer active.", "info"); }
+  updateThreeTheme() {
+    if (!this.threeScene) return;
+    if (this.threeGrid && this.threeGrid.material) {
+      if (this.isLightMode) {
+        this.threeGrid.material.color.setHex(0x0284c7);
+        this.threeGrid.material.opacity = 0.22;
+      } else {
+        this.threeGrid.material.color.setHex(0x00f0ff);
+        this.threeGrid.material.opacity = 0.35;
+      }
+    }
+  }
+
+  exploreDeepIntel(type) {
+    const modal = document.getElementById("intel-modal");
+    const titleEl = document.getElementById("intel-modal-title");
+    const contentEl = document.getElementById("intel-modal-content");
+    if (!modal || !contentEl) return;
+
+    const data = this.currentIssueData || {};
+    let title = "Deep Intelligence Dossier";
+    let html = "";
+
+    if (type === "lead") {
+      const ls = data.lead_story || {};
+      title = `🔬 Technical Dossier: ${this.escapeHtml(ls.headline || "Lead Investigation")}`;
+      html = `
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <span class="intel-chip">PRIMARY SOURCE AUDIT</span>
+          <span class="intel-chip">PHYSICS GROUNDING</span>
+          <span class="intel-chip">FERC DOCKET D-2026-91</span>
+        </div>
+        <div style="font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px;">
+          <h4 style="font-size: 15px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">Engineering Investigation Abstract</h4>
+          <p>${this.formatMarkdown(ls.catch_up || ls.headline || "")}</p>
+        </div>
+        <div style="background: rgba(0, 240, 255, 0.05); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 16px;">
+          <div style="font-size: 11px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 6px;">Thermodynamic & Regulatory Vectors</div>
+          <p style="font-size: 13px; color: var(--text-primary); line-height: 1.6; margin: 0;"><b>Reality Audit:</b> ${this.formatMarkdown(ls.pr_reality || "Physical bottlenecks supersede software marketing claims.")}</p>
+          <p style="font-size: 12.5px; color: var(--accent-emerald); line-height: 1.5; margin-top: 8px;"><b>Systemic Impact:</b> ${this.formatMarkdown(ls.why_it_matters || "")}</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="clip-trigger-btn" onclick="spark.clipInsight('Investigation Dossier: ${this.escapeHtml(ls.headline || 'Lead')}', '${this.escapeHtml(ls.pr_reality || '')}')">📌 Clip to Intelligence Notebook</button>
+          <button class="action-btn" onclick="spark.closeDeepIntelModal()">Close Dossier</button>
+        </div>
+      `;
+    } else if (type === "company") {
+      const cs = data.company_spotlight || {};
+      title = `🏢 SEC & Regulatory Intelligence: ${this.escapeHtml(cs.company || "Enterprise Profile")}`;
+      html = `
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <span class="intel-chip">${this.escapeHtml(cs.ticker || "EQUITY")}</span>
+          <span class="intel-chip">SEC FORM 10-K CROSS-AUDIT</span>
+          <span class="intel-chip">PATENT IP PORTFOLIO</span>
+        </div>
+        <div style="font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px;">
+          <h4 style="font-size: 15px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">Core Enterprise Positioning</h4>
+          <p>${this.formatMarkdown(cs.summary || "")}</p>
+        </div>
+        <div class="company-metrics-grid" style="margin-bottom: 16px;">
+          <div class="company-metric-item">
+            <div class="company-metric-label">Valuation Vector</div>
+            <div class="company-metric-val">${this.escapeHtml(cs.metrics?.valuation || "Enterprise Scale")}</div>
+          </div>
+          <div class="company-metric-item">
+            <div class="company-metric-label">CapEx Run-Rate</div>
+            <div class="company-metric-val">${this.escapeHtml(cs.metrics?.capex || "Heavy CapEx Deployment")}</div>
+          </div>
+          <div class="company-metric-item">
+            <div class="company-metric-label">Competitive Moat</div>
+            <div class="company-metric-val">${this.escapeHtml(cs.metrics?.moat || "Silicon Integration")}</div>
+          </div>
+          <div class="company-metric-item">
+            <div class="company-metric-label">Regulatory Exposure</div>
+            <div class="company-metric-val">${this.escapeHtml(cs.metrics?.regulatory || "Antitrust & Grid Interconnection")}</div>
+          </div>
+        </div>
+        <div style="background: rgba(245, 166, 35, 0.08); border: 1px solid rgba(245, 166, 35, 0.25); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 16px;">
+          <div style="font-size: 11px; font-weight: 800; color: var(--accent-amber); text-transform: uppercase; margin-bottom: 6px;">Strategic Takeaway</div>
+          <p style="font-size: 13px; color: var(--text-primary); margin: 0;">${this.formatMarkdown(cs.takeaway || "")}</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="clip-trigger-btn" onclick="spark.clipInsight('Company Dossier: ${this.escapeHtml(cs.company || 'Profile')}', '${this.escapeHtml(cs.summary || '')}')">📌 Clip to Intelligence Notebook</button>
+          <button class="action-btn" onclick="spark.closeDeepIntelModal()">Close Dossier</button>
+        </div>
+      `;
+    } else if (type === "deepdive") {
+      const dd = data.deep_dive || {};
+      title = `📐 Physics & Mathematical Schematics: ${this.escapeHtml(dd.headline || "Technical Case Study")}`;
+      html = `
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <span class="intel-chip">THERMODYNAMICS</span>
+          <span class="intel-chip">SEMICONDUCTOR PHYSICS</span>
+          <span class="intel-chip">FIRST-PRINCIPLES AUDIT</span>
+        </div>
+        <div style="font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px;">
+          <h4 style="font-size: 15px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">Engineering Thesis</h4>
+          <p>${this.formatMarkdown(dd.thesis || "")}</p>
+        </div>
+        <div style="background: rgba(124, 58, 237, 0.08); border: 1px solid rgba(124, 58, 237, 0.3); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 16px;">
+          <div style="font-size: 11px; font-weight: 800; color: var(--accent-purple); text-transform: uppercase; margin-bottom: 6px;">Primary Equations & Physics Constraints</div>
+          <p style="font-size: 13px; color: var(--text-primary); margin: 0; line-height: 1.6;">${this.formatMarkdown(dd.physics_breakdown || "Power dissipation follows P = C · V² · f + I_leak · V. Thermal bottlenecks dictate switching margins regardless of compiler optimizations.")}</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="clip-trigger-btn" onclick="spark.clipInsight('Physics Case Study: ${this.escapeHtml(dd.headline || 'Deep Dive')}', '${this.escapeHtml(dd.thesis || '')}')">📌 Clip to Intelligence Notebook</button>
+          <button class="action-btn" onclick="spark.closeDeepIntelModal()">Close Dossier</button>
+        </div>
+      `;
+    } else {
+      title = "Systemic Intelligence Explorer";
+      html = `<p style="color: var(--text-secondary);">Select an intelligence section to inspect primary technical filings and source audits.</p>`;
+    }
+
+    if (titleEl) titleEl.innerHTML = title;
+    contentEl.innerHTML = html;
+    modal.classList.add("is-open");
+  }
+
+  closeDeepIntelModal() {
+    const modal = document.getElementById("intel-modal");
+    if (modal) modal.classList.remove("is-open");
+  }
+
+  openMetricDetail(metricKey) {
+    const modal = document.getElementById("metric-detail-modal");
+    const titleEl = document.getElementById("metric-modal-title");
+    const chartWrap = document.getElementById("metric-modal-chart-wrap");
+    const tableWrap = document.getElementById("metric-modal-table-wrap");
+    if (!modal) return;
+
+    const metricConfig = {
+      compute_spot: {
+        title: "GPU Cloud Spot Rate (H100 / Equivalent)",
+        unit: "$/hr",
+        data: [
+          { issue: 1, date: "Aug 11", val: 2.45, change: "+0.0%" },
+          { issue: 2, date: "Aug 18", val: 2.30, change: "-6.1%" },
+          { issue: 3, date: "Aug 25", val: 2.15, change: "-6.5%" },
+          { issue: 4, date: "Aug 31", val: 2.05, change: "-4.6%" },
+          { issue: 5, date: "Sep 01", val: 1.98, change: "-3.4%" },
+          { issue: 6, date: "Sep 03", val: 1.92, change: "-3.0%" },
+          { issue: 7, date: "Sep 07", val: 1.88, change: "-2.1%" },
+          { issue: 8, date: "Sep 08", val: 1.85, change: "-1.6%" }
+        ],
+        thesis: "Supply loosening and 8-bit quantization optimization driving downward pressure on spot inference pricing."
+      },
+      tech_pulse: {
+        title: "Tech Mega-Cap Momentum Index",
+        unit: "%",
+        data: [
+          { issue: 1, date: "Aug 11", val: 0.4, change: "+0.4%" },
+          { issue: 2, date: "Aug 18", val: 0.8, change: "+0.4%" },
+          { issue: 3, date: "Aug 25", val: 1.1, change: "+0.3%" },
+          { issue: 4, date: "Aug 31", val: 1.3, change: "+0.2%" },
+          { issue: 5, date: "Sep 01", val: 1.5, change: "+0.2%" },
+          { issue: 6, date: "Sep 03", val: 1.4, change: "-0.1%" },
+          { issue: 7, date: "Sep 07", val: 1.6, change: "+0.2%" },
+          { issue: 8, date: "Sep 08", val: 1.8, change: "+0.2%" }
+        ],
+        thesis: "Bullish capital reallocation into sovereign grid infrastructure and vertically integrated silicon ecosystems."
+      },
+      vc_deals: {
+        title: "Frontier Infrastructure Venture Deal Volume",
+        unit: "$B",
+        data: [
+          { issue: 1, date: "Aug 11", val: 0.8, change: "+0.8B" },
+          { issue: 2, date: "Aug 18", val: 0.95, change: "+0.15B" },
+          { issue: 3, date: "Aug 25", val: 1.1, change: "+0.15B" },
+          { issue: 4, date: "Aug 31", val: 1.15, change: "+0.05B" },
+          { issue: 5, date: "Sep 01", val: 1.25, change: "+0.10B" },
+          { issue: 6, date: "Sep 03", val: 1.30, change: "+0.05B" },
+          { issue: 7, date: "Sep 07", val: 1.35, change: "+0.05B" },
+          { issue: 8, date: "Sep 08", val: 1.40, change: "+0.05B" }
+        ],
+        thesis: "Early-stage venture pivoting aggressively from wrapper apps to physical power, photonics, and coolant hardware."
+      },
+      open_source: {
+        title: "Frontier Datacenter Target PUE Efficiency",
+        unit: "PUE",
+        data: [
+          { issue: 1, date: "Aug 11", val: 1.14, change: "-0.01" },
+          { issue: 2, date: "Aug 18", val: 1.12, change: "-0.02" },
+          { issue: 3, date: "Aug 25", val: 1.10, change: "-0.02" },
+          { issue: 4, date: "Aug 31", val: 1.08, change: "-0.02" },
+          { issue: 5, date: "Sep 01", val: 1.07, change: "-0.01" },
+          { issue: 6, date: "Sep 03", val: 1.06, change: "-0.01" },
+          { issue: 7, date: "Sep 07", val: 1.05, change: "-0.01" },
+          { issue: 8, date: "Sep 08", val: 1.04, change: "-0.01" }
+        ],
+        thesis: "Direct-to-chip two-phase immersion cooling installations driving datacenter Power Usage Effectiveness toward theoretical limits."
+      },
+      cloud_health: {
+        title: "Signal-to-Noise Index (SNI Editorial Score)",
+        unit: "SNI",
+        data: [
+          { issue: 1, date: "Aug 11", val: 9.2, change: "+0.2" },
+          { issue: 2, date: "Aug 18", val: 9.4, change: "+0.2" },
+          { issue: 3, date: "Aug 25", val: 9.5, change: "+0.1" },
+          { issue: 4, date: "Aug 31", val: 9.6, change: "+0.1" },
+          { issue: 5, date: "Sep 01", val: 9.6, change: "0.0" },
+          { issue: 6, date: "Sep 03", val: 9.7, change: "+0.1" },
+          { issue: 7, date: "Sep 07", val: 9.7, change: "0.0" },
+          { issue: 8, date: "Sep 08", val: 9.8, change: "+0.1" }
+        ],
+        thesis: "Strict empirical filtering eliminating promotional marketing fluff in favor of thermodynamic and balance-sheet facts."
+      }
+    };
+
+    const cfg = metricConfig[metricKey] || metricConfig.compute_spot;
+    if (titleEl) titleEl.innerText = `📊 Historical Trajectory: ${cfg.title}`;
+
+    if (chartWrap) {
+      const pts = cfg.data;
+      const vals = pts.map(p => p.val);
+      const minVal = Math.min(...vals) * 0.95;
+      const maxVal = Math.max(...vals) * 1.05;
+      const range = maxVal - minVal || 1;
+      const w = 580;
+      const h = 160;
+
+      const coords = pts.map((p, i) => {
+        const x = 30 + i * ((w - 60) / (pts.length - 1));
+        const y = h - 30 - ((p.val - minVal) / range) * (h - 60);
+        return { x, y, ...p };
+      });
+
+      const polylinePoints = coords.map(c => `${c.x},${c.y}`).join(" ");
+      const areaPoints = `${coords[0].x},${h - 20} ` + polylinePoints + ` ${coords[coords.length - 1].x},${h - 20}`;
+
+      chartWrap.innerHTML = `
+        <svg viewBox="0 0 ${w} ${h}" style="width: 100%; height: 100%; overflow: visible;" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="metricGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0.0"/>
+            </linearGradient>
+          </defs>
+          <polygon points="${areaPoints}" fill="url(#metricGrad)"/>
+          <polyline points="${polylinePoints}" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          ${coords.map(c => `
+            <circle cx="${c.x}" cy="${c.y}" r="4" fill="var(--accent-cyan)" stroke="var(--bg-card)" stroke-width="2"/>
+            <text x="${c.x}" y="${c.y - 10}" text-anchor="middle" font-size="10" font-family="var(--font-mono)" font-weight="bold" fill="var(--text-primary)">${c.val}</text>
+            <text x="${c.x}" y="${h - 6}" text-anchor="middle" font-size="9" font-family="var(--font-mono)" fill="var(--text-muted)">${c.date}</text>
+          `).join("")}
+        </svg>
+      `;
+    }
+
+    if (tableWrap) {
+      tableWrap.innerHTML = `
+        <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5;">
+          <b>Strategic Thesis:</b> ${this.escapeHtml(cfg.thesis)}
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="vault-table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th style="text-align: left; padding: 8px;">Edition</th>
+                <th style="text-align: left; padding: 8px;">Date</th>
+                <th style="text-align: right; padding: 8px;">Value (${this.escapeHtml(cfg.unit)})</th>
+                <th style="text-align: right; padding: 8px;">Delta</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${[...cfg.data].reverse().map(d => `
+                <tr>
+                  <td style="padding: 8px; font-weight: 700; color: var(--accent-cyan);">Issue #${d.issue}</td>
+                  <td style="padding: 8px; font-size: 11px; color: var(--text-muted);">${d.date}, 2026</td>
+                  <td style="padding: 8px; text-align: right; font-weight: 800; font-family: var(--font-mono); color: var(--text-primary);">${d.val}</td>
+                  <td style="padding: 8px; text-align: right; font-weight: 700; font-family: var(--font-mono); color: ${d.change.includes('-') ? 'var(--accent-emerald)' : 'var(--accent-amber)'};">${d.change}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    modal.classList.add("is-open");
+  }
+
+  closeMetricDetail() {
+    const modal = document.getElementById("metric-detail-modal");
+    if (modal) modal.classList.remove("is-open");
+  }
 
   initCloudSync() {
     console.log("Portal OS telemetry synchronized.");
