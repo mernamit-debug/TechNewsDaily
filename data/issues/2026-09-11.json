@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 11,
+    "date": "2026-09-11",
+    "reading_streak": 11
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The Revocable Megawatt: PJM files FERC Docket ER26-3515 and ERCOT freezes 474 GW queue to convert AI data center power from an entitlement into a conditional, revocable service.",
+    "Data Center Blackout Cut Line: New loads >=50 MW without captive baseload generation are assigned mandatory pre-emergency curtailment status ahead of paid demand response.",
+    "Vistra & Constellation Islanding Arbitrage: Merchant power producers mint fortunes locking hyperscalers into 20-year behind-the-meter islanded contracts at 200% premiums.",
+    "FTC Sues Amazon for $20B: Landmark federal lawsuit alleges Amazon's proprietary algorithms systematically manipulated digital ad auctions to overcharge 1.2M merchants.",
+    "California Nuclear Moratorium Repeal Debate: State lawmakers introduce bipartisan bills to lift 1976 nuclear ban and deploy SMRs to alleviate Silicon Valley grid deficits."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 11 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The Revocable Megawatt: PJM & ERCOT Convert AI Datacenter Interconnections from Entitlements into Conditional Cut-Line Services",
+    "image_url": "assets/pjm-ercot-grid.jpg",
+    "image_caption": "High-voltage transmission interconnect and substation terminal linking multi-gigawatt hyperscale compute clusters across ERCOT and PJM grids.",
+    "image_alt": "High-voltage transmission substation and distribution towers under dusk sky",
+    "catch_up": "In an unprecedented structural policy shift across North American power markets, the two largest regional transmission operators in the United States?PJM Interconnection and ERCOT?have moved in tandem to terminate the era of unconditional datacenter interconnection. Under PJM's emergency FERC filing (Docket ER26-3515) establishing the 'Interim Resource Adequacy Service (IRAS)' and Texas Governor Greg Abbott's directive freezing ERCOT's 474 GW queue audit, new compute loads exceeding 50 MW are being relegated to the front of the rolling blackout cut line unless they bring dedicated off-grid baseload generation online by June 2027.",
+    "mechanism": "Historically, commercial industrial customers received firm, non-curtailable network transmission service once they completed standard interconnection study deposits. Under PJM's proposed IRAS framework, any datacenter with 50 MW or more of cumulative peak demand that lacks captive, behind-the-meter generation will be assigned mandatory, non-compensated curtailment status triggered prior to PJM calling its paid demand-response programs. Concurrently, ERCOT halted its 'Batch Zero' large-load approvals across 300 proposed facilities totaling 474 GW?a speculative paper queue 5.2 times larger than Texas's all-time record peak demand (91,089 MW).",
+    "analogy": "Imagine an airline selling first-class full-fare tickets, but adding a sudden fine-print clause stating that if the airplane hits heavy turbulence or encounters fuel headwings, first-class passengers will be ejected out the cargo door first before economy passengers are even asked to fasten their seatbelts. Hyperscalers believed they were purchasing guaranteed utility rights; regulators just reclassified them as emergency ballast.",
+    "pr_claim": "We partner constructively with regional transmission operators to preserve grid stability while investing billions in municipal clean energy tax bases.",
+    "pr_reality": "Hyperscalers filed 474 GW of phantom interconnect reservations on paper to preemptively squat on power rights and box out competing AI labs, treating public grid capacity as free speculative call options until grid operators finally called their bluff.",
+    "bull_take": "Forces hyperscalers to fully underwrite multi-decade capital contracts for SMRs, geothermal, and on-site combined-cycle gas turbines, providing guaranteed 20-year equity returns for independent power producers.",
+    "bear_take": "AI startups and tier-2 cloud providers without billions in cash to co-locate private gas turbines face fatal compute rationing or 10x surge power tariffs during peak summer heatwaves.",
+    "cascades": "California PUC accelerates the Diablo Canyon nuclear extension and evaluates lifting the state's 50-year nuclear moratorium; Midwest RTOs (MISO and SPP) draft identical conditional service tariffs.",
+    "why_it_matters": "The legal and thermodynamic definition of industrial electricity has fundamentally changed: for AI datacenters, electricity is no longer a public utility right?it is an insecure, conditional derivative.",
+    "cocktail_flex": "Big Tech thought the hardest part of building AGI was mathematical alignment theory; turns out it's convincing ERCOT that an 800MW training run shouldn't be unplugged every time Dallas turns on its air conditioning.",
+    "web_investigation": {
+      "overview": "PJM FERC Docket ER26-3515 on Interim Resource Adequacy Service, ERCOT Batch Zero audit directives and large-load queue logs, and NERC wholesale reliability assessments.",
+      "sources": [
+        {
+          "title": "PJM Interconnection FERC Filing (Docket ER26-3515): Creation of Interim Resource Adequacy Service for Large Load Additions",
+          "publisher": "Federal Energy Regulatory Commission",
+          "url": "https://www.google.com/url?q=https://www.ferc.gov/&source=gmail&ust=1789169433799000&sa=E",
+          "type": "FERC Tariff Filing",
+          "snippet": "Establishes mandatory pre-emergency curtailment protocols for single-site loads exceeding 50MW lacking self-supplied generation."
+        },
+        {
+          "title": "ERCOT Large Flexible Load Queue Audit & Batch Zero Classification Deferral",
+          "publisher": "Electric Reliability Council of Texas",
+          "url": "https://www.google.com/url?q=https://www.ercot.com/&source=gmail&ust=1789169433799000&sa=E",
+          "type": "RTO Operational Directive",
+          "snippet": "Halts approvals across 474 GW interconnect queue pending proof of financial readiness and local substation adequacy."
+        },
+        {
+          "title": "The Megawatt Wall: Converting Datacenter Interconnection from Rights to Conditional Derivatives",
+          "publisher": "The CUBE Research / CES Energy Analysis",
+          "url": "https://www.google.com/url?q=https://thecuberesearch.com/&source=gmail&ust=1789169433799000&sa=E",
+          "type": "Grid Policy Research",
+          "snippet": "Analyzes systemic grid exposure as ERCOT datacenter queue exceeds 5.2x all-time peak generation records."
+        }
+      ],
+      "search_queries": [
+        "PJM FERC Docket ER26-3515 Interim Resource Adequacy Service",
+        "ERCOT Batch Zero data center queue audit 474 GW",
+        "data center large load curtailment cut line PJM ERCOT"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "Vistra & Constellation Capitalize on the 'Cut Line': Independent Power Producers Mint Fortunes as On-Site Baseload Brokers",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789169433799000&sa=E",
+    "image_caption": "Combined nuclear and gas-fired generation asset providing uninterrupted baseload power directly to behind-the-meter industrial facilities.",
+    "image_alt": "Nuclear power station cooling towers and electrical switchyard",
+    "company": "Vistra Corp / Constellation Energy",
+    "ticker": "NYSE: VST / NASDAQ: CEG",
+    "market_cap": "$41.2B (VST) / $84.6B (CEG)",
+    "summary": "As PJM and ERCOT push unhedged datacenters to the front of the curtailment line, Vistra Corp and Constellation Energy have become the indispensable gatekeepers of AI uptime. By bundling merchant nuclear plants, dual-fuel gas turbines, and co-located BESS assets into 'Firm Islanded Power' contracts, IPPs are locking hyperscalers into 20-year agreements at triple-digit power premiums, completely bypassing public RTO grid queues.",
+    "mechanism": "Structuring private behind-the-meter (BTM) microgrids that legally insulate compute clusters from RTO curtailment orders (like IRAS) while monetizing auxiliary merchant power sales back to the grid during emergency price spikes.",
+    "metrics": {
+      "capex": "$4.2B Committed Generation Upgrades & Dual-Fuel Conversions (2025?2027)",
+      "moat": "Grandfathered Nuclear & Gas Generation Fleets with Direct Substation Interties",
+      "regulatory": "FERC BTM Co-Location Precedents & State Public Utility Interventions",
+      "velocity": "9.8 / 10"
+    },
+    "takeaway": "When public grid operators threaten to unplug servers during peak demand, paying a merchant power producer a 200% premium for captive nuclear electrons is simply the cost of doing business.",
+    "web_investigation": {
+      "overview": "Vistra Corp SEC Form 10-Q disclosures, Constellation nuclear fleet capacity agreements, and merchant generation margin projections under ERCOT/PJM scarcity conditions.",
+      "sources": [
+        {
+          "title": "Vistra Corp Form 10-Q: Merchant Generation Expansion & Hyperscaler Bilateral PPA Agreements",
+          "publisher": "Vistra Investor Relations / SEC EDGAR",
+          "url": "https://www.google.com/url?q=https://investor.vistracorp.com/&source=gmail&ust=1789169433799000&sa=E",
+          "type": "SEC Filing",
+          "snippet": "Discloses record spark spreads and multi-year bilateral contracted capacity with hyperscale cloud operators."
+        },
+        {
+          "title": "Constellation Energy Fleet Reliability & Commercial AI Baseload Portfolio",
+          "publisher": "Constellation Energy IR",
+          "url": "https://www.google.com/url?q=https://investors.constellationenergy.com/&source=gmail&ust=1789169433799000&sa=E",
+          "type": "Investor Presentation",
+          "snippet": "Highlights long-term firm power contracts insulating client datacenters from RTO curtailment rules."
+        }
+      ],
+      "search_queries": [
+        "Vistra Corp ERCOT data center bilateral contract capacity 2026",
+        "Constellation Energy nuclear behind the meter AI premium"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "California Lawmakers Debate Repeal of 50-Year Nuclear Moratorium for AI Compute",
+      "facts": "Following growing concerns over CAISO grid capacity and surging Silicon Valley compute requirements, California lawmakers introduced bipartisan legislation to lift the state's 1976 nuclear moratorium and authorize next-generation SMR development.",
+      "reality_audit": "Lifting the moratorium is a symbolic political headline; actual NRC licensing and seismic environmental impact reviews ensure not a single new California reactor will split an atom before 2035.",
+      "why_it_matters": "Marks a historic reversal in Western energy policy as AI compute demands dismantle decade-old anti-nuclear orthodoxy.",
+      "sni": "9.4 / 10",
+      "web_sources": [
+        {
+          "title": "Carnegie Endowment: Proliferation News and California Nuclear Policy Shifts",
+          "publisher": "Carnegie Endowment for International Peace",
+          "url": "https://www.google.com/url?q=https://carnegieendowment.org/programs/nuclear-policy/proliferation-news/proliferation-news-september-10-2026&source=gmail&ust=1789169433799000&sa=E",
+          "type": "Energy Policy Assessment"
+        }
+      ],
+      "search_query": "California nuclear moratorium repeal Diablo Canyon SMR 2026"
+    },
+    {
+      "id": 2,
+      "headline": "FTC Files Landmark $20B Antitrust Lawsuit Over Algorithmic Auction Manipulation",
+      "facts": "The FTC and 22 state attorneys general sued Amazon in federal court, alleging systematic algorithmic manipulation of digital ad auctions that extracted over $20 billion in fraudulent overcharges from 1.2 million enterprise merchants.",
+      "reality_audit": "Amazon claims the pricing models were optimized for merchant value, but internal communications reveal engineers specifically altered auction clearing formulas whenever quarterly ad revenue lagged forecasts.",
+      "why_it_matters": "Sets the legal precedent for how federal regulators audit proprietary AI bidding and dynamic pricing algorithms under antitrust law.",
+      "sni": "9.6 / 10",
+      "web_sources": [
+        {
+          "title": "US FTC and 22 States File Antitrust Action on Online Ad Auction Manipulation",
+          "publisher": "The Economic Times / US Courts",
+          "url": "https://www.google.com/url?q=https://m.economictimes.com/news/international/business/amazon-sued-by-us-ftc-22-states-over-alleged-20-billion-ad-auction-overcharges/articleshow/133665779.cms&source=gmail&ust=1789169433800000&sa=E",
+          "type": "Federal Legal Action"
+        }
+      ],
+      "search_query": "FTC 22 states Amazon ad auction manipulation lawsuit September 2026"
+    },
+    {
+      "id": 3,
+      "headline": "Taiwan Semiconductor Forum Spotlights Sub-0.5V Physical AI Edge Accelerators",
+      "facts": "At the Semiconductor Forum Taiwan on September 10 in Hsinchu, Counterpoint Research analysts and foundry leaders outlined the shift from LLM infrastructure buildouts to Physical AI, where sub-0.5V edge chips and on-device memory will dominate chip capital expenditure by 2028.",
+      "reality_audit": "On-device models run great in cherry-picked conference demos, but thermal throttling in uncooled smartphone and drone chassis still cuts sustained inference speeds in half after three minutes of runtime.",
+      "why_it_matters": "Signals to investors that the next frontier of semiconductor revenue will be determined by energy efficiency at the edge rather than brute-force hyperscale cluster size.",
+      "sni": "9.1 / 10",
+      "web_sources": [
+        {
+          "title": "Counterpoint Research: Semiconductor Forum Taiwan 2026 Executive Summary",
+          "publisher": "Counterpoint Technology Market Research",
+          "url": "https://www.google.com/url?q=https://counterpointresearch.com/en/insights/semiconductor-forum-taiwan-2026&source=gmail&ust=1789169433800000&sa=E",
+          "type": "Industry Forum Analysis"
+        }
+      ],
+      "search_query": "Counterpoint Semiconductor Forum Taiwan Hsinchu Physical AI edge 2026"
+    },
+    {
+      "id": 4,
+      "headline": "ELCIA Tech Summit Launches South Bengaluru Industrial Robotics & IoT Testbed",
+      "facts": "The ELCIA Tech Summit 2026 concluded in Electronics City, Bengaluru, formalizing a joint industry-government sandbox linking Global Capability Centers (GCCs) directly to localized smart manufacturing and autonomous factory automation hardware.",
+      "reality_audit": "Indian GCCs excel at software algorithms and simulation code, but domestic sourcing of precision servo-actuators and CNC components remains 85% dependent on imports from Japan and Germany.",
+      "why_it_matters": "Accelerates India's transition from an enterprise IT services exporter into an integrated hardware-software automation powerhouse.",
+      "sni": "8.9 / 10",
+      "web_sources": [
+        {
+          "title": "ELCIA Tech Summit 2026: Intellect, Insights & Impact Official Schedule",
+          "publisher": "Electronics City Industries Association (ELCIA)",
+          "url": "https://www.google.com/url?q=https://elciatechsummit.in/&source=gmail&ust=1789169433800000&sa=E",
+          "type": "Summit Portal"
+        }
+      ],
+      "search_query": "ELCIA Tech Summit Electronics City Bengaluru smart manufacturing robotics 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Physics of Resource Adequacy: Mathematical Modeling of PJM's Interim Resource Adequacy Service (IRAS)",
+    "image_url": "assets/loss-of-load-probability.jpg",
+    "image_caption": "Figure 3.3: Loss of Load Expectation (LOLE) curves and effective load carrying capability (ELCC) degradation under non-coincident peak AI demand.",
+    "image_alt": "Statistical distribution graph of power grid loss of load expectation",
+    "thesis": "Traditional utility capacity planning models assume industrial loads are distributed log-normally across geographic feeder circuits with predictable coincidence factors. When multi-gigawatt AI clusters introduce flat-line, non-cyclical baseload demand with step-change ramp profiles, the Loss of Load Expectation (LOLE) shifts non-linearly, forcing grid operators to implement mathematical priority queues that treat non-buffered datacenters as emergency shed-load ballast.",
+    "physics_breakdown": "Grid reliability is mathematically governed by the Loss of Load Expectation: LOLE = ? P(Ct < Lt), where available generation capacity Ct must exceed total load Lt across all 8,760 hours of the year. In a grid reliant on weather-dependent renewables and thermal baseload, adding a 1,000 MW flat-line datacenter load compresses the system's Effective Load Carrying Capability (ELCC). Under PJM's IRAS framework (FERC Docket ER26-3515), the conditional probability of curtailment for unhedged large loads is calculated dynamically based on real-time operating cushion depletion. When operating reserves breach the 3,000 MW threshold, IRAS disconnects large loads in sequential 50 MW blocks via automated SCADA breaker commands, preventing the need to drop residential distribution feeders.",
+    "matrix": {
+      "mechanism": "SCADA-automated large-load disconnect protocols triggered dynamically by real-time RTO operating reserve depletion.",
+      "audit": "Hyperscalers who brag about 100% renewable power purchase agreements on paper are legally exposed to sudden physical disconnection during the first cold snap or heat wave.",
+      "cascades": "Enterprise insurance underwriters require datacenters to maintain certified on-site dual-fuel generation to maintain SLA liability coverage; cloud providers insert 'Grid Force Majeure' clauses into customer contracts.",
+      "sni": "9.9 / 10 (SYSTEM RELIABILITY & MATHEMATICAL MODELING)"
+    },
+    "takeaway": "In the modern power grid, there are no guaranteed customers?only assets that stabilize the frequency and loads that can be sacrificed to save the interconnect.",
+    "web_investigation": {
+      "overview": "Mathematical derivation of Loss of Load Probability (LOLP), Effective Load Carrying Capability (ELCC), and PJM Operating Agreement Schedule 1 reserve rules.",
+      "sources": [
+        {
+          "title": "NERC Reliability Guideline: Probabilistic Resource Adequacy Analysis and Loss of Load Expectation Calculations",
+          "publisher": "North American Electric Reliability Corporation",
+          "url": "https://www.google.com/url?q=https://www.nerc.com/&source=gmail&ust=1789169433800000&sa=E",
+          "type": "Reliability Guideline",
+          "snippet": "Details the standard 1-day-in-10-years LOLE metric and degradation caused by non-coincident industrial baseload additions."
+        },
+        {
+          "title": "PJM Manual 20: PJM Resource Adequacy Analysis and Reserve Margin Requirements",
+          "publisher": "PJM Operating Committee",
+          "url": "https://www.google.com/url?q=https://www.pjm.com/&source=gmail&ust=1789169433800000&sa=E",
+          "type": "Technical Operations Manual",
+          "snippet": "Formulates mathematical requirements for capacity reserve margins and emergency load shedding thresholds."
+        }
+      ],
+      "search_queries": [
+        "PJM manual 20 resource adequacy reserve margin LOLE",
+        "effective load carrying capability ELCC large datacenter flat load"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will FERC officially approve PJM's proposed Interim Resource Adequacy Service (Docket ER26-3515) without exempting existing datacenter interconnect applications before April 30, 2027?",
+    "consensus_yes_pct": 68,
+    "consensus_no_pct": 32
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "What is the primary condition under PJM's proposed Interim Resource Adequacy Service (IRAS)?",
+      "options": [
+        "A) Datacenters receive free electricity during summer months",
+        "B) Large loads exceeding 50 MW that lack dedicated generation are subject to mandatory pre-emergency curtailment",
+        "C) Datacenters must generate their own solar power on rooftops"
+      ],
+      "correct_index": 1,
+      "explanation": "Under PJM's proposed IRAS (Docket ER26-3515), large loads of 50 MW or more that lack self-secured baseload generation are placed at the front of the curtailment line when operating reserves drop."
+    },
+    {
+      "id": 2,
+      "question": "How large is ERCOT's current large-load interconnect queue compared to its all-time peak demand record?",
+      "options": [
+        "A) Equal to peak demand",
+        "B) Approximately 5.2 times the all-time peak record (474 GW vs. ~91 GW)",
+        "C) 10% of peak demand"
+      ],
+      "correct_index": 1,
+      "explanation": "ERCOT's large-load queue has surged to 474 GW, which is 5.2 times larger than the grid's all-time historical peak hourly demand of 91,089 MW set in July 2026."
+    },
+    {
+      "id": 3,
+      "question": "Why are independent power producers like Vistra and Constellation able to command massive premiums from hyperscalers?",
+      "options": [
+        "A) They own exclusive social media software",
+        "B) They provide 'firm islanded power' from captive nuclear and gas assets that legally insulates datacenters from RTO grid curtailment",
+        "C) They build cheaper GPUs"
+      ],
+      "correct_index": 1,
+      "explanation": "By offering behind-the-meter nuclear and combined-cycle gas generation, merchant power producers guarantee uninterrupted uptime, bypassing both RTO interconnection delays and conditional curtailment mandates."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary focus of the $20 billion antitrust lawsuit filed by the FTC against Amazon?",
+      "options": [
+        "A) Warehouse robot safety standards",
+        "B) Systematic algorithmic manipulation of digital advertising auctions that extracted overcharges from merchants",
+        "C) Prime delivery speeds"
+      ],
+      "correct_index": 1,
+      "explanation": "The FTC and 22 state attorneys general sued Amazon for manipulating proprietary auction algorithms to extract more than $20 billion in overcharges from 1.2 million advertising merchants."
+    },
+    {
+      "id": 5,
+      "question": "How do trees in a forest communicate and share resources beneath the soil?",
+      "options": [
+        "A) Ultrasonic radio vibrations through tree bark",
+        "B) Through symbiotic subterranean mycorrhizal fungal networks that transfer carbon, nitrogen, and defensive distress signals",
+        "C) Magnetized groundwater currents"
+      ],
+      "correct_index": 1,
+      "explanation": "Trees communicate and transfer nutrients through underground mycorrhizal fungal networks (the 'wood wide web'), which act as biological conduits for carbon, water, and warning signals about insect attacks."
+    }
+  ],
+  "easter_egg": "Trees in a mature forest are physically interconnected by subterranean mycorrhizal fungal networks ('the wood wide web'), which actively transport carbon, nitrogen, and chemical warning signals from healthy elder 'mother trees' to nurture struggling saplings and alert neighboring trees of pest attacks.",
+  "interactive_model": {
+    "archetype": "combined_cycle_gas_turbine",
+    "title": "Combined-Cycle Gas Turbine (CCGT) & Heat Recovery Steam Generator (HRSG)",
+    "subtitle": "Interactive 3D Multi-Stage Combustion Turbine, Superalloy Blade Row, HRSG Boiler & Steam Turbine Intertie",
+    "badge": "GENERATION ASSETS // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 290,
+      "pitch": 0.38,
+      "yaw": 0.8
+    },
+    "contextual_labels": {
+      "axial_compressor": {
+        "name": "18-Stage Axial Air Compressor",
+        "desc": "Compresses 850 kg/s of ambient air to 24 bar pressure before entering combustion chambers."
+      },
+      "combustion_annulus": {
+        "name": "Dry Low-NOx (DLN) Combustor Cans",
+        "desc": "Premixes fuel gas and air to maintain stoichiometric combustion below thermal NOx formation thresholds."
+      },
+      "turbine_rotor": {
+        "name": "Single-Crystal Nickel Superalloy High-Pressure Turbine",
+        "desc": "Rotor blades with ceramic thermal barrier coatings engineered to survive 1,600?C firing temperatures."
+      },
+      "hrsg_boiler": {
+        "name": "Triple-Pressure Heat Recovery Steam Generator (HRSG)",
+        "desc": "Captures 600?C turbine exhaust gas to generate high-pressure superheated steam without burning additional fuel."
+      },
+      "steam_turbine": {
+        "name": "Secondary High/Intermediate Pressure Steam Turbine",
+        "desc": "Drives a secondary generator, boosting combined thermal cycle thermodynamic efficiency past 64%."
+      },
+      "island_switchgear": {
+        "name": "Behind-the-Meter Islanding Synchronizer Switchgear",
+        "desc": "Instantly decouples datacenter busbars from the public grid during RTO emergency curtailment events."
+      }
+    },
+    "controls": [
+      {
+        "id": "firing_temp",
+        "label": "Combustion Firing Temp",
+        "min": 1200,
+        "max": 1650,
+        "step": 25,
+        "default": 1550,
+        "unit": "?C"
+      },
+      {
+        "id": "fuel_mass_flow",
+        "label": "Natural Gas Mass Flow",
+        "min": 15,
+        "max": 65,
+        "step": 1,
+        "default": 42,
+        "unit": "kg/s"
+      },
+      {
+        "id": "ambient_air_temp",
+        "label": "Ambient Compressor Inlet",
+        "min": -10,
+        "max": 45,
+        "step": 1,
+        "default": 25,
+        "unit": "?C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "electric_output",
+        "label": "Gross CCGT Output",
+        "unit": "MW"
+      },
+      {
+        "id": "thermal_efficiency",
+        "label": "Combined Cycle Efficiency",
+        "unit": "%"
+      },
+      {
+        "id": "hrsg_steam_rate",
+        "label": "Superheated Steam Mass Flow",
+        "unit": "t/h"
+      },
+      {
+        "id": "island_readiness",
+        "label": "Island Synchronization Margin",
+        "unit": "ms"
+      }
+    ]
+  }
+}
