@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 11,
+    "date": "2026-09-11",
+    "headline": "The Revocable Megawatt: PJM & ERCOT Convert AI Datacenter Interconnections from Entitlements into Conditional Cut-Line Services",
+    "file_path": "data/issues/2026-09-11.json"
+  },
+  {
     "issue_number": 10,
     "date": "2026-09-10",
     "headline": "The 4,000MW Sudden-Trip Shock: FERC & NERC Mandate Fast-Ride-Through Inverters as AI Datacenter Frequency Swings Threaten Eastern Grid Stability",
