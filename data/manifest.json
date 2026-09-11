@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 12,
+    "date": "2026-09-12",
+    "headline": "The 1GW Sacrificial Compute Precedent: Texas PUCT Finalizes SB6 as OpenAI Concedes 1,000MW Instant Curtailment to Secure 3.2GW Georgia Intertie",
+    "file_path": "data/issues/2026-09-12.json"
+  },
+  {
     "issue_number": 11,
     "date": "2026-09-11",
     "headline": "The Revocable Megawatt: PJM & ERCOT Convert AI Datacenter Interconnections from Entitlements into Conditional Cut-Line Services",
