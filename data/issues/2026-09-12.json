@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "issue_number": 12,
+    "date": "2026-09-12",
+    "reading_streak": 12
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The 1GW Sacrificial Compute Precedent: Texas PUCT finalizes SB6 rapid-curtailment rulemaking while OpenAI concedes up to 1,000 MW of mandatory demand response in its 3.2GW Georgia Power pact.",
+    "The 30-Minute Checkpoint Pivot: Hyperscalers abandon the myth of non-interruptible training, engineering asynchronous checkpoint protocols to shed gigawatts without corrupting gradient states.",
+    "Taiwan CPO Packaging Offensive: TSMC and ASE Group formalize panel-level Co-Packaged Optics (CPO) consortium to replace resistive copper cables across 100,000-GPU AI superclusters.",
+    "electronica India Convenes in Bengaluru: 750 global exhibitors gather at BIEC as India Semiconductor Mission advances fab tooling and indigenous PCB manufacturing scale.",
+    "DOE 202(c) Emergency Mobilization: Federal Energy Department invokes emergency powers authorizing grid operators to commandeer datacenter diesel and turbine reserves during heatwaves."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 12 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The 1GW Sacrificial Compute Precedent: Texas PUCT Finalizes SB6 as OpenAI Concedes 1,000MW Instant Curtailment to Secure 3.2GW Georgia Intertie",
+    "image_url": "assets/datacenter-curtailment.jpg",
+    "image_caption": "Substation switchyard and medium-voltage feeder lines connecting a hyperscale AI compute campus subject to mandatory 30-minute demand response shedding.",
+    "image_alt": "Aerial view of hyperscale datacenter substation and high-voltage feeder corridors",
+    "catch_up": "In a watershed regulatory compromise that permanently dismantles the commercial myth of uninterruptible AI model training, the Public Utility Commission of Texas (PUCT) finalized its landmark Senate Bill 6 (SB6) large-load rulemaking, legally codifying mandatory 30-minute curtailment windows for all data centers exceeding 75 MW. Simultaneously, regulatory disclosures from Georgia revealed that OpenAI committed up to 1,000 MW of instantaneous demand response?nearly a third of its proposed 3.2 GW 'Project Camellia' campus?to secure approval from state utility commissioners.",
+    "mechanism": "Under SB6 and Georgia Power's 25-year large-load tariff filings, datacenters must demonstrate dual-mode operational flexibility. When regional reserve margins fall below statutory thresholds (or during grid emergencies), the facility receives an automated SCADA curtailment signal. Rather than relying solely on diesel generators, the datacenter executes an algorithmic workload dump: pausing active distributed training runs, flushing GPU tensor states to NVMe storage within 12 minutes, and throttling server power draws by 80% within 30 minutes, shedding a full gigawatt without causing destructive busbar inductive voltage spikes (L di/dt).",
+    "analogy": "For three years, AI executives told utility commissions that asking a datacenter to curtail power was like slamming the brakes on a supersonic jet?guaranteed catastrophic failure. The moment regulators threatened to freeze interconnect queues, hyperscalers suddenly invented a parachute, proving that one-third of their compute was completely disposable all along.",
+    "pr_claim": "Our groundbreaking demand-flexibility partnerships demonstrate how frontier artificial intelligence actively supports clean energy grid resilience during extreme weather events.",
+    "pr_reality": "Hyperscalers realized that state utility commissions and angry residential voters were preparing to ban new datacenter connections outright; offering up 1,000 MW of sacrificial compute was the only legal surrender that allowed their 3.2 GW projects to survive.",
+    "bull_take": "Validates algorithmic demand response as a multi-gigawatt synthetic peaking asset, allowing hyperscalers to secure grid interties years faster than peers demanding 100% firm power.",
+    "bear_take": "Frequent summer curtailment orders will stretch frontier model training runs from 90 days to 140 days, drastically degrading AI research velocity and inflating capital depreciation costs.",
+    "cascades": "PJM, CAISO, and MISO immediately copy Texas's 30-minute curtailment framework; enterprise cloud providers insert mandatory 'Interruptible Compute Tiers' into AI customer contracts.",
+    "why_it_matters": "AI training clusters have officially been reclassified from sacrosanct industrial manufacturing facilities into interruptible grid shock absorbers, resetting the economics of frontier model scaling.",
+    "cocktail_flex": "Silicon Valley claimed frontier neural networks were the most critical infrastructure in human history, until a Texas heatwave forced them to admit that keeping Houston's air conditioning running was vastly more important.",
+    "web_investigation": {
+      "overview": "Public Utility Commission of Texas (PUCT) Project 55000 / SB6 rulemaking records, Georgia Public Service Commission Docket 45389 (Project Camellia 3.2GW filing), and DOE wholesale emergency orders.",
+      "sources": [
+        {
+          "title": "Public Utility Commission of Texas: Rulemaking Proceeding for Implementation of Senate Bill 6 Large Load Interconnection",
+          "publisher": "PUCT Interchange",
+          "url": "https://www.google.com/url?q=https://www.puc.texas.gov/&source=gmail&ust=1789255073577000&sa=E",
+          "type": "State Regulatory Order",
+          "snippet": "Codifies mandatory 1-hour, 2-hour, and 30-minute rapid-curtailment operational criteria for loads exceeding 75MW."
+        },
+        {
+          "title": "Georgia Public Service Commission Docket 45389: Georgia Power Integrated Resource Plan Amendment (Project Camellia)",
+          "publisher": "Georgia PSC Filings",
+          "url": "https://www.google.com/url?q=https://psc.ga.gov/&source=gmail&ust=1789255073577000&sa=E",
+          "type": "Utility Regulatory Docket",
+          "snippet": "Discloses OpenAI 3.2GW 25-year electric service agreement featuring up to 1,000MW of interruptible demand-response capacity."
+        },
+        {
+          "title": "Data Center Power Playbook: The Transition from Firm Power Rights to Mandatory Curtailability",
+          "publisher": "DataCenterPower.ai",
+          "url": "https://www.google.com/url?q=https://www.datacenterpower.ai/&source=gmail&ust=1789255073577000&sa=E",
+          "type": "Infrastructure Analysis",
+          "snippet": "Evaluates the legal and thermodynamic implications of 1GW rapid-load shedding across ERCOT and the Southeast."
+        }
+      ],
+      "search_queries": [
+        "Texas PUCT SB6 large load curtailment rulemaking September 2026",
+        "OpenAI Georgia Power Project Camellia 1GW demand response",
+        "ERCOT curtailable co-located data center 30 minute ramp"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "TSMC & ASE Group Form Panel-Level CPO Consortium as Cluster Scaling Hits the Copper Wall",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1518770660439-4636190af475?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789255073577000&sa=E",
+    "image_caption": "Advanced panel-level silicon photonics substrate with embedded optical engines and high-density fiber arrays.",
+    "image_alt": "Microscopic view of advanced silicon photonics chiplet and optical fiber interposer",
+    "company": "TSMC / ASE Technology Holding",
+    "ticker": "NYSE: TSM / NYSE: ASX",
+    "market_cap": "$920.4B (TSM) / $32.8B (ASX)",
+    "summary": "As gigawatt-scale AI clusters consume unsustainable megawatts simply pushing electrical signals across copper DAC cables, TSMC and ASE Technology Holding have formalized a Taiwanese packaging coalition to commercialize Panel-Level Co-Packaged Optics (CPO). By directly integrating silicon photonics optical engines onto organic interposers adjacent to compute chiplets, the consortium reduces interconnect power dissipation by 70% while scaling rack-to-rack optical bandwidth to 3.2 Tbps per optical engine.",
+    "mechanism": "Replacing passive copper twinax cables with laser-driven optical waveguides fabricated in silicon, coupling photons directly from the ASIC substrate into single-mode ribbon fibers via high-precision automated die bonding.",
+    "metrics": {
+      "capex": "$5.8B Advanced Packaging Fab Allocation (CoWoS-L & CPO Substrates)",
+      "moat": "0.1-Micron Sub-Micron Optical Alignment Precision & Proprietary Laser Couplers",
+      "regulatory": "US-Taiwan Bilateral Technology Export Controls & Subsidies",
+      "velocity": "9.9 / 10"
+    },
+    "takeaway": "In 100,000-GPU clusters, electrical copper cabling has reached physical thermodynamic limits; the next trillion dollars of AI infrastructure will be wired in glass.",
+    "web_investigation": {
+      "overview": "Taiwan Semiconductor Industry Association (TSIA) advanced packaging roadmap, TSMC 3DIC symposium disclosures, and ficonTEC silicon photonics manufacturing data.",
+      "sources": [
+        {
+          "title": "Taiwan Targets CPO Leadership: Panel-Level Packaging & Silicon Photonics Integration",
+          "publisher": "Advanced Packaging News",
+          "url": "https://www.google.com/url?q=https://advancedpackaging.news/article/125310/Taiwan_targets_CPO_leadership&source=gmail&ust=1789255073577000&sa=E",
+          "type": "Semiconductor Packaging Analysis",
+          "snippet": "Details the Taiwanese foundry and OSAT initiative to integrate silicon photonics optical engines onto panel-based organic substrates."
+        },
+        {
+          "title": "TSMC Open Innovation Platform (OIP) 3DFabric Alliance: Co-Packaged Optics Roadmap",
+          "publisher": "TSMC Investor & Technology Portal",
+          "url": "https://www.google.com/url?q=https://www.tsmc.com/&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Technical Roadmap Disclosure",
+          "snippet": "Outlines CoWoS integration of compact optical engines delivering sub-5pJ/bit interconnect energy efficiency."
+        }
+      ],
+      "search_queries": [
+        "TSMC ASE Group panel-level CPO silicon photonics 2026",
+        "Co-Packaged Optics optical engine 3.2 Tbps power reduction"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "electronica India 2026 Opens in Bengaluru with 750 Global Hardware Exhibitors",
+      "facts": "On September 11?12, electronica India and productronica India 2026 convened at the Bengaluru International Exhibition Centre (BIEC), hosting 750 exhibitors from 30 countries to showcase indigenous semiconductor packaging, surface-mount technology, and PCB fabrication.",
+      "reality_audit": "India's assembly footprint is expanding at record speed, but local manufacturers still import over 90% of specialized semiconductor lithography and automated inspection capital equipment from Japan and Europe.",
+      "why_it_matters": "Positions Bengaluru as the pivotal bridge between global electronics supply chains and India's emerging commercial wafer fabrication ecosystem.",
+      "sni": "9.0 / 10",
+      "web_sources": [
+        {
+          "title": "electronica India and productronica India 2026 Return to Bengaluru at Scale",
+          "publisher": "Big News Network / ANI",
+          "url": "https://www.google.com/url?q=https://www.bignewsnetwork.com/news/279301193/policy-push-meets-production-scale-as-electronica-india-and-productronica-india-2026-return-to-bengaluru-with-750-exhibitors-from-30-countries&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Industry Trade Exhibition Report"
+        }
+      ],
+      "search_query": "electronica India productronica Bengaluru September 11 2026"
+    },
+    {
+      "id": 2,
+      "headline": "DOE Invokes Section 202(c) Emergency Powers to Commandeer Data Center Backup Power",
+      "facts": "The US Department of Energy issued emergency orders under Section 202(c) of the Federal Power Act, granting PJM and ERCOT executive authority to run all available generating units at maximum capacity and mandate that data center on-site backup generators feed the public grid during critical reserve deficits.",
+      "reality_audit": "Forcing hyperscale datacenters to run emergency diesel generators to prop up public air conditioning during heatwaves shreds their corporate ESG net-zero marketing claims.",
+      "why_it_matters": "Establishes a binding federal precedent that private datacenter backup infrastructure can be drafted into service as emergency public utility reserves.",
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "US Department of Energy: Emergency Orders Pursuant to Section 202(c) of the Federal Power Act",
+          "publisher": "DOE Office of Cybersecurity, Energy Security, and Emergency Response (CESER)",
+          "url": "https://www.google.com/url?q=https://www.energy.gov/ceser/2026-doe-202c-orders&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Federal Executive Order"
+        }
+      ],
+      "search_query": "DOE 202c emergency orders PJM ERCOT data center backup 2026"
+    },
+    {
+      "id": 3,
+      "headline": "India Semiconductor Mission Formalizes Commercial Fab Support Agreements",
+      "facts": "The India Semiconductor Mission (ISM) finalized formal Fab Support Agreements (FSA) with Tata Electronics for its Dholera commercial wafer fab and Jagiroad advanced packaging facility, unlocking government capex subsidies and infrastructure support.",
+      "reality_audit": "Securing government subsidies is the easy part; training 10,000 cleanroom technicians and mastering ultra-pure chemical supply chains within two years is the real hurdle.",
+      "why_it_matters": "Solidifies India's domestic semiconductor production timeline, establishing sovereign manufacturing capacity for automotive and industrial power silicon.",
+      "sni": "9.2 / 10",
+      "web_sources": [
+        {
+          "title": "India Semiconductor Mission: Official Notification of Fab Support Agreements",
+          "publisher": "Ministry of Electronics and Information Technology (MeitY)",
+          "url": "https://www.google.com/url?q=https://www.ism.gov.in/&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Government Policy Communique"
+        }
+      ],
+      "search_query": "India Semiconductor Mission Tata Electronics FSA agreement 2026"
+    },
+    {
+      "id": 4,
+      "headline": "Taiwan Semiconductor Ecosystem Mandates Sub-Micron Alignment for Optical Engines",
+      "facts": "At advanced packaging symposiums in Hsinchu, automated equipment makers demonstrated 0.1-micron machine-vision alignment systems capable of mass-attaching fiber optic ribbon arrays to silicon photonics chiplets at commercial fab yields.",
+      "reality_audit": "Sub-micron optical alignment works brilliantly in controlled lab environments, but thermal expansion cycles in 1,000-watt server chassis quickly shake fiber arrays out of optical alignment.",
+      "why_it_matters": "Solves the mechanical packaging bottleneck that prevented Co-Packaged Optics from replacing copper interconnects in production AI racks.",
+      "sni": "9.3 / 10",
+      "web_sources": [
+        {
+          "title": "Silicon Photonics Driving AI Supply Chains: ficonTEC Expert Seminar Hsinchu",
+          "publisher": "Digitimes Technology News",
+          "url": "https://www.google.com/url?q=https://www.digitimes.com/news/a20260901PR202/photonics-infrastructure-demand.html&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Semiconductor Equipment Analysis"
+        }
+      ],
+      "search_query": "ficonTEC silicon photonics optical engine packaging Hsinchu 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Physics of Distributed State Checkpointing: How a 1GW AI Cluster Sheds Load in Under 1,800 Seconds Without Gradient Collapse",
+    "image_url": "assets/gpu-checkpointing.jpg",
+    "image_caption": "Figure 3.4: Distributed pipeline checkpointing topology, NVLink tensor state synchronization, and controlled ramp-down power curve.",
+    "image_alt": "Block diagram of distributed GPU cluster memory hierarchy and SSD checkpoint bus",
+    "thesis": "Executing an emergency 1,000 MW power curtailment across a distributed 100,000-GPU cluster is fundamentally a power-electronics and memory-synchronization problem. Abruptly disconnecting power causes destructive inductive flyback voltage spikes (V = L di/dt) that blow substation switchgear, while improperly halting distributed pipeline parallelism corrupts gradient weights across trillions of parameters. Resolving this requires orchestrating asynchronous checkpointing across thousands of nodes within an exact 30-minute thermodynamic envelope.",
+    "physics_breakdown": "In a frontier LLM training run operating across 100,000 GPUs, total cluster electrical draw is 1 GW (10,000 Amps at 100 kV distribution busbars). An instantaneous disconnect would induce an inductive transient: V = L (di/dt). With a substation feeder inductance L ? 15 mH, an unramped 5-millisecond breaker trip would generate an apocalyptic voltage spike of V = 0.015 ? (10,000 / 0.005) = 30,000 Volts above nominal, vaporizing circuit breakers. Therefore, curtailment must follow a deterministic ramp-down curve. Over the first 12 minutes (T_0 to T_720s), the cluster orchestrator initiates an asynchronous distributed checkpoint: flushing optimizer states (FP32 master weights, Adam momentum vectors) from HBM3e memory across PCIe Gen6 buses into local multi-terabit NVMe storage fabrics. From T_720s to T_1800s, GPU clock frequencies are throttled in coordinated 50 MHz steps from 1,800 MHz down to 300 MHz via dynamic voltage and frequency scaling (DVFS), smoothly tapering current draw from 10,000A to 2,000A (di/dt = 7.4 A/s), preserving both substation hardware and mathematical gradient integrity.",
+    "matrix": {
+      "mechanism": "Coordinated DVFS frequency down-stepping synchronized with NVMe distributed tensor checkpointing shedding 800MW in 18 minutes.",
+      "audit": "Hyperscalers pretend their clusters are impervious to real-world infrastructure; in reality, complex distributed software routines are engineered strictly to prevent the power company from blowing up their servers.",
+      "cascades": "GPU firmware engineers mandate automated 'Emergency Grid Shedding' APIs directly in NVIDIA CUDA and PyTorch runtime compilers; cloud SLAs bifurcate into 'Uncurtailable Sovereign Compute' ($4.50/GPU-hr) vs 'Sacrificial Compute' ($1.80/GPU-hr).",
+      "sni": "9.9 / 10 (MATHEMATICAL TENSOR SYNCHRONIZATION & SUBSTATION TRANSIENTS)"
+    },
+    "takeaway": "Frontier AI algorithms are no longer insulated in pristine mathematical abstractions; they are directly bound to the thermal decay rate of copper windings and the inductive limits of electric substations.",
+    "web_investigation": {
+      "overview": "Technical analysis of distributed training checkpoint latency, IEEE PES substation transient recovery voltage (TRV) standards, and NVIDIA NVLink/NVSwitch power telemetry.",
+      "sources": [
+        {
+          "title": "IEEE Transactions on Power Delivery: Transient Overvoltages Resulting from Rapid Disconnection of High-Density Inverter Loads",
+          "publisher": "IEEE Power & Energy Society",
+          "url": "https://www.google.com/url?q=https://ieeexplore.ieee.org/&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Peer-Reviewed Power Engineering Paper",
+          "snippet": "Models inductive switching transients and LC resonance during gigawatt-scale industrial load rejection events."
+        },
+        {
+          "title": "Scalable Distributed Checkpointing for Trillion-Parameter Language Models Under Elastic Grid Constraints",
+          "publisher": "ACM / IEEE International Symposium on Computer Architecture (ISCA)",
+          "url": "https://www.google.com/url?q=https://dl.acm.org/&source=gmail&ust=1789255073578000&sa=E",
+          "type": "Computer Systems Research",
+          "snippet": "Evaluates asynchronous multi-tier checkpointing pipelines to NVMe-oF storage to sustain 30-minute rapid power shedding."
+        }
+      ],
+      "search_queries": [
+        "distributed GPU cluster 1GW checkpointing latency NVLink",
+        "substation transient recovery voltage L di dt load shedding",
+        "dynamic voltage frequency scaling DVFS datacenter curtailment"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will at least three major cloud hyperscalers (AWS, Azure, Google Cloud) introduce commercially distinct 'Interruptible / Sacrificial Compute' GPU instances discounted by >50% before December 31, 2027?",
+    "consensus_yes_pct": 82,
+    "consensus_no_pct": 18
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "What historic concession did OpenAI agree to in its 3.2 GW Project Camellia contract with Georgia Power?",
+      "options": [
+        "A) To use only solar power generated within 5 miles",
+        "B) To provide up to 1,000 MW of instantaneous, interruptible demand response during peak grid stress",
+        "C) To provide free ChatGPT access to all Georgia state employees"
+      ],
+      "correct_index": 1,
+      "explanation": "OpenAI agreed to make up to 1,000 MW?nearly a third of its entire 3.2 GW campus load?interruptible and curtailable on demand to alleviate grid strain and secure regulatory approval."
+    },
+    {
+      "id": 2,
+      "question": "Why can't a 1,000 MW datacenter instantly disconnect its power breakers within 5 milliseconds during a grid emergency?",
+      "options": [
+        "A) Because server fans take an hour to stop spinning",
+        "B) Because an instantaneous cut in high-current draw induces a massive inductive flyback voltage spike (V = L di/dt) that vaporizes substation switchgear",
+        "C) Because the Internet cable would overheat"
+      ],
+      "correct_index": 1,
+      "explanation": "High-voltage distribution lines carry significant inductance (L). Abruptly cutting 10,000 Amps in milliseconds induces a destructive inductive overvoltage surge (V = L di/dt) reaching tens of thousands of volts, destroying circuit breakers and transformers."
+    },
+    {
+      "id": 3,
+      "question": "What is the primary advantage of Co-Packaged Optics (CPO) over traditional copper DAC cables in AI clusters?",
+      "options": [
+        "A) It makes chips glow in different colors",
+        "B) It integrates optical silicon chiplets directly onto the packaging substrate, cutting interconnect power dissipation by up to 70% and removing copper resistive bottlenecks",
+        "C) It allows computers to run underwater"
+      ],
+      "correct_index": 1,
+      "explanation": "Co-Packaged Optics replaces lossy copper cables with high-speed silicon photonics directly adjacent to the ASIC, reducing interconnect power by 70% and enabling multi-terabit bandwidth between server racks."
+    },
+    {
+      "id": 4,
+      "question": "What major hardware trade event opened on September 11, 2026, at the Bengaluru International Exhibition Centre (BIEC)?",
+      "options": [
+        "A) electronica India and productronica India 2026, featuring 750 global electronics manufacturing exhibitors",
+        "B) Annual Consumer Smartphone Sale Expo",
+        "C) Global Video Game Championship"
+      ],
+      "correct_index": 0,
+      "explanation": "electronica India and productronica India 2026 opened at BIEC in Bengaluru with 750 exhibitors from 30 countries to advance indigenous electronics assembly, PCB fabrication, and semiconductor tooling."
+    },
+    {
+      "id": 5,
+      "question": "How do homing pigeons navigate across hundreds of miles of unfamiliar territory to return home?",
+      "options": [
+        "A) They follow highway road signs",
+        "B) They utilize microscopic cryptochrome proteins in their eyes and magnetite particles in their beaks to sense the Earth's geomagnetic field, combined with an olfactory map",
+        "C) They rely entirely on prevailing wind directions"
+      ],
+      "correct_index": 1,
+      "explanation": "Homing pigeons possess biological magnetoreception via cryptochrome proteins in their retinas and iron-rich magnetite clusters in their beaks, allowing them to visualize Earth's magnetic field lines alongside memorized scent gradients."
+    }
+  ],
+  "easter_egg": "Homing pigeons possess built-in quantum compasses: light-sensitive cryptochrome proteins in their retinas undergo quantum entanglement when struck by photons, allowing them to literally 'see' Earth's magnetic field lines overlaid across their field of vision.",
+  "interactive_model": {
+    "archetype": "silicon_photonics_cpo",
+    "title": "Co-Packaged Optics (CPO) Substrate & 3.2 Tbps Optical Engine",
+    "subtitle": "Interactive 3D Multi-Chiplet Substrate, Silicon Photonics Optical Engine, Micro-Ring Modulators & Optical Fiber Ribbon Array",
+    "badge": "SEMICONDUCTOR INTERCONNECT // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 270,
+      "pitch": 0.42,
+      "yaw": 0.7
+    },
+    "contextual_labels": {
+      "compute_asic": {
+        "name": "Frontier AI Compute ASIC / GPU Die",
+        "desc": "Host processor generating multi-terabit tensor parallelism traffic across die-to-die interfaces."
+      },
+      "optical_engine": {
+        "name": "Co-Packaged Silicon Photonics Optical Engine (OE)",
+        "desc": "Converts electrical PAM4 signals into multi-channel optical wavelengths directly on the packaging substrate."
+      },
+      "microring_modulator": {
+        "name": "Silicon Micro-Ring Modulator Array",
+        "desc": "Thermally tuned silicon optical resonators modulating continuous-wave laser light with sub-picojoule energy efficiency."
+      },
+      "fiber_ribbon": {
+        "name": "High-Density Single-Mode Ribbon Fiber Intertie",
+        "desc": "Low-loss optical waveguides routing photons from substrate edge directly to optical patch panels."
+      },
+      "elsfp_laser": {
+        "name": "External Laser Source (ELSFP) Socket",
+        "desc": "Pluggable continuous-wave DFB laser module isolated from ASIC heat dissipation to ensure 100,000-hour MTBF."
+      },
+      "organic_interposer": {
+        "name": "Ultra-High-Density Organic Packaging Interposer",
+        "desc": "Sub-micron redistribution layer (RDL) providing high-density electrical interconnects between compute and optical silicon."
+      }
+    },
+    "controls": [
+      {
+        "id": "optical_bandwidth",
+        "label": "Optical Bus Bandwidth",
+        "min": 800,
+        "max": 6400,
+        "step": 400,
+        "default": 3200,
+        "unit": "Gbps"
+      },
+      {
+        "id": "laser_power",
+        "label": "Continuous Laser Power",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 45,
+        "unit": "mW"
+      },
+      {
+        "id": "junction_temp",
+        "label": "Substrate Junction Temp",
+        "min": 40,
+        "max": 105,
+        "step": 1,
+        "default": 68,
+        "unit": "?C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "energy_per_bit",
+        "label": "Interconnect Energy Consumption",
+        "unit": "pJ/bit"
+      },
+      {
+        "id": "insertion_loss",
+        "label": "Optical Insertion Loss",
+        "unit": "dB"
+      },
+      {
+        "id": "copper_power_saved",
+        "label": "Power Saved vs Copper Twinax",
+        "unit": "kW/rack"
+      },
+      {
+        "id": "thermal_margin",
+        "label": "Micro-Ring Tuning Headroom",
+        "unit": "?C"
+      }
+    ]
+  }
+}
