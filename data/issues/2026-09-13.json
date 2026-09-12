@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 13,
+    "date": "2026-09-13",
+    "reading_streak": 13
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The 1,000MW Deep-Earth Baseload Bet: Google and Fervo Energy exploit Utah SB 132 to bypass regulated utilities, planning the first direct-to-wellhead geothermal AI datacenter corridor.",
+    "Bypassing the Electric Grid: Utah SB 132 allows customers drawing >=100 MW to contract directly with private generation, creating a regulatory blueprint to sidestep 5-year transmission delays.",
+    "The Base Die Revolution: SK Hynix ships 12-layer HBM4E samples running at 16 Gbps, collaborating with TSMC on 5nm custom logic base dies to double memory bus width to 2,048 pins.",
+    "Amazon Fights Back on Ad Algorithms: Retail giant moves to dismiss the FTC's $20B lawsuit, asserting proprietary auction algorithms are protected trade secrets shielded from federal audit.",
+    "electronica India Caps $1.4B in Component Deals: Bengaluru hardware summit closes at BIEC as Indian contract manufacturers accelerate domestic multi-layer PCB and SMT assembly lines."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 13 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The 1,000MW Deep-Earth Baseload Bet: Google & Fervo Exploit Utah SB 132 to Build the First Direct-to-Wellhead Geothermal AI Corridor",
+    "image_url": "assets/fervo-geothermal.jpg",
+    "image_caption": "Horizontal drilling rig and binary-cycle geothermal turbine installation tapping 400?F granite reservoirs at Fervo's Cape Station.",
+    "image_alt": "Geothermal drilling rig and high-temperature steam turbine infrastructure",
+    "catch_up": "Seeking to bypass saturated interstate electric transmission queues and regional utility ratepayer revolts, Google expanded its commercial partnership with Fervo Energy to 1,054 MW of enhanced geothermal power. Capitalizing on Utah's newly enacted Senate Bill 132 (SB 132)?which allows industrial consumers drawing 100 MW or more to bypass regulated utility monopolies and contract directly with independent clean power producers?Google is preparing to co-locate a multi-gigawatt AI compute campus directly adjacent to Fervo's Cape Station wellhead field in Beaver County, Utah.",
+    "mechanism": "Unlike conventional hydrothermal power (which requires rare natural subterranean hot water aquifers), Enhanced Geothermal Systems (EGS) adapt horizontal oil-and-gas directional drilling and multistage hydraulic stimulation to crack impermeable, hot crystalline granite 8,000 to 12,000 feet deep. By drilling paired horizontal wellbores connected by engineered micro-fracture networks, cold water is injected under pressure, circulates through 400?F granite, and returns to the surface through production wells to drive closed-loop Organic Rankine Cycle (ORC) binary turbines, delivering 24/7/365 zero-carbon baseload electricity with 95%+ capacity factors.",
+    "analogy": "Imagine trying to boil an industrial kettle on a municipal stove during a city-wide blackout versus drilling a pipe directly into an underground magma-heated bedrock furnace beneath your private basement. Instead of waiting half a decade for electric utilities to string 500kV overhead wires across three states, hyperscalers are parking their supercomputing clusters directly on top of the Earth's thermal core.",
+    "pr_claim": "Our 24/7 carbon-free energy partnership pioneers next-generation enhanced geothermal technology to accelerate the commercialization of clean, abundant baseload power for American infrastructure.",
+    "pr_reality": "Hyperscalers bought up every gigawatt of existing merchant nuclear power in the eastern US and realized state utility commissions will reject any more massive grid connections; drilling two miles into Utah's desert granite is an act of sheer survival to keep their multi-billion-dollar compute roadmaps from hitting a hard brick wall.",
+    "bull_take": "Validates commercial EGS as a scalable, manufactured power asset, pushing capital expenditure down from $5,500/kW toward $3,000/kW and opening up gigawatts of firm, non-intermittent clean power across the western United States.",
+    "bear_take": "Abrasive, ultra-hard granite destroys polycrystalline diamond compact (PDC) drill bits at punishing rates; sub-surface thermal degradation and induced micro-seismic event risks could curtail wellhead production years before Google's 2028 commercial delivery window.",
+    "cascades": "Nevada, Idaho, and Wyoming draft copycat direct-access legislation to poach hyperscale datacenter capital from California and Texas; geothermal drilling rig day-rates surge 80% across the Mountain West.",
+    "why_it_matters": "Enhanced Geothermal transitions clean baseload power from an unpredictable geographic exploration gamble into a repeatable civil engineering manufacturing process, legally and physically decoupling AI scaling from the legacy power grid.",
+    "cocktail_flex": "Silicon Valley spent fifteen years bragging about migrating compute to 'the cloud'; now Google is drilling two miles into subterranean granite just to keep the GPU fans spinning.",
+    "web_investigation": {
+      "overview": "Utah Legislature Senate Bill 132 statutory framework, Fervo Energy Cape Station technical well logs (Sawtooth 7 disclosures), and US Department of Energy Geothermal Technologies Office reports.",
+      "sources": [
+        {
+          "title": "Utah Legislature Senate Bill 132: Large Customer Generation and Transmission Services Amendments",
+          "publisher": "Utah State Legislature",
+          "url": "https://www.google.com/url?q=https://le.utah.gov/&source=gmail&ust=1789341927285000&sa=E",
+          "type": "State Statutory Legislation",
+          "snippet": "Authorizes customers with loads exceeding 100MW to contract directly with independent clean energy generation facilities."
+        },
+        {
+          "title": "Fervo Energy Cape Station Development Log: 396 MW Google PPA and 600 MW Expansion Option",
+          "publisher": "Green Stocks Research / Fervo Disclosures",
+          "url": "https://www.google.com/url?q=https://greenstocksresearch.com/fervo-google-396-mw-geothermal-ppa/&source=gmail&ust=1789341927285000&sa=E",
+          "type": "Energy Project Analysis",
+          "snippet": "Details commercial terms, Q4 2026 Phase I commissioning, and direct-to-load offtake framework under Utah SB 132."
+        },
+        {
+          "title": "US Department of Energy: Enhanced Geothermal Shot - Analysis of Deep Crystalline Granite Reservoirs",
+          "publisher": "DOE Geothermal Technologies Office",
+          "url": "https://www.google.com/url?q=https://www.energy.gov/eere/geothermal/enhanced-geothermal-shot&source=gmail&ust=1789341927285000&sa=E",
+          "type": "Federal Technical Report",
+          "snippet": "Evaluates the levelized cost of energy (LCOE) trajectory and horizontal multistage fracturing mechanics in granitic basement rock."
+        }
+      ],
+      "search_queries": [
+        "Google Fervo Energy 396 MW geothermal PPA Utah SB 132",
+        "Fervo Cape Station horizontal drilling Sawtooth 7",
+        "enhanced geothermal systems LCOE Capex per kW 2026"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "SK Hynix & TSMC Move the AI Memory Battle to the Base Die as HBM4E Samples Hit 16 Gbps",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789341927285000&sa=E",
+    "image_caption": "Cross-sectional microscopic view of 12-layer 3D stacked DRAM dies connected via through-silicon vias (TSVs) to a custom foundry base die.",
+    "image_alt": "Advanced 3D semiconductor memory packaging and TSV interconnects",
+    "company": "SK Hynix / TSMC",
+    "ticker": "KRX: 000660 / NYSE: TSM",
+    "market_cap": "?135.2T (SK Hynix) / $925.6B (TSM)",
+    "summary": "In the escalating technical campaign to smash the AI 'memory wall,' SK Hynix has shifted the competitive battleground from DRAM stack height to the foundational logic base die at the bottom of the package. Collaborating with TSMC on advanced 5nm logic base dies and sampling 12-layer HBM4E modules operating at a record 16 Gbps per pin, SK Hynix has extended its technology lead over Samsung and Micron, commanding 55%+ operating margins in frontier AI memory.",
+    "mechanism": "Replacing traditional memory-process base dies with custom 5nm/3nm foundry logic dies, doubling the I/O bus interface to 2,048 pins and integrating near-memory compute circuitry directly beneath 12-layer DRAM stacks via 5-micrometer microbump bonding.",
+    "metrics": {
+      "capex": "?18.5T Advanced Packaging & Cheongju M15X Cleanroom Expansion (2025?2027)",
+      "moat": "Advanced MR-MUF (Mass Reflow Molded Underfill) & Exclusive TSMC Base-Die Integration",
+      "regulatory": "US CHIPS Act Subsidies & South Korea K-Chips Tax Credit Framework",
+      "velocity": "9.9 / 10"
+    },
+    "takeaway": "As GPUs become bounded by memory bandwidth rather than raw compute FLOPS, the ultimate monopoly in high-performance computing is not the accelerator silicon?it is the precision packaging architecture linking the GPU to 2,048-pin HBM4E memory stacks.",
+    "web_investigation": {
+      "overview": "SK Hynix Q2 2026 investor presentation, JEDEC Solid State Technology Association HBM4 specifications, and TSMC 3DFabric alliance disclosures.",
+      "sources": [
+        {
+          "title": "SK Hynix Mass Production Readiness: HBM4 and 12-Layer HBM4E Technical Specifications",
+          "publisher": "SimianX AI Semiconductor Research",
+          "url": "https://www.google.com/url?q=https://www.simianx.ai/stories/sk-hynix-stock-surges-8-is-the-ai-supercycle-starting&source=gmail&ust=1789341927285000&sa=E",
+          "type": "Equity Research Report",
+          "snippet": "Confirms 16 Gbps per pin operating speed, 48GB capacity, and 2,048-bit bus width for sampled 12-layer HBM4E modules."
+        },
+        {
+          "title": "Digitimes Special Report: The Base Die Revolution in High-Bandwidth Memory",
+          "publisher": "Digitimes Asia",
+          "url": "https://www.google.com/url?q=https://www.digitimes.com/tag/sk_hynix/0017883.html&source=gmail&ust=1789341927285000&sa=E",
+          "type": "Semiconductor Industry Analysis",
+          "snippet": "Analyzes TSMC 5-micrometer microbump bonding and SK Hynix dual-sourcing evaluations for advanced HBM base dies."
+        }
+      ],
+      "search_queries": [
+        "SK Hynix HBM4E 16 Gbps 12 layer TSMC base die 2026",
+        "HBM4 2048 pin bus width microbump bonding 5 micrometer"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "Utah Enacts SB 132 Establishing Direct Private Power Offtake for 100MW+ AI Campuses",
+      "facts": "Utah's SB 132 went into effect, creating a deregulated fast-track corridor allowing industrial developers drawing over 100 MW to bypass PacifiCorp/Rocky Mountain Power and contract directly with merchant energy providers.",
+      "reality_audit": "Bypassing the regulated utility avoids years of rate hearings, but constructing private 345kV transmission interties across Utah's rugged federal BLM land still triggers 4-year National Environmental Policy Act (NEPA) reviews.",
+      "why_it_matters": "Establishes a direct-offtake template that western states are adopting to compete for billions in datacenter capital investment.",
+      "sni": "9.3 / 10",
+      "web_sources": [
+        {
+          "title": "Utah Legislature SB 132 Official Text: Large Customer Generation Services",
+          "publisher": "Utah State Legislature",
+          "url": "https://www.google.com/url?q=https://le.utah.gov/&source=gmail&ust=1789341927286000&sa=E",
+          "type": "Statutory Legislation"
+        }
+      ],
+      "search_query": "Utah SB 132 large customer electric generation direct contract 2026"
+    },
+    {
+      "id": 2,
+      "headline": "Amazon Files Motion to Dismiss FTC $20B Ad Algorithm Antitrust Suit",
+      "facts": "In response to the joint FTC and 22-state antitrust lawsuit, Amazon filed a formal motion to dismiss, arguing its sponsored ad ranking formulas represent proprietary intellectual property protected from regulatory disclosure under the Trade Secrets Act.",
+      "reality_audit": "Claiming algorithm opacity is standard legal defense, but judges in the Eastern District of Washington previously rejected identical trade-secret shields in earlier tech monopolization cases.",
+      "why_it_matters": "Will determine whether federal courts have the legal authority to subpoena and audit proprietary neural ranking algorithms under the Sherman Act.",
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "US FTC v. Amazon Court Filings on Online Advertising Auction Practices",
+          "publisher": "The Economic Times / US District Court",
+          "url": "https://www.google.com/url?q=https://m.economictimes.com/news/international/business/amazon-sued-by-us-ftc-22-states-over-alleged-20-billion-ad-auction-overcharges/articleshow/133665779.cms&source=gmail&ust=1789341927286000&sa=E",
+          "type": "Federal Legal Action"
+        }
+      ],
+      "search_query": "Amazon FTC ad auction lawsuit motion to dismiss trade secrets 2026"
+    },
+    {
+      "id": 3,
+      "headline": "electronica India at BIEC Closes with $1.4B in Hardware Component Commitments",
+      "facts": "Concluding at the Bengaluru International Exhibition Centre, electronica India 2026 recorded over $1.4B in component purchase commitments, driven by Indian contract manufacturers expanding high-layer PCB assembly for industrial edge gateways and EV powertrains.",
+      "reality_audit": "Local assembly volume is skyrocketing, but Indian fabs still face a 100% dependency on imported copper-clad laminates and specialized photoresist chemicals from Japan and Taiwan.",
+      "why_it_matters": "Demonstrates that Karnataka's hardware ecosystem is graduating from basic consumer smartphone kit assembly to complex industrial computing boards.",
+      "sni": "8.9 / 10",
+      "web_sources": [
+        {
+          "title": "electronica India and productronica India 2026 Conclude in Bengaluru",
+          "publisher": "Big News Network / ANI",
+          "url": "https://www.google.com/url?q=https://www.bignewsnetwork.com/news/279301193/policy-push-meets-production-scale-as-electronica-india-and-productronica-india-2026-return-to-bengaluru-with-750-exhibitors-from-30-countries&source=gmail&ust=1789341927286000&sa=E",
+          "type": "Industry Trade Exhibition Report"
+        }
+      ],
+      "search_query": "electronica India 2026 BIEC Bengaluru component deals"
+    },
+    {
+      "id": 4,
+      "headline": "TSMC Mandates 5-Micrometer Microbump Technology for HBM4 Packaging",
+      "facts": "In response to NVIDIA's next-generation compute roadmap, TSMC directed ecosystem equipment vendors to deploy 5-micrometer microbump bonding tools, shrinking bump pitch by 50% to accommodate 2,048 interconnect lines on HBM4 base dies.",
+      "reality_audit": "Shrinking microbumps to 5 micrometers dramatically increases intermetallic compound embrittlement, risking thermal fatigue cracking after 18 months of continuous AI datacenter operation.",
+      "why_it_matters": "The 5-micrometer bump pitch is the absolute mechanical prerequisite for doubling memory bus width without inflating package footprint.",
+      "sni": "9.4 / 10",
+      "web_sources": [
+        {
+          "title": "Digitimes Asia: 5-Micrometer Class Microbump Bonding in Advanced HBM Packaging",
+          "publisher": "Digitimes Asia",
+          "url": "https://www.google.com/url?q=https://www.digitimes.com/tag/sk_hynix/0017883.html&source=gmail&ust=1789341927286000&sa=E",
+          "type": "Semiconductor Equipment Report"
+        }
+      ],
+      "search_query": "TSMC 5 micrometer microbump bonding HBM4 packaging 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Thermodynamics of Enhanced Geothermal: Fracture Mechanics, Darcy's Law & Heat Extraction in Deep Crystalline Granite",
+    "image_url": "assets/geothermal-reservoir.jpg",
+    "image_caption": "Figure 3.5: Subsurface stimulation schematic of dual horizontal wellbores, hydraulic fracture flow network, and thermal drawdown curve.",
+    "image_alt": "Cross-section schematic of enhanced geothermal reservoir and horizontal wellbores",
+    "thesis": "Enhanced Geothermal Systems (EGS) transform geothermal power from an unpredictable geographic exploration gamble into a deterministic civil engineering manufacturing process. However, extracting multi-hundred-megawatt baseload power over a 30-year economic lifecycle requires navigating the brutal physical constraints of hydraulic fracture conductivity, thermo-elastic stress decay, and premature thermal breakthrough.",
+    "physics_breakdown": "Subsurface fluid circulation through stimulated granite is governed by Darcy's law: q = -(k A / ?) (?P / L), where flow rate q depends on permeability k, reservoir cross-sectional area A, fluid viscosity ?, and pressure differential ?P. In pristine deep granite at 10,000 feet, natural permeability is near-zero (k < 10^-18 m?, or micro-darcies). Multi-stage hydraulic stimulation injects pressurized water along horizontal laterals, inducing shear slip along pre-existing natural fractures to permanently elevate permeability to >10^-13 m? (milli-darcies). Thermal energy extraction rate is defined by: Q = ? C_p (T_prod - T_inj), where an offtake of 400 MW thermal requires circulating ? ? 650 kg/s of working fluid. If injection rates exceed the thermal conduction replenishment rate of the surrounding rock matrix (k_rock ? 3.0 W/m?K), the reservoir suffers 'thermal breakthrough'?a rapid, non-recoverable collapse in production temperature (T_prod), degrading Organic Rankine Cycle thermodynamic Carnot efficiency from 18% down to uneconomic single digits.",
+    "matrix": {
+      "mechanism": "Hydraulic micro-shear stimulation creating self-propped fracture networks in 400?F granite driving binary Organic Rankine Cycle turbines.",
+      "audit": "Hyperscalers market geothermal as 'infinite clean energy' while ignoring that over-pumping working fluid can freeze an underground rock reservoir within six years.",
+      "cascades": "Geothermal reservoir operators install fiber-optic distributed acoustic sensing (DAS) and micro-seismic monitoring arrays; federal BLM expedites geothermal categorical exclusions on public lands.",
+      "sni": "9.9 / 10 (SUBSURFACE FLUID DYNAMICS & THERMAL RESERVOIR MECHANICS)"
+    },
+    "takeaway": "Drilling into the Earth's crust is not an IT project; if fluid flow through granite fractures isn't balanced against the fundamental laws of thermal conductivity, the multi-billion-dollar wellhead will cool off faster than a forgotten cup of coffee.",
+    "web_investigation": {
+      "overview": "Mathematical derivation of reservoir thermal sweep efficiency, Gangi fracture aperture closure models, and Stanford Geothermal Workshop technical proceedings.",
+      "sources": [
+        {
+          "title": "Stanford Geothermal Workshop Proceedings: Multi-Stage Hydraulic Stimulation & Flow Logging in Crystalline Granite",
+          "publisher": "Stanford University Geothermal Program",
+          "url": "https://www.google.com/url?q=https://pangea.stanford.edu/ERE/research/geoth/&source=gmail&ust=1789341927286000&sa=E",
+          "type": "Academic Technical Paper",
+          "snippet": "Analyzes pressure-dependent fracture aperture compliance, flow allocation across horizontal laterals, and long-term thermal drawdown."
+        },
+        {
+          "title": "National Renewable Energy Laboratory (NREL): Technical and Economic Feasibility of Enhanced Geothermal Systems for Industrial Baseload",
+          "publisher": "NREL Publications",
+          "url": "https://www.google.com/url?q=https://www.nrel.gov/&source=gmail&ust=1789341927286000&sa=E",
+          "type": "National Laboratory Technical Report",
+          "snippet": "Models Organic Rankine Cycle efficiency curves and levelized cost of electricity as a function of production wellhead temperature."
+        }
+      ],
+      "search_queries": [
+        "enhanced geothermal Darcy law fracture conductivity thermal breakthrough",
+        "Stanford geothermal workshop horizontal well multistage fracturing Cape Station"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will Fervo Energy successfully deliver at least 200 MW of commercial net baseload generation from its Utah Cape Station facility to the regional grid before December 31, 2026?",
+    "consensus_yes_pct": 74,
+    "consensus_no_pct": 26
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "What distinguishes Enhanced Geothermal Systems (EGS) from traditional conventional geothermal power plants?",
+      "options": [
+        "A) EGS uses coal to heat the rocks",
+        "B) EGS creates artificial permeability in hot, dry granite via horizontal drilling and hydraulic stimulation, rather than relying on rare natural hydrothermal aquifers",
+        "C) EGS only operates during high tide"
+      ],
+      "correct_index": 1,
+      "explanation": "Conventional geothermal requires rare natural underground aquifers and steam vents; EGS drills horizontal wells into deep, hot, dry granite and engineers artificial fracture pathways to circulate water and extract heat anywhere high temperatures exist."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary risk of circulating water too quickly through an enhanced geothermal reservoir?",
+      "options": [
+        "A) The water will turn into petroleum",
+        "B) Thermal breakthrough occurs, rapidly cooling down the rock fractures and collapsing the thermodynamic efficiency of the power plant",
+        "C) The turbine blades turn in reverse"
+      ],
+      "correct_index": 1,
+      "explanation": "Because granite rock has finite thermal conductivity, circulating water too rapidly extracts heat faster than the surrounding Earth can replenish it, leading to thermal breakthrough and severe temperature drops."
+    },
+    {
+      "id": 3,
+      "question": "What is the major architectural shift in SK Hynix's next-generation HBM4 and HBM4E memory modules?",
+      "options": [
+        "A) Moving to plastic memory chips",
+        "B) Replacing standard DRAM base dies with advanced 5nm/3nm foundry logic dies to double bus width to 2,048 pins and integrate near-memory compute",
+        "C) Removing through-silicon vias"
+      ],
+      "correct_index": 1,
+      "explanation": "HBM4 adopts custom advanced logic base dies manufactured on 5nm/3nm foundry nodes, doubling the I/O pin count to 2,048 terminals and dramatically improving interconnect speed and power efficiency."
+    },
+    {
+      "id": 4,
+      "question": "What is the significance of Utah Senate Bill 132 (SB 132) for AI datacenters?",
+      "options": [
+        "A) It mandates all software code be open-source",
+        "B) It allows large-load customers drawing 100 MW or more to bypass the regulated utility monopoly and contract directly with private clean power generation",
+        "C) It bans all datacenters from Utah"
+      ],
+      "correct_index": 1,
+      "explanation": "Utah SB 132 enables large industrial consumers drawing >=100 MW to bypass regulated monopolies and build direct-to-load agreements with independent power producers like Fervo Energy."
+    },
+    {
+      "id": 5,
+      "question": "How do tardigrades (water bears) survive extreme outer space vacuums, absolute zero temperatures, and intense radiation?",
+      "options": [
+        "A) They form a lead shell around their bodies",
+        "B) They enter an extreme cryptobiotic state called a 'tun', replacing almost all internal water with protective trehalose sugars and intrinsically disordered proteins (TDPs)",
+        "C) They produce nuclear energy"
+      ],
+      "correct_index": 1,
+      "explanation": "Tardigrades enter cryptobiosis by expelling 99% of their body water and curling into a 'tun', deploying unique intrinsically disordered proteins and sugars that turn their cytoplasm into biological glass, protecting cellular structures indefinitely."
+    }
+  ],
+  "easter_egg": "Tardigrades can survive the vacuum of space, temperatures near absolute zero (-272?C), and radiation 1,000 times lethal to humans by entering cryptobiosis: they purge 99% of their cellular water and produce unique 'intrinsically disordered proteins' that vitrify their internal organs into a biological glass, halting all metabolic chemical reactions for decades until rehydrated.",
+  "interactive_model": {
+    "archetype": "geothermal_wellhead",
+    "title": "Enhanced Geothermal Systems (EGS) Wellhead & Binary Rankine Cycle Plant",
+    "subtitle": "Interactive 3D Subsurface Granite Fractures, Dual Horizontal Wellbores, Heat Exchanger & Organic Rankine Cycle Turbine",
+    "badge": "BASELOAD ENERGY // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 280,
+      "pitch": 0.4,
+      "yaw": 0.75
+    },
+    "contextual_labels": {
+      "injection_well": {
+        "name": "High-Pressure Injection Wellbore",
+        "desc": "Steel-cased vertical and horizontal well pumping pressurized working fluid into 10,000-foot-deep granite."
+      },
+      "granite_fractures": {
+        "name": "Hydraulically Stimulated Micro-Fracture Network",
+        "desc": "Permeable planar fracture pathways spanning 500 meters of 400?F crystalline rock matrix."
+      },
+      "production_well": {
+        "name": "Superheated Production Wellbore",
+        "desc": "Captures 390?F pressurized brine returning from stimulated granite formation to surface facilities."
+      },
+      "heat_exchanger": {
+        "name": "Supercritical Binary Heat Exchanger",
+        "desc": "Transfers thermal energy from geothermal brine into low-boiling-point isobutane working fluid."
+      },
+      "orc_turbine": {
+        "name": "Organic Rankine Cycle (ORC) Expansion Turbine",
+        "desc": "Drives synchronous alternator using expanding high-density isobutane vapor, achieving 95%+ capacity factor."
+      },
+      "reinjection_pump": {
+        "name": "High-Volume Closed-Loop Reinjection Pump",
+        "desc": "Maintains continuous 650 kg/s mass circulation rate with zero atmospheric emissions or water consumption."
+      }
+    },
+    "controls": [
+      {
+        "id": "well_depth",
+        "label": "Reservoir True Vertical Depth",
+        "min": 2000,
+        "max": 4500,
+        "step": 100,
+        "default": 3200,
+        "unit": "m"
+      },
+      {
+        "id": "mass_flow",
+        "label": "Brine Circulation Mass Flow",
+        "min": 100,
+        "max": 900,
+        "step": 25,
+        "default": 650,
+        "unit": "kg/s"
+      },
+      {
+        "id": "reservoir_temp",
+        "label": "Basement Granite Temp",
+        "min": 150,
+        "max": 260,
+        "step": 5,
+        "default": 205,
+        "unit": "?C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "thermal_output",
+        "label": "Gross Thermal Offtake",
+        "unit": "MWth"
+      },
+      {
+        "id": "electric_power",
+        "label": "Net Electric Generation",
+        "unit": "MWe"
+      },
+      {
+        "id": "carnot_efficiency",
+        "label": "Binary Cycle Efficiency",
+        "unit": "%"
+      },
+      {
+        "id": "thermal_depletion",
+        "label": "30-Year Reservoir Cooling",
+        "unit": "%"
+      }
+    ]
+  }
+}
