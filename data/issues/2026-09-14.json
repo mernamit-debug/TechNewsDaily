@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 14,
+    "date": "2026-09-14",
+    "reading_streak": 14
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The 120kW Rack Thermal Wall: Municipal water moratoriums force hyperscalers to abandon evaporative cooling towers, pivoting to closed-loop direct-to-chip liquid cooling systems.",
+    "Vertiv & Supermicro Cooling Bottleneck: Industrial Coolant Distribution Units (CDUs) face 18-month backlogs as rack power densities leap past 120 kW on Vera Rubin and Blackwell Ultra.",
+    "DOE Releases $17.5B in Nuclear Loan Guarantees: Federal financing backs construction of 10 Westinghouse AP1000 reactors across five utilities to power industrial AI loads.",
+    "SMR Momentum Accelerates Under ADVANCE Act: Amazon, Google, and Oracle lock up over 4 GW of Small Modular Reactor capacity as HALEU fuel enrichment remains the key supply chain hurdle.",
+    "Bharat Electronics Validates Edge AI Radar: Bengaluru defense electronics giant validates indigenous edge AI compute modules for tactical phased-array radar systems."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 14 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The 120kW Rack Thermal Wall: The Transition from Evaporative Cooling Towers to High-Density Direct-to-Chip Closed Loops as AI Datacenter Water Consumption Triggers Municipal Moratoriums",
+    "image_url": "assets/liquid-cooling-manifold.jpg",
+    "image_caption": "Direct-to-chip closed-loop liquid cooling distribution unit (CDU) and manifold delivering treated water-glycol coolant to 120kW AI server racks.",
+    "image_alt": "Data center liquid cooling distribution unit manifold and stainless steel braided hoses",
+    "catch_up": "With next-generation AI accelerator racks (including NVIDIA Vera Rubin NVL72 and Blackwell Ultra) pushing thermal dissipation beyond 120 kW per cabinet, municipal water authorities across Virginia, Arizona, and Georgia have imposed emergency moratoriums on evaporative cooling tower permits. Facing fierce public backlash over facilities consuming up to 5 million gallons of potable drinking water per day, hyperscalers are being forced into a multi-billion-dollar architectural overhaul, replacing open evaporative towers with closed-loop direct-to-chip liquid cooling systems operating at elevated coolant temperatures (up to 115?F / 46?C).",
+    "mechanism": "Traditional datacenter HVAC systems relied on wet evaporative cooling towers, which exploit the latent heat of vaporization of water (2,260 kJ/kg) to reject heat into the atmosphere. While thermodynamically effective, a 100MW datacenter consumes up to 500 million gallons of water annually. At 120kW per rack, thermal flux across GPU heat spreaders exceeds 100 W/cm??beyond the physical thermal conduction limit of forced air. Closed-loop direct-to-chip systems route a treated water-propylene glycol mixture through micro-channel copper cold plates directly atop silicon dies, circulating fluid through coolant distribution units (CDUs) to outdoor dry coolers without evaporating a single drop of municipal water.",
+    "analogy": "For decades, datacenters cooled servers the way a sweating human cools down: by pouring millions of gallons of municipal drinking water onto hot radiator coils and letting it evaporate away into the sky. Now that server racks run as hot as jet engines, nearby towns are running out of drinking water, forcing tech giants to build sealed, closed-circuit industrial refrigeration loops.",
+    "pr_claim": "Our advanced cooling architectures lead the industry in water stewardship and environmental sustainability, achieving net-positive water restoration across all operating regions.",
+    "pr_reality": "Hyperscalers didn't switch to closed-loop cooling out of environmental benevolence; suburban city councils literally shut off their municipal water meters and refused to grant building permits until datacenters stopped drinking their local reservoirs dry.",
+    "bull_take": "Catalyzes an explosive $6.2B equipment supercycle for specialized coolant distribution unit (CDU) manufacturers, quick-disconnect couplings, and micro-channel cold plate fabricators (e.g. Vertiv, Supermicro, Boyd).",
+    "bear_take": "Dry-cooler heat exchangers operating in 105?F summer ambient air require massive fan-power parasitics, driving facility PUE from 1.04 up to 1.18 and forcing hyperscalers to purchase even more scarce grid power.",
+    "cascades": "Municipalities across North America and Europe mandate 'Zero Water Evaporation' standards as an uncompromisable condition for all datacenter zoning permits; hyperscalers retrofit warm-water cooling to pipe waste heat into municipal district heating grids.",
+    "why_it_matters": "The physical barrier bounding AI scaling has expanded from the electrical grid to municipal hydrology; compute clusters can no longer treat municipal drinking water as a free thermal heat sink.",
+    "cocktail_flex": "Silicon Valley built artificial intelligence to optimize global supply chains, but forgot that if a single datacenter drinks 5 million gallons of water a day, the local mayor will simply turn off the garden hose.",
+    "web_investigation": {
+      "overview": "Municipal water utility moratorium filings in Loudoun County (VA) and Maricopa County (AZ), ASHRAE TC 9.9 Thermal Guidelines for Liquid Cooling, and hyperscale dry-cooler thermodynamic white papers.",
+      "sources": [
+        {
+          "title": "ASHRAE TC 9.9 Technical Committee: Thermal Guidelines for Liquid Cooled Data Processing Environments",
+          "publisher": "ASHRAE Publications",
+          "url": "https://www.google.com/url?q=https://www.ashrae.org/&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Engineering Design Standard",
+          "snippet": "Establishes W3/W4 warm water cooling standards allowing facility supply temperatures up to 45?C without mechanical chillers."
+        },
+        {
+          "title": "Greenpeace Global Tech Hydrology Assessment: The Evaporative Footprint of Hyperscale AI Factories",
+          "publisher": "Greenpeace Environmental Research",
+          "url": "https://www.google.com/url?q=https://www.greenpeace.org/&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Environmental Policy Report",
+          "snippet": "Documents 200-billion-gallon annual data center water consumption and localized water table depletion."
+        },
+        {
+          "title": "NVIDIA Sustainability Architecture: Closed-Loop Warm-Water Cooling for Exascale Compute",
+          "publisher": "NVIDIA Corporation",
+          "url": "https://www.google.com/url?q=https://www.nvidia.com/&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Corporate Technical White Paper",
+          "snippet": "Details 100% elimination of operational evaporative water consumption via high-temperature direct-to-chip liquid cooling loops."
+        }
+      ],
+      "search_queries": [
+        "data center water consumption moratorium evaporative cooling 2026",
+        "direct to chip liquid cooling 120kW rack ASHRAE W4",
+        "NVIDIA closed loop liquid cooling water reduction data center"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "Vertiv & Supermicro Dominate the 120kW Liquid Cooling Bottleneck as Datacenters Purge Evaporative Towers",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1581092160607-ee22621dd758?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789428576727000&sa=E",
+    "image_caption": "Industrial coolant distribution unit (CDU) assembly bay with dual redundant pumps and brazed plate heat exchangers.",
+    "image_alt": "Assembly line of industrial coolant distribution units and titanium heat exchangers",
+    "company": "Vertiv Holdings / Supermicro",
+    "ticker": "NYSE: VRT / NASDAQ: SMCI",
+    "market_cap": "$38.4B (VRT) / $26.5B (SMCI)",
+    "summary": "As hyperscalers abandon water-wasting evaporative cooling towers under municipal regulatory pressure, Vertiv Holdings and Supermicro have established an operational chokehold on liquid-cooling distribution infrastructure. With rack thermal loads leaping to 120kW?140kW per cabinet on Vera Rubin and Blackwell Ultra architectures, Vertiv's CoolTera and Liebert high-capacity Coolant Distribution Units (CDUs) carry an 18-month manufacturing backlog, securing 38% gross margins and lock-in across Tier-1 cloud builders.",
+    "mechanism": "Liquid-to-Liquid and Liquid-to-Air Coolant Distribution Units (CDUs) isolating secondary treated datacenter loops from harsh outdoor facility water, regulating sub-second fluid pressure, flow rate, and delta-T across thousands of micro-channel cold plates.",
+    "metrics": {
+      "capex": "$1.8B Global Thermal Infrastructure Manufacturing Expansion (2025?2027)",
+      "moat": "Proprietary Zero-Drip Blind-Mate Fluid Couplings & Dynamic Thermal Telemetry",
+      "regulatory": "ASHRAE TC 9.9 Thermal Compliance & Municipal Zero-Evaporation Mandates",
+      "velocity": "9.8 / 10"
+    },
+    "takeaway": "In the transition to 120kW racks, the real moat is not the cold plate on the GPU?it is the industrial plumbing, pump redundancy, and control software preventing a 1,000-liter coolant leak from frying $5 million of silicon.",
+    "web_investigation": {
+      "overview": "Vertiv Holdings Form 10-Q disclosures, Supermicro Data Center Building Block Solutions (DCBBS) liquid-cooling specifications, and global thermal management market reports.",
+      "sources": [
+        {
+          "title": "Vertiv Holdings Form 10-Q: Thermal Management Segment Backlog and Hyperscale Liquid Cooling Demand",
+          "publisher": "Vertiv Investor Relations / SEC EDGAR",
+          "url": "https://www.google.com/url?q=https://investors.vertiv.com/&source=gmail&ust=1789428576727000&sa=E",
+          "type": "SEC Form 10-Q Filing",
+          "snippet": "Discloses record order backlog for liquid-to-liquid CDUs and modular prefabricated thermal solutions."
+        },
+        {
+          "title": "Supermicro DCBBS Liquid-Cooling Architecture for Next-Generation Exascale AI Factories",
+          "publisher": "Super Micro Computer IR",
+          "url": "https://www.google.com/url?q=https://www.supermicro.com/&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Product Architecture Disclosure",
+          "snippet": "Details complete rack-level liquid cooling architectures supporting up to 140kW per rack with sub-1.05 facility PUE."
+        }
+      ],
+      "search_queries": [
+        "Vertiv liquid cooling CDU order backlog 2026",
+        "Supermicro DCBBS Vera Rubin NVL72 liquid cooling"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "DOE Releases $17.5B in Federal Loan Guarantees for Commercial AP1000 Deployments",
+      "facts": "The US Department of Energy finalized $17.5 billion in conditional loan guarantees to finance the construction of 10 Westinghouse AP1000 nuclear reactors across five utilities, aiming to accelerate construction timelines by three years to supply industrial AI clusters.",
+      "reality_audit": "Federal loans ease financing, but the complete lack of domestic heavy forging capacity for massive reactor pressure vessels means major components must still queue for years at specialized foundries in Japan and South Korea.",
+      "why_it_matters": "Represents the largest federal capital commitment to large-scale commercial nuclear baseload construction since the 1970s.",
+      "sni": "9.6 / 10",
+      "web_sources": [
+        {
+          "title": "AZoCleantech: What Does the Nuclear Energy Market Look Like in 2026?",
+          "publisher": "AZoCleantech Energy Analysis",
+          "url": "https://www.google.com/url?q=https://www.azocleantech.com/article.aspx?ArticleID%3D2184&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Energy Policy Assessment"
+        }
+      ],
+      "search_query": "DOE 17.5 billion loan guarantees Westinghouse AP1000 reactors 2026"
+    },
+    {
+      "id": 2,
+      "headline": "Tech Giants Secure 4GW in Advanced SMR PPAs Under Streamlined ADVANCE Act Licensing",
+      "facts": "Spurred by the NRC's newly implemented ADVANCE Act risk-informed Part 53 licensing framework, tech giants including Amazon (X-energy), Google (Kairos Power), and Oracle signed binding agreements totaling over 4 GW of Small Modular Reactor capacity.",
+      "reality_audit": "Tech executives are signing SMR agreements at breakneck speed, but commercial HALEU (High-Assay Low-Enriched Uranium) enrichment in the West remains severely constrained, threatening to delay initial reactor fuel loadings past 2030.",
+      "why_it_matters": "Unlocks long-term private financing for Gen-IV molten-salt and gas-cooled nuclear architectures.",
+      "sni": "9.4 / 10",
+      "web_sources": [
+        {
+          "title": "Advanced Nuclear & SMR Fundraising Guide: Technology and Regulatory Landscape",
+          "publisher": "Startup Fundraising Intelligence",
+          "url": "https://www.google.com/url?q=https://startupfundraising.com/advanced-nuclear-smr-fundraising&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Nuclear Industry Report"
+        }
+      ],
+      "search_query": "ADVANCE Act Part 53 SMR Kairos X-energy PPA 2026"
+    },
+    {
+      "id": 3,
+      "headline": "Bharat Electronics Validates Edge AI Radar Processing for Tactical Defense Systems",
+      "facts": "Bengaluru-headquartered Bharat Electronics Limited (BEL) completed prototype validation of indigenous edge AI computing modules for phased-array radar systems, processing target classification locally on radiation-hardened silicon without satellite cloud downlinks.",
+      "reality_audit": "BEL's embedded algorithms demonstrate high precision in field trials, but commercial fabrication of the underlying sub-28nm ruggedized silicon remains dependent on overseas foundries.",
+      "why_it_matters": "Advances India's strategic push for sovereign defense electronics and battlefield edge computing.",
+      "sni": "9.0 / 10",
+      "web_sources": [
+        {
+          "title": "Bharat Electronics Limited: Corporate Overview and Advanced Radar Systems",
+          "publisher": "Wikipedia / Ministry of Defence",
+          "url": "https://www.google.com/url?q=https://en.wikipedia.org/wiki/Bharat_Electronics&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Defense Technology Overview"
+        }
+      ],
+      "search_query": "Bharat Electronics Bengaluru edge AI radar modules 2026"
+    },
+    {
+      "id": 4,
+      "headline": "Supermicro Previews Vera Rubin NVL72 Liquid-Cooled AI Factory Architecture",
+      "facts": "Supermicro previewed its complete liquid-cooled rack integration for NVIDIA's Vera Rubin NVL72 platform, delivering 3.6 Exaflops of inference performance and 1.6 PB/s of aggregated HBM4 memory bandwidth across a single 120kW cabinet.",
+      "reality_audit": "Exaflop rack numbers sound incredible in keynote presentations, but installing a single 120kW cabinet requires gutting legacy raised-floor datacenter halls and installing massive reinforced concrete floor pads to support 3-ton liquid-filled racks.",
+      "why_it_matters": "Confirms that future AI cluster scaling is strictly gated by mechanical and civil engineering floor-loading constraints.",
+      "sni": "9.3 / 10",
+      "web_sources": [
+        {
+          "title": "Supermicro Reveals DCBBS with New NVIDIA Vera Rubin NVL72 and HGX Rubin Systems",
+          "publisher": "Stock Titan / Supermicro Press",
+          "url": "https://www.google.com/url?q=https://www.stocktitan.net/news/SMCI/supermicro-reveals-dcbbs-with-new-nvidia-vera-rubin-nvl72-hgx-rubin-s1gx8304xn2y.html&source=gmail&ust=1789428576727000&sa=E",
+          "type": "Hardware Architecture Announcement"
+        }
+      ],
+      "search_query": "Supermicro Vera Rubin NVL72 liquid cooling DCBBS 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Thermodynamics of 120kW Rack Heat Rejection: Micro-Channel Cold Plates, Nusselt Numbers & Fluid Flow Dynamics",
+    "image_url": "assets/microchannel-coldplate.jpg",
+    "image_caption": "Figure 3.6: Micro-channel copper cold plate fluid dynamics, boundary layer thermal resistance, and pressure drop gradients across 1,000W silicon dies.",
+    "image_alt": "Cross-section fluid dynamics simulation of copper micro-channel cold plate and laminar flow",
+    "thesis": "When server rack power density jumps from 30 kW to 120 kW, heat removal transcends traditional HVAC air velocity limits. Removing 1,200 watts from a 10 cm? semiconductor die without exceeding silicon junction temperature limits (T_j ? 85?C) requires micro-channel copper cold plate architectures operating in forced laminar and transitional fluid regimes, balancing convective heat transfer coefficients against punishing hydraulic pressure drops.",
+    "physics_breakdown": "Heat flux through a silicon die is governed by Fourier's Law (q'' = -k ?T), where heat flux q'' exceeds 120 W/cm?. The convective heat transfer between the cold plate copper base and the liquid coolant is defined by Newton's Law of Cooling: q = h A (T_s - T_f), where h is the convective heat transfer coefficient, A is the wetted surface area, T_s is copper surface temperature, and T_f is bulk fluid temperature. In micro-channel geometries (channel widths w_c ? 50 ?m, fin height H ? 500 ?m), the Nusselt number (Nu = h D_h / k_f) remains constant in laminar flow (Re < 2,300), yielding massive heat transfer coefficients (h > 25,000 W/m??K). However, hydraulic pumping power scales with the pressure drop: ?P = f (L / D_h) (? v? / 2). As fluid velocity v increases to suppress boundary layer thermal resistance, pressure drop across a 72-GPU rack escalates quadratically, requiring coolant distribution unit (CDU) pumps to deliver >150 kPa at 120 liters/minute. If coolant flow drops by just 15%, thermal runaway occurs in under 800 milliseconds.",
+    "matrix": {
+      "mechanism": "Micro-channel convective heat exchange with 50-micron copper fin arrays circulating treated water-glycol coolant under 150 kPa differential pressure.",
+      "audit": "Hardware makers advertise 'waterless datacenters' while omitting that closed-loop dry coolers consume megawatts of auxiliary fan power in hot climates.",
+      "cascades": "Datacenter operators migrate from 25% propylene glycol mixtures to fluorochemical dielectric two-phase direct immersion; ASHRAE expands allowable server inlet temperatures to 45?C.",
+      "sni": "9.9 / 10 (MICRO-FLUIDICS & THERMODYNAMIC SILICON CONVERGENCE)"
+    },
+    "takeaway": "Software engineers write code in abstract floating-point math; physical silicon survives only because a pump pushes coolant through 50-micron copper slits at 150 kilopascals.",
+    "web_investigation": {
+      "overview": "Micro-channel cold plate thermal resistance modeling, IEEE Intersociety Conference on Thermal Phenomena (ITherm), and ASHRAE TC 9.9 liquid-cooling guidelines.",
+      "sources": [
+        {
+          "title": "IEEE ITherm Proceedings: Optimization of High-Aspect-Ratio Microchannel Heat Sinks for 1,000W+ AI Silicon",
+          "publisher": "IEEE Thermal & Thermomechanical Phenomena",
+          "url": "https://www.google.com/url?q=https://ieeexplore.ieee.org/&source=gmail&ust=1789428576728000&sa=E",
+          "type": "Peer-Reviewed Thermal Engineering Paper",
+          "snippet": "Evaluates single-phase micro-fin hydraulic impedance, Nusselt number scaling, and junction temperature uniformity."
+        },
+        {
+          "title": "ASHRAE Datacom Series: Liquid Cooling Guidelines for Datacom Equipment Centers (2nd Edition)",
+          "publisher": "ASHRAE Technical Committee 9.9",
+          "url": "https://www.google.com/url?q=https://www.ashrae.org/&source=gmail&ust=1789428576728000&sa=E",
+          "type": "Engineering Design Standard",
+          "snippet": "Defines water quality specifications, corrosion inhibition protocols, and dry-cooler sizing for W3/W4 facilities."
+        }
+      ],
+      "search_queries": [
+        "microchannel cold plate Nusselt number 1200W GPU heat flux",
+        "liquid cooling pressure drop CDU 120kW rack ASHRAE W4"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will at least five major US municipal water authorities formally ban new evaporative cooling towers for data centers exceeding 50 MW before December 31, 2027?",
+    "consensus_yes_pct": 86,
+    "consensus_no_pct": 14
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "Why are municipal utility authorities placing moratoriums on evaporative cooling towers for AI datacenters?",
+      "options": [
+        "A) Evaporative towers make too much ultrasonic noise",
+        "B) A single 100MW datacenter using evaporative cooling can consume up to 500 million gallons of municipal water annually, depleting local drinking reservoirs",
+        "C) They block bird migration routes"
+      ],
+      "correct_index": 1,
+      "explanation": "Traditional evaporative cooling towers consume massive quantities of water through evaporation (up to 5 million gallons daily for large campuses), causing municipal water authorities in drought-prone areas to halt new permits."
+    },
+    {
+      "id": 2,
+      "question": "How does direct-to-chip closed-loop liquid cooling solve the datacenter water consumption problem?",
+      "options": [
+        "A) It turns waste heat into drinking water",
+        "B) It recirculates a sealed water-glycol coolant loop through micro-channel cold plates to outdoor dry coolers, consuming zero municipal water during operation",
+        "C) It replaces water with liquid nitrogen"
+      ],
+      "correct_index": 1,
+      "explanation": "Closed-loop systems circulate a sealed coolant mixture between the server cold plates and outdoor radiator dry coolers, rejecting heat into the air without evaporating or releasing water into the environment."
+    },
+    {
+      "id": 3,
+      "question": "What physical trade-off occurs when a datacenter switches from evaporative cooling towers to outdoor dry coolers during a 105?F summer heatwave?",
+      "options": [
+        "A) Computers run out of memory",
+        "B) Dry coolers require massive electrical fan power to reject heat into hot ambient air, increasing facility PUE and electrical parasitic load",
+        "C) The coolant freezes instantly"
+      ],
+      "correct_index": 1,
+      "explanation": "Without the benefit of evaporative water cooling, dry coolers must spin large radiator fans at maximum speed to reject heat into hot ambient air, significantly increasing auxiliary electrical consumption and worsening PUE."
+    },
+    {
+      "id": 4,
+      "question": "How much did the US Department of Energy recently commit in loan guarantees to support commercial AP1000 nuclear reactor construction?",
+      "options": [
+        "A) $500 million",
+        "B) $17.5 billion across five utility projects building 10 AP1000 reactors",
+        "C) $2 billion"
+      ],
+      "correct_index": 1,
+      "explanation": "The US DOE finalized $17.5 billion in conditional loan guarantees to support the construction of 10 Westinghouse AP1000 nuclear reactors across five utilities."
+    },
+    {
+      "id": 5,
+      "question": "How do glass frogs make their bodies almost completely transparent to camouflage from predators while sleeping?",
+      "options": [
+        "A) They shed their skin every sunrise",
+        "B) They sequester up to 90% of their circulating red blood cells inside their reflective, mirror-coated liver",
+        "C) They absorb all external light waves"
+      ],
+      "correct_index": 1,
+      "explanation": "Glass frogs achieve optical transparency while sleeping by packing up to 89% of their red blood cells into their liver, which has a specialized guanine crystal coating that reflects light, making their muscles and skin clear."
+    }
+  ],
+  "easter_egg": "Northern glass frogs achieve near-total optical transparency while sleeping by packing up to 89% of their red blood cells out of circulation and cramming them inside their mirror-coated, guanine-shielded liver?a feat that would cause fatal blood clotting in virtually any other vertebrate.",
+  "interactive_model": {
+    "archetype": "liquid_cooling_cdu",
+    "title": "120kW Direct-to-Chip Coolant Distribution Unit (CDU) & Cold Plate Loop",
+    "subtitle": "Interactive 3D Dual Redundant Inverter Pumps, Plate Heat Exchanger, Distribution Manifold & Micro-Channel GPU Cold Plates",
+    "badge": "THERMAL INFRASTRUCTURE // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 280,
+      "pitch": 0.42,
+      "yaw": 0.7
+    },
+    "contextual_labels": {
+      "primary_heat_exchanger": {
+        "name": "Brazed Titanium Plate Heat Exchanger",
+        "desc": "Thermally couples the facility loop to the clean secondary loop with sub-2?C approach temperature."
+      },
+      "redundant_pumps": {
+        "name": "Dual N+1 Canned-Motor Inverter Pumps",
+        "desc": "Delivers continuous 150 kPa differential pressure and 120 L/min flow with sub-second automatic failover."
+      },
+      "manifold_headers": {
+        "name": "Stainless Steel Supply & Return Manifold Headers",
+        "desc": "Distributes treated water-glycol coolant evenly across 72 GPU server cold plates."
+      },
+      "blind_mate_couplings": {
+        "name": "Zero-Drip Quick-Disconnect Blind-Mate Couplings",
+        "desc": "Self-sealing hydraulic connectors preventing fluid leaks during hot-swappable server blade servicing."
+      },
+      "microchannel_coldplate": {
+        "name": "50-Micron Micro-Channel Copper Cold Plate",
+        "desc": "High-aspect-ratio micro-fin array engineered to dissipate 1,200W heat flux from GPU dies."
+      },
+      "expansion_reservoir": {
+        "name": "Pressurized Nitrogen Expansion Reservoir & Deaerator",
+        "desc": "Compensates for thermal coolant volume expansion and strips entrained micro-air bubbles from the loop."
+      }
+    },
+    "controls": [
+      {
+        "id": "rack_power",
+        "label": "Rack Thermal Load",
+        "min": 40,
+        "max": 160,
+        "step": 5,
+        "default": 120,
+        "unit": "kW"
+      },
+      {
+        "id": "flow_rate",
+        "label": "Coolant Flow Rate",
+        "min": 40,
+        "max": 180,
+        "step": 5,
+        "default": 120,
+        "unit": "L/min"
+      },
+      {
+        "id": "supply_temp",
+        "label": "CDU Supply Fluid Temp",
+        "min": 20,
+        "max": 50,
+        "step": 1,
+        "default": 35,
+        "unit": "?C"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "junction_temp",
+        "label": "Peak GPU Junction Temp",
+        "unit": "?C"
+      },
+      {
+        "id": "loop_pressure_drop",
+        "label": "Total Hydraulic Pressure Drop",
+        "unit": "kPa"
+      },
+      {
+        "id": "pumping_power",
+        "label": "CDU Auxiliary Power",
+        "unit": "kW"
+      },
+      {
+        "id": "thermal_resistance",
+        "label": "Cold Plate Thermal Resistance",
+        "unit": "?C/W"
+      }
+    ]
+  }
+}
