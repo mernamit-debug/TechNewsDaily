@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 14,
+    "date": "2026-09-14",
+    "headline": "The 120kW Rack Thermal Wall: The Transition from Evaporative Cooling Towers to High-Density Direct-to-Chip Closed Loops as AI Datacenter Water Consumption Triggers Municipal Moratoriums",
+    "file_path": "data/issues/2026-09-14.json"
+  },
+  {
     "issue_number": 13,
     "date": "2026-09-13",
     "headline": "The 1,000MW Deep-Earth Baseload Bet: Google & Fervo Exploit Utah SB 132 to Build the First Direct-to-Wellhead Geothermal AI Corridor",
