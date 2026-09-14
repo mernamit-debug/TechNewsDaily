@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 15,
+    "date": "2026-09-15",
+    "headline": "The Photonic Spine Revolt: Hyperscalers Deploy 3D MEMS Optical Circuit Switching (OCS) to Purge the 30% E-O-E Transceiver Power Tax",
+    "file_path": "data/issues/2026-09-15.json"
+  },
+  {
     "issue_number": 14,
     "date": "2026-09-14",
     "headline": "The 120kW Rack Thermal Wall: The Transition from Evaporative Cooling Towers to High-Density Direct-to-Chip Closed Loops as AI Datacenter Water Consumption Triggers Municipal Moratoriums",
