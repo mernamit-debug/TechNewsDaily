@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 15,
+    "date": "2026-09-15",
+    "reading_streak": 15
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The Photonic Spine Revolt: Hyperscalers deploy 3D MEMS Optical Circuit Switching (OCS) to eliminate the 30% Electrical-Optical-Electrical (E-O-E) transceiver power tax in 100K-GPU clusters.",
+    "Lumentum & Coherent Monopolize Light Routing: Precision piezoelectric MEMS micro-mirror arrays face surging demand as cloud builders replace packet spine switches with optical crossbars.",
+    "HCLTech Launches ?185 Cr Hardware Lab in Bengaluru: 40,000-sq.-ft. facility dedicated to benchmarking enterprise AI accelerators, liquid-cooling loops, and high-speed PCB interconnects.",
+    "Federal Nuclear Siting Fast-Track: US Energy Secretary Chris Wright announces priority SMR siting on Department of Energy reservations, bypassing state utility regulatory hurdles.",
+    "Riyadh Global AI Summit Mobilizes Desert Compute: Saudi Arabia's SDAIA formalizes multi-gigawatt sovereign AI clean energy corridors backed by direct solar and gas generation."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 15 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The Photonic Spine Revolt: Hyperscalers Deploy 3D MEMS Optical Circuit Switching (OCS) to Purge the 30% E-O-E Transceiver Power Tax",
+    "image_url": "assets/optical-circuit-switch.jpg",
+    "image_caption": "Inside a 3D MEMS Optical Circuit Switch (OCS) showing collimator fiber arrays and piezoelectric micro-mirror matrix steering laser paths in free space.",
+    "image_alt": "Interior view of 3D MEMS micro-mirror array and optical fiber collimators in a datacenter optical circuit switch",
+    "catch_up": "In an aggressive bid to dismantle the electrical power tax suffocating 100,000-GPU AI clusters, hyperscalers (led by Google's Mission Apollo deployment and Meta's 14 GW optical spine roadmaps) are replacing traditional electrical packet spine switches with direct Optical Circuit Switching (OCS). By routing photons in free space using piezoelectric 3D MEMS micro-mirrors, OCS eliminates costly Electrical-Optical-Electrical (E-O-E) transceiver conversions, slashing cluster networking power dissipation by up to 40% and eliminating packet buffer queuing delays.",
+    "mechanism": "In standard Clos spine-leaf networks, every hop from server to leaf to spine requires converting optical pulses back into electrical electrons (O-E), running them through power-hungry serializer-deserializer (SerDes) silicon chips and packet buffers, and re-modulating them back into optical lasers (E-O). In a 100,000-GPU cluster, SerDes chips and transceivers consume up to 30% of total networking electricity. A 3D MEMS Optical Circuit Switch replaces the spine switch ASIC with a dual-array of microscopic piezoelectric silicon mirrors in an airtight, hermetically sealed cavity. Piezoelectric actuators tilt the mirrors along two axes with sub-milliradian precision, reflecting a collimated laser beam from an input fiber directly into an output fiber in free space, maintaining zero packet buffering and transparently switching any optical data rate (from 800G to 3.2T) with less than 2 dB insertion loss.",
+    "analogy": "Traditional datacenter networking is like an airport where every connecting flight forces passengers to deplane, pass through full passport control and security baggage re-screening, and board a new plane. Optical Circuit Switching is like keeping passengers in a high-speed vacuum transit tube that simply bends the track toward the destination gate without stopping.",
+    "pr_claim": "Our reconfigurable optical fabrics deliver ultra-low-latency, software-defined networking that maximizes multi-tenant AI training efficiency.",
+    "pr_reality": "Hyperscalers adopted OCS because traditional electrical switch chassis generate so much heat they were literally melting copper backplanes, while burning megawatts of power just changing light into electricity and back again.",
+    "bull_take": "Unlocks non-blocking, multi-terabit cluster scaling for 100K+ GPU deployments, eliminating transceiver refresh capex every two years and creating a massive market for precision MEMS actuators and fiber collimators (e.g. Lumentum, Coherent, Calient).",
+    "bear_take": "Mechanical micro-mirror settling times (10 to 30 milliseconds) prevent packet-level routing, restricting OCS strictly to circuit-switched batch training topologies; particulate contamination or mirror misalignment inside the optical cavity can blind an entire 136-port fabric.",
+    "cascades": "Major cloud providers sunset electrical spine switches in favor of hybrid OCS-EPS fabrics; merchant switch ASIC makers (Broadcom, Marvell) scramble to integrate co-packaged optical bypass circuits to protect switch silicon market share.",
+    "why_it_matters": "Networking energy consumption is the silent ceiling of distributed AI scaling; routing light with light is the only physical path to building million-accelerator supercomputers.",
+    "cocktail_flex": "Silicon Valley spent thirty years building multi-gigahertz network processors, only to realize that the most energy-efficient switch in the universe is simply a tiny mirror reflecting a laser.",
+    "web_investigation": {
+      "overview": "Optical Internetworking Forum (OIF) and Open Compute Project (OCP) optical switching specifications, Google Apollo SIGCOMM engineering publications, and Meta intra-DC optical transport roadmap.",
+      "sources": [
+        {
+          "title": "Optical Circuit Switching (OCS): A Full Guide to Photonic Fabrics in AI Data Centers",
+          "publisher": "Inside Deep Tech / OCP Publications",
+          "url": "https://www.google.com/url?q=https://www.insidedeeptech.com/optical-circuit-switching-ocs-ai-data-centers-full-guide/&source=gmail&ust=1789514365787000&sa=E",
+          "type": "Photonic Systems Technical Guide",
+          "snippet": "Analyzes 3D MEMS mirror steering, insertion loss budgets, and 40% power reduction across hyperscale AI fabrics."
+        },
+        {
+          "title": "Google Apollo: Software-Defined Optical Circuit Switching for Supercomputer Scale AI Workloads",
+          "publisher": "ACM SIGCOMM / Google Cloud",
+          "url": "https://www.google.com/url?q=https://cloud.google.com/&source=gmail&ust=1789514365787000&sa=E",
+          "type": "Peer-Reviewed Computer Systems Paper",
+          "snippet": "Documents production deployment of 4,096-node TPU pods interconnected via 136x136 3D MEMS optical circuit switches."
+        },
+        {
+          "title": "Meta AI Infrastructure Roadmap: Intra-DC Optical Fabrics and 14 GW Optical Transport Architecture",
+          "publisher": "IEEE Communications Society (IEEE ComSoc)",
+          "url": "https://www.google.com/url?q=https://techblog.comsoc.org/category/meta/&source=gmail&ust=1789514365787000&sa=E",
+          "type": "Telecommunications Engineering Analysis",
+          "snippet": "Details 800G/1.6T coherent transceivers, ROADM integration, and dynamic optical circuit switching."
+        }
+      ],
+      "search_queries": [
+        "Optical Circuit Switching OCS 3D MEMS insertion loss AI datacenter",
+        "Google Apollo optical circuit switch SIGCOMM TPU pod",
+        "Meta intra-DC optical fabrics IEEE ComSoc September 2026"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "Lumentum & Coherent Corner the Photonic Mirror Chokepoint as Hyperscalers Abandon Electrical Spine Switches",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1518770660439-4636190af475?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789514365788000&sa=E",
+    "image_caption": "Precision 3D MEMS piezoelectric micro-mirror array undergoing laser interferometry calibration in cleanroom fabrication.",
+    "image_alt": "Cleanroom inspection of silicon photonics MEMS micro-mirror wafer",
+    "company": "Lumentum Holdings / Coherent Corp",
+    "ticker": "NASDAQ: LITE / NYSE: COHR",
+    "market_cap": "$6.2B (LITE) / $14.8B (COHR)",
+    "summary": "As hyperscale AI clusters hit thermal and electrical limits in multi-tier Clos networks, Lumentum Holdings and Coherent Corp have emerged as the indispensable monopolists of precision photonic hardware. By controlling high-reliability InP laser diodes, 2D/3D MEMS optical switching cores, and precision collimator arrays, Lumentum and Coherent are supplying the mission-critical physical layer enabling Google, Meta, and Microsoft to build all-optical datacenter fabrics.",
+    "mechanism": "Monolithic fabrication of sub-millimeter silicon mirrors with electrostatic and piezoelectric dual-axis gimbal actuators, combined with automated robotic active fiber alignment achieving sub-0.5dB optical coupling efficiency.",
+    "metrics": {
+      "capex": "$950M Cleanroom Packaging Expansion & InP Wafer Fab Allocation",
+      "moat": "Sub-Milliradian Beam Steering Stability & Zero-Backlash Piezoelectric MEMS Patents",
+      "regulatory": "ITAR Dual-Use Optical Telecommunications Controls & CHIPS Act Tooling Grants",
+      "velocity": "9.8 / 10"
+    },
+    "takeaway": "While Wall Street fixates on digital GPU accelerators, the physical routing of light in exascale datacenters is controlled by an oligopoly of precision laser and optical mirror manufacturers.",
+    "web_investigation": {
+      "overview": "Lumentum Holdings Form 10-Q disclosures, Coherent Corp optical communications order book, and OCP Photonic Switching Project reports.",
+      "sources": [
+        {
+          "title": "Lumentum Holdings Form 10-Q: Cloud Data Center Optical Switching Segment Financial Results",
+          "publisher": "Lumentum Investor Relations / SEC EDGAR",
+          "url": "https://www.google.com/url?q=https://investor.lumentum.com/&source=gmail&ust=1789514365788000&sa=E",
+          "type": "SEC Filing",
+          "snippet": "Discloses surging order book for MEMS-based optical circuit switching engines and high-power continuous-wave laser arrays."
+        },
+        {
+          "title": "Coherent Corp Technical Brief: 3D MEMS Beam Steering and Reconfigurable Photonic Fabrics",
+          "publisher": "Coherent Corp Technical Library",
+          "url": "https://www.google.com/url?q=https://www.coherent.com/&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Corporate Technical Brief",
+          "snippet": "Outlines insertion loss minimization and mechanical reliability under continuous high-power laser irradiation."
+        }
+      ],
+      "search_queries": [
+        "Lumentum 3D MEMS optical circuit switch order backlog 2026",
+        "Coherent Corp high power laser continuous wave AI interconnect"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "HCLTech Launches ?185 Crore Advanced AI Hardware & Testing Facility in Bengaluru",
+      "facts": "On September 13?15, HCLTech inaugurated a ?185 crore, 40,000-sq.-ft. advanced hardware and system-validation laboratory in Bengaluru, dedicated to stress-testing enterprise AI accelerators, server liquid cooling loops, and high-speed PCB interconnects.",
+      "reality_audit": "A state-of-the-art test lab is vital for thermal qualification, but indigenous Indian silicon testing still relies 100% on automated test equipment (ATE) imported from Advantest and Teradyne.",
+      "why_it_matters": "Anchors Bengaluru as the premier regional center for physical hardware validation and enterprise AI appliance benchmarking.",
+      "sni": "8.9 / 10",
+      "web_sources": [
+        {
+          "title": "HCLTech Launches ?185 Crore, 40,000 Sq. Ft. Advanced AI Hardware Lab in Bengaluru",
+          "publisher": "IndianWeb2 Technology Portal",
+          "url": "https://www.google.com/url?q=https://www.indianweb2.com/2026/09/hcltech-launches-185-crore-40000-sq-ft.html&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Hardware Facility Launch Report"
+        }
+      ],
+      "search_query": "HCLTech launches 185 crore advanced AI lab Bengaluru September 2026"
+    },
+    {
+      "id": 2,
+      "headline": "US Energy Secretary Wright Prioritizes SMR Deployments on Federal DOE Reservations",
+      "facts": "On Bloomberg Surveillance on September 14, US Energy Secretary Chris Wright confirmed the federal government is prioritizing advanced reactor siting on National Laboratory reservations, offering pre-qualified seismic data and federal interconnection easements to expedite SMR deployment for AI by 2028.",
+      "reality_audit": "Pre-qualified land cuts zoning friction, but commercial SMR operators still face a 3-year queue for Nuclear Regulatory Commission (NRC) safety evaluation reports.",
+      "why_it_matters": "Bypasses state-level public utility commission objections by placing AI compute directly on federal sovereign territory.",
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "Secretary Wright Joins Bloomberg Surveillance: Federal Energy Priorities and SMR Siting",
+          "publisher": "Bloomberg / US Department of Energy",
+          "url": "https://www.google.com/url?q=https://www.youtube.com/watch?v%3DOZni55IHxjY&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Federal Executive Broadcast"
+        }
+      ],
+      "search_query": "Secretary Chris Wright Bloomberg Surveillance September 14 2026 SMR DOE"
+    },
+    {
+      "id": 3,
+      "headline": "Saudi SDAIA Convenes Fourth Riyadh Global AI Summit on Sovereign Desert Compute",
+      "facts": "The Saudi Data and AI Authority (SDAIA) launched the Fourth Riyadh Global AI Summit on September 15, formalizing multi-gigawatt clean energy compute corridors powered by dedicated desert solar and gas peakers to attract global foundation model training.",
+      "reality_audit": "Capital is unlimited in the Gulf, but US Department of Commerce export controls restricting advanced NVIDIA Rubin and Blackwell GPU shipments to non-allied countries cap real-world deployment speed.",
+      "why_it_matters": "Positions the Middle East as a primary capital competitor to North American and European datacenter development.",
+      "sni": "9.1 / 10",
+      "web_sources": [
+        {
+          "title": "SDAIA Showcases Data and AI Initiatives at Fourth Riyadh Global AI Summit",
+          "publisher": "Saudi Press Agency (SPA)",
+          "url": "https://www.google.com/url?q=https://www.spa.gov.sa/en/N2676360&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Summit Communique"
+        }
+      ],
+      "search_query": "SDAIA Fourth Riyadh Global AI Summit September 15 2026"
+    },
+    {
+      "id": 4,
+      "headline": "India Semiconductor Mission Sets Tooling Timelines for Dholera Commercial Fab",
+      "facts": "Following the execution of formal Fab Support Agreements (FSA), the India Semiconductor Mission published revised equipment timelines for Tata Electronics' Dholera commercial wafer fab (?91,526 crore), confirming initial 28nm pilot wafer processing by Q4 2027.",
+      "reality_audit": "Subsidies are disbursed, but securing delivery of deep ultraviolet (DUV) immersion lithography scanners amid global foundry backlogs remains the critical supply chain pacing item.",
+      "why_it_matters": "Establishes the foundational domestic wafer manufacturing node for India's automotive and telecommunications hardware industries.",
+      "sni": "9.3 / 10",
+      "web_sources": [
+        {
+          "title": "India Semiconductor Mission: Official Notification on Fab Support Agreements",
+          "publisher": "Ministry of Electronics and Information Technology (MeitY)",
+          "url": "https://www.google.com/url?q=https://www.ism.gov.in/&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Statutory Communique"
+        }
+      ],
+      "search_query": "India Semiconductor Mission Tata Electronics Dholera fab FSA timeline 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Physics of Free-Space Photonic Routing: Beam Steering, Insertion Loss & Wavefront Distortion in 3D MEMS Switches",
+    "image_url": "assets/mems-beam-steering.jpg",
+    "image_caption": "Figure 3.7: Optical beam propagation geometry, Gaussian beam waist expansion, and piezoelectric angular deflection tolerances across a 136x136 OCS crossbar.",
+    "image_alt": "Ray-tracing optical simulation of collimated laser beam steering between 3D MEMS mirror arrays",
+    "thesis": "Replacing electrical packet switches with Optical Circuit Switches (OCS) removes the thermal dissipation and SerDes power of digital switching matrices. However, routing multi-terabit optical beams across free space without digital regeneration requires maintaining sub-microradian angular precision, mitigating Gaussian beam diffraction, and eliminating insertion loss penalties across 3D MEMS mirror arrays.",
+    "physics_breakdown": "An optical beam exiting a single-mode fiber behaves as a fundamental Gaussian beam (TEM00). As the beam propagates across the internal free-space cavity (L ? 10 to 20 cm), beam radius expands according to: w(z) = w0 ?(1 + (z / zR)?), where zR = (? w0? / ?) is the Rayleigh range. To prevent beam clipping and diffraction losses, micro-collimator lens arrays transform the diverging beam into a collimated beam with a wide beam waist (w0 ? 500 ?m). The beam reflects off two consecutive 3D MEMS mirrors: an input steering mirror and an output coupling mirror. The optical insertion loss (IL) is acutely sensitive to angular misalignment (?_err), governed by the overlap integral: ? = exp(-(? w0 ?_err / ?)?). For telecommunications laser wavelengths (? = 1310 nm or 1550 nm), maintaining insertion loss below 0.5 dB mandates an angular pointing tolerance of ?_err ? 0.001? (sub-milliradian). Piezoelectric actuators provide high resonant frequencies (>1 kHz), but thermal drift in the switch chassis requires closed-loop laser position sensing with quad-cell photodetectors continuously adjusting bias voltages to prevent connection dropouts.",
+    "matrix": {
+      "mechanism": "Closed-loop electrostatic/piezoelectric dual-axis MEMS mirror steering routing collimated infrared beams across free space.",
+      "audit": "Hyperscalers tout 'zero-latency optical switching' while disguising that reconfiguring the physical mirrors requires a 25-millisecond pause during which zero data can pass.",
+      "cascades": "Network architects develop hybrid topologies: OCS handles bulk 95% all-to-all tensor training traffic, while low-latency electrical switches handle metadata and parameter broadcasts.",
+      "sni": "9.9 / 10 (PHOTONIC WAVEFRONT PHYSICS & MICRO-ELECTRO-MECHANICAL SYSTEMS)"
+    },
+    "takeaway": "In the post-copper computing era, the most powerful network routers contain no CPUs, no software routing tables, and no packet buffers; they are simply pristine arrays of microscopic mirrors dancing in a vacuum.",
+    "web_investigation": {
+      "overview": "Gaussian beam waist expansion formulas, IEEE Photonics Technology Letters on 3D MEMS crossbars, and Bell Labs optical switching reliability benchmarks.",
+      "sources": [
+        {
+          "title": "IEEE Photonics Technology Letters: High-Port-Count 3D MEMS Optical Matrix Switches with Sub-Milliradian Closed-Loop Telemetry",
+          "publisher": "IEEE Photonics Society",
+          "url": "https://www.google.com/url?q=https://ieeexplore.ieee.org/&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Peer-Reviewed Photonics Research",
+          "snippet": "Demonstrates 3D MEMS beam steering with <1.5 dB insertion loss and 20ms reconfiguration switching latency."
+        },
+        {
+          "title": "Optical Fiber Communication Conference (OFC): Scalability Limits of Free-Space Optical Circuit Switching in AI Superclusters",
+          "publisher": "Optica Publishing Group",
+          "url": "https://www.google.com/url?q=https://www.optica.org/&source=gmail&ust=1789514365788000&sa=E",
+          "type": "Conference Proceedings Paper",
+          "snippet": "Models optical power budget, Rayleigh diffraction limits, and thermal drift stabilization across 256-port OCS fabrics."
+        }
+      ],
+      "search_queries": [
+        "3D MEMS optical circuit switch insertion loss Rayleigh range",
+        "Gaussian beam collimator angular tolerance OCS IEEE photonics"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will at least two major public cloud providers (Google Cloud, Azure, AWS) deploy full 3D MEMS Optical Circuit Switching across more than 50% of their new frontier training cluster deployments before December 31, 2027?",
+    "consensus_yes_pct": 76,
+    "consensus_no_pct": 24
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "What is the primary architectural benefit of using Optical Circuit Switching (OCS) instead of traditional Electrical Packet Switches in AI datacenters?",
+      "options": [
+        "A) OCS allows servers to play video games faster",
+        "B) OCS routes light beams directly using microscopic mirrors in free space, eliminating power-hungry Electrical-Optical-Electrical (E-O-E) transceiver conversions that consume up to 30% of cluster power",
+        "C) OCS eliminates the need for fiber optic cables"
+      ],
+      "correct_index": 1,
+      "explanation": "Traditional packet switches convert optical light into electrical signals and back again at every hop, consuming massive electrical power. OCS steers light beams directly with micro-mirrors, cutting networking power by up to 40% and removing packet buffering delays."
+    },
+    {
+      "id": 2,
+      "question": "What is the major mechanical limitation of 3D MEMS Optical Circuit Switches?",
+      "options": [
+        "A) They cannot transmit data faster than 1 Gigabit per second",
+        "B) Physical micro-mirrors require 10 to 30 milliseconds of settling time to reposition, making them unsuitable for per-packet routing and restricting them to long-duration circuit switching",
+        "C) They dissolve in humid air"
+      ],
+      "correct_index": 1,
+      "explanation": "Because micro-mirrors are physical mechanical components, tilting and stabilizing them requires 10?30 milliseconds. During this settling time, no data can pass, meaning OCS cannot replace sub-microsecond packet-by-packet routers."
+    },
+    {
+      "id": 3,
+      "question": "How does beam collimation prevent signal loss as light travels across the free-space cavity of an OCS switch?",
+      "options": [
+        "A) It turns the laser beam into sound waves",
+        "B) Micro-lenses widen the Gaussian beam waist to minimize divergence and prevent beam clipping over the 10?20 cm propagation distance between mirrors",
+        "C) It coats the beam in reflective gold paint"
+      ],
+      "correct_index": 1,
+      "explanation": "Uncollimated light from a single-mode fiber diverges rapidly. Micro-collimators expand the beam waist (w0) to several hundred microns, extending the Rayleigh range so the beam travels across the internal switch cavity with minimal diffraction loss."
+    },
+    {
+      "id": 4,
+      "question": "What major facility did HCLTech inaugurate in Bengaluru on September 13?15, 2026?",
+      "options": [
+        "A) A consumer electronics retail superstore",
+        "B) A ?185 crore, 40,000-sq.-ft. advanced hardware and system-validation laboratory for enterprise AI accelerators and server cooling systems",
+        "C) A smartphone assembly plant"
+      ],
+      "correct_index": 1,
+      "explanation": "HCLTech launched a ?185 crore, 40,000-sq.-ft. advanced AI hardware and validation testing lab in Bengaluru to benchmark enterprise accelerators, high-speed PCBs, and liquid-cooling architectures."
+    },
+    {
+      "id": 5,
+      "question": "How do eucalyptus trees survive and outcompete other plant species following intense bushfires?",
+      "options": [
+        "A) Their seeds contain microscopic fire-extinguishing enzymes",
+        "B) They store epicormic buds insulated beneath thick fire-resistant bark and produce serotinous seed pods that open only when stimulated by intense heat",
+        "C) They absorb all ground water to prevent fire from spreading"
+      ],
+      "correct_index": 1,
+      "explanation": "Eucalyptus trees are pyrophytic: their vital buds are shielded under thick, insulating bark, and their woody seed capsules (serotiny) require the extreme heat of a bushfire to open and germinate in the nutrient-rich, competition-free ash."
+    }
+  ],
+  "easter_egg": "Eucalyptus trees are biological arsonists: their leaves produce volatile flammable oils that actively encourage explosive forest fires, while their own living tissue survives protected under thick insulating bark?allowing their heat-activated seed capsules (serotiny) to germinate in the freshly cleared, competition-free ash beds.",
+  "interactive_model": {
+    "archetype": "optical_circuit_switch",
+    "title": "3D MEMS Optical Circuit Switch (OCS) & Free-Space Beam Routing Matrix",
+    "subtitle": "Interactive 3D Collimator Fiber Array, Piezoelectric 3D MEMS Dual-Axis Micro-Mirrors & Photonic Crossbar Beam Steering",
+    "badge": "PHOTONIC FABRIC // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 285,
+      "pitch": 0.38,
+      "yaw": 0.72
+    },
+    "contextual_labels": {
+      "input_collimator": {
+        "name": "136-Fiber High-Precision Input Collimator Array",
+        "desc": "Transforms diverging optical signals from single-mode fibers into parallel collimated Gaussian beams."
+      },
+      "input_mems_array": {
+        "name": "Primary 3D MEMS Steering Mirror Matrix",
+        "desc": "Piezoelectric silicon micro-mirrors tilting along dual axes to direct beams toward target output mirrors."
+      },
+      "free_space_cavity": {
+        "name": "Hermetically Sealed Free-Space Optical Cavity",
+        "desc": "Particle-free, temperature-stabilized vacuum cavity preventing refractive atmospheric turbulence and dust occlusion."
+      },
+      "output_mems_array": {
+        "name": "Secondary 3D MEMS Coupling Mirror Matrix",
+        "desc": "Compensates for beam trajectory and aligns the reflected wavefront precisely with the target output collimator."
+      },
+      "output_collimator": {
+        "name": "136-Fiber Output Coupling Collimator Array",
+        "desc": "Focuses the reflected parallel beam back into single-mode ribbon fibers with sub-0.5 dB insertion loss."
+      },
+      "piezo_actuator": {
+        "name": "Dual-Axis Piezoelectric Gimbal Actuator",
+        "desc": "High-bandwidth piezoelectric positioners delivering sub-milliradian pointing precision with zero mechanical backlash."
+      }
+    },
+    "controls": [
+      {
+        "id": "port_count",
+        "label": "Switch Matrix Dimension",
+        "min": 64,
+        "max": 256,
+        "step": 32,
+        "default": 136,
+        "unit": "Ports"
+      },
+      {
+        "id": "cavity_length",
+        "label": "Free-Space Cavity Length",
+        "min": 100,
+        "max": 300,
+        "step": 10,
+        "default": 180,
+        "unit": "mm"
+      },
+      {
+        "id": "angular_drift",
+        "label": "Thermal Angular Drift",
+        "min": 0,
+        "max": 0.005,
+        "step": 0.0005,
+        "default": 0.001,
+        "unit": "deg"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "insertion_loss",
+        "label": "Total Optical Insertion Loss",
+        "unit": "dB"
+      },
+      {
+        "id": "switching_latency",
+        "label": "Mirror Reconfiguration Time",
+        "unit": "ms"
+      },
+      {
+        "id": "power_savings",
+        "label": "Power Saved vs Electrical Spine",
+        "unit": "kW/switch"
+      },
+      {
+        "id": "beam_waist_growth",
+        "label": "Rayleigh Beam Waist Expansion",
+        "unit": "%"
+      }
+    ]
+  }
+}
