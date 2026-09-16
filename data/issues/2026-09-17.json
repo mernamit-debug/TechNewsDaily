@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "issue_number": 17,
+    "date": "2026-09-17",
+    "reading_streak": 17
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.35 GWh",
+    "transformer_lead_time": "185 WKS",
+    "optical_bandwidth": "3.6 Tbps",
+    "target_pue": "1.04",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "The $2.2B Military Island: US Army awards landmark nuclear microreactor contracts to deploy off-grid baseload power across defense installations, severing reliance on vulnerable civilian grids.",
+    "TSMC A16 Backside Power Unveiled: Super Power Rail routes power rails behind thinned silicon wafers, cutting resistive IR drop by 85% and reshaping sub-2nm AI accelerator architectures.",
+    "BWXT & Curtiss-Wright Microreactor Moat: Specialized defense nuclear suppliers corner the military energy islanding market as Project Pele moves toward commercial deployment.",
+    "Ontario Municipalities Cap Datacenter Power: Canadian municipal councils enact 50 MW connection caps on hyperscale compute facilities amid provincial grid congestion.",
+    "electronica India Day 2 in Bengaluru: Over 1,500 industry leaders convene at BIEC for the India Electronics Conclave, signing MoUs to scale domestic semiconductor packaging and SMT lines."
+  ],
+  "lead_story": {
+    "kicker": "SEPTEMBER 17 // LEAD INVESTIGATIVE ANCHOR",
+    "headline": "The $2.2 Billion Military Island: US Army Awards Historic Nuclear Microreactor Contracts to Shield Defense AI from Civilian Grid Collapse",
+    "image_url": "assets/nuclear-microreactor.jpg",
+    "image_caption": "Containerized 5MW transportable nuclear microreactor undergoing thermal integration testing for off-grid military installation deployment.",
+    "image_alt": "Transportable high-temperature gas-cooled nuclear microreactor module on concrete pad",
+    "catch_up": "In a decisive strategic move that accelerates the physical militarization of AI power infrastructure, the US Army formally awarded up to $2.2 billion in contracts to deploy commercial nuclear microreactors across critical military bases and defense compute installations. Spurred by growing fears that cascading civilian grid failures and foreign cyber sabotage could blind autonomous defense networks, the Pentagon is moving to permanently sever its mission-critical AI compute nodes from the vulnerable public electric grid.",
+    "mechanism": "Unlike massive 1,000MW conventional reactors that require 8-year construction cycles and millions of gallons of cooling water, transportable microreactors (such as 1MW to 10MW high-temperature gas-cooled or heat-pipe designs like Westinghouse eVinci and BWXT Project Pele) are factory-assembled, sealed modules transportable via standard ISO shipping containers. Utilizing TRISO (Tri-structural Isotropic) fuel that cannot melt down even under complete loss of coolant, microreactors operate for 5 to 10 years without refueling, providing true islanded, air-gapped baseload power that operates completely independent of civilian transmission lines and external fuel supply logistics.",
+    "analogy": "Traditional military datacenters relied on the public grid like a homeowner relying on city tap water with a few bottles in the pantry. When the reservoir runs dry, backup diesel generators run out of fuel within 72 hours. A nuclear microreactor is like having an indestructible, closed-loop geothermal geyser in your backyard that runs continuously for a decade without anyone touching it.",
+    "pr_claim": "This strategic energy resilience initiative guarantees uninterrupted power for national defense installations while pioneering clean, modular advanced nuclear technologies.",
+    "pr_reality": "The Pentagon watched civilian electric utilities grovel before public utility commissions over 100MW datacenter interconnects and realized the public electric grid is a decaying, insecure liability that cannot be trusted to power sovereign military neural nets during a geopolitical crisis.",
+    "bull_take": "Establishes a guaranteed, deep-pocketed sovereign customer base for microreactor developers, driving manufacturing scale down the cost curve and creating a regulatory fast-track that commercial tech hyperscalers will soon copy.",
+    "bear_take": "Microreactor deployments remain strictly gated by the acute scarcity of High-Assay Low-Enriched Uranium (HALEU); defense priority allocations will crowd out commercial AI startups and civilian SMR projects from accessing domestic enrichment supplies through 2029.",
+    "cascades": "The Department of Defense establishes sovereign 'Defense Compute Corridors' on federal reservations; commercial hyperscalers lobby Congress for identical Title III Defense Production Act waivers to bypass NRC civilian licensing backlogs.",
+    "why_it_matters": "The physical architecture of national security AI has officially decoupled from civilian utility grids; sovereign compute will no longer run on commercial power lines.",
+    "cocktail_flex": "Silicon Valley is still arguing with local zoning boards over transformer substations, while the US Army just ordered $2.2 billion of nuclear reactors that can be delivered in a shipping container.",
+    "web_investigation": {
+      "overview": "US Department of the Army microreactor acquisition notices, National Association of Manufacturers (NAM) Defense Intelligence report, and DOE Office of Nuclear Energy TRISO fuel milestones.",
+      "sources": [
+        {
+          "title": "National Association of Manufacturers: Army Awards $2.2B for Nuclear Microreactors at Military Sites",
+          "publisher": "NAM Newsroom",
+          "url": "https://www.google.com/url?q=https://nam.org/army-awards-2-2b-for-nuclear-microreactors-at-military-sites/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Defense Manufacturing Intelligence",
+          "snippet": "Documents $2.2 billion contract award for transportable microreactors across military bases and critical infrastructure."
+        },
+        {
+          "title": "US Department of Energy: Westinghouse eVinci Microreactor Criticality and Remote Siting Milestones",
+          "publisher": "DOE Office of Nuclear Energy",
+          "url": "https://www.google.com/url?q=https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Federal Technical Announcement",
+          "snippet": "Details heat-pipe microreactor testing, passive safety validation, and factory-fabricated deployment timelines."
+        },
+        {
+          "title": "Defense Mirror: US Army Awards First-Ever Nuclear Micro-Reactor Installations",
+          "publisher": "Defense Mirror Aerospace & Security",
+          "url": "https://www.google.com/url?q=https://defensemirror.com/news/41909&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Military Procurement Analysis",
+          "snippet": "Analyzes five microreactor installations providing off-grid operational power for defense computing and drone radar arrays."
+        }
+      ],
+      "search_queries": [
+        "US Army 2.2 billion nuclear microreactors military sites September 2026",
+        "Westinghouse eVinci microreactor criticality milestone DOE",
+        "Project Pele TRISO microreactor transportable defense compute"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "BWXT & Curtiss-Wright Secure Microreactor Moat as Pentagon Backs Off-Grid Defense Infrastructure",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w%3D1000%26auto%3Dformat%26fit%3Dcrop&source=gmail&ust=1789687013726000&sa=E",
+    "image_caption": "Precision reactor core pressure vessel and TRISO fuel element containment assembly inside specialized nuclear manufacturing bay.",
+    "image_alt": "Nuclear reactor pressure vessel and precision valve assembly in manufacturing plant",
+    "company": "BWX Technologies / Curtiss-Wright",
+    "ticker": "NYSE: BWXT / NYSE: CW",
+    "market_cap": "$11.2B (BWXT) / $13.5B (CW)",
+    "summary": "With the US Army committing $2.2 billion to nuclear microreactors and the Pentagon prioritizing energy islanding, BWX Technologies (BWXT) and Curtiss-Wright have consolidated a near-monopoly on defense-grade nuclear engineering. As the prime contractor fabricating the Department of Defense's Project Pele transportable microreactor and the exclusive domestic supplier of naval nuclear propulsion components and control rod mechanisms, BWXT is translating sovereign defense contracts into a multi-decade industrial moat.",
+    "mechanism": "Specialized NRC-licensed Category I facilities capable of handling weapons-grade and high-assay nuclear materials, fabricating TRISO coated-particle fuel pellets that withstand temperatures exceeding 1,600?C without core damage.",
+    "metrics": {
+      "capex": "$650M Nuclear Manufacturing & Advanced TRISO Fuel Line Expansion (2025?2027)",
+      "moat": "Category I Nuclear Security Clearance & Sole-Source Defense Reactor Tooling",
+      "regulatory": "DOD Strategic Capabilities Office (SCO) Certification & NRC Part 52/53 Clearances",
+      "velocity": "9.8 / 10"
+    },
+    "takeaway": "While tech venture capitalists pour billions into speculative nuclear software startups, BWXT and Curtiss-Wright own the actual high-security heavy forging presses, fuel fabrication licenses, and defense contracts that turn nuclear physics into running power.",
+    "web_investigation": {
+      "overview": "BWX Technologies Form 10-Q disclosures, Curtiss-Wright defense segment order books, and DOD Project Pele technical validation filings.",
+      "sources": [
+        {
+          "title": "BWX Technologies Form 10-Q: Government Operations Segment & Microreactor Contract Backlog",
+          "publisher": "BWXT Investor Relations / SEC EDGAR",
+          "url": "https://www.google.com/url?q=https://investors.bwxt.com/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "SEC Form 10-Q Filing",
+          "snippet": "Discloses record government contract backlog for advanced nuclear components, TRISO fuel, and terrestrial microreactors."
+        },
+        {
+          "title": "Curtiss-Wright Defense Systems: Commercial Nuclear Power and Critical Flow Control Mechanisms",
+          "publisher": "Curtiss-Wright Investor Relations",
+          "url": "https://www.google.com/url?q=https://www.curtisswright.com/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Corporate Technical Overview",
+          "snippet": "Details reactor coolant pumps, control rod drive mechanisms, and safety valves for advanced modular reactors."
+        }
+      ],
+      "search_queries": [
+        "BWXT Project Pele microreactor contract order backlog 2026",
+        "Curtiss-Wright advanced reactor flow control valves defense"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": 1,
+      "headline": "electronica India Day 2 Convenes India Electronics Conclave at BIEC in Bengaluru",
+      "facts": "Day 2 of electronica India 2026 in Bengaluru saw over 1,500 delegates attend the India Electronics Conclave, where Karnataka IT leaders and global suppliers signed MoUs to establish local semiconductor packaging testbeds and automotive SMT manufacturing lines along the Tumkur Road industrial corridor.",
+      "reality_audit": "Memorandums of Understanding are signed freely on exhibition stages, but local electronics manufacturers still struggle with 40-day customs clearance delays for imported surface-mount pick-and-place equipment.",
+      "why_it_matters": "Solidifies Bengaluru as South Asia's undisputed engineering cockpit for automotive electronics and high-reliability embedded hardware.",
+      "sni": "9.0 / 10",
+      "web_sources": [
+        {
+          "title": "electronica India 2026: Supporting Program Overview and Conclave Agenda",
+          "publisher": "electronica India / Messe M?nchen",
+          "url": "https://www.google.com/url?q=https://electronica-india.com/en/trade-fair/program/overview/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Industry Trade Fair Portal"
+        }
+      ],
+      "search_query": "electronica India 2026 BIEC Bengaluru India Electronics Conclave September 17"
+    },
+    {
+      "id": 2,
+      "headline": "TSMC Details A16 Super Power Rail Nanosheet Architecture Ahead of Volume Ramp",
+      "facts": "Technical disclosures from TSMC's A16 (1.6nm) node confirmed that its backside power delivery network, dubbed 'Super Power Rail' (SPR), routes power rails directly beneath transistor source/drain terminals, cutting IR drop voltage loss by 10% and unlocking a 10% logic density boost for 2027 AI accelerators.",
+      "reality_audit": "Backside power delivery is a triumph of nano-scale engineering, but thinning 300mm silicon wafers down to just a few micrometers to expose backside contacts introduces extreme wafer warpage and yield loss during chemical-mechanical polishing.",
+      "why_it_matters": "Marks the decisive architectural transition of semiconductor logic from single-sided chips into true double-sided 3D silicon fabrics.",
+      "sni": "9.5 / 10",
+      "web_sources": [
+        {
+          "title": "SemiWiki: TSMC Super Power Rail (SPR) Backside Power at VLSI 2026",
+          "publisher": "SemiWiki Semiconductor Intelligence",
+          "url": "https://www.google.com/url?q=https://semiwiki.com/wikis/industry-wikis/tsmc-super-power-rail-spr-wiki/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Semiconductor Engineering Wiki"
+        }
+      ],
+      "search_query": "TSMC A16 Super Power Rail backside power delivery nanosheet 2026"
+    },
+    {
+      "id": 3,
+      "headline": "Ontario Municipalities Enact 50 MW Connection Caps on Hyperscale AI Datacenters",
+      "facts": "Municipal councils across Ontario, Canada, enacted municipal bylaws capping new datacenter electrical grid draw at 50 MW per campus, citing provincial Hydro One substation congestion and rising residential power rates.",
+      "reality_audit": "Cloud hyperscalers pitched Canada as a cool-climate green compute sanctuary, but Canadian mayors are proving just as unwilling as US utility commissions to sacrifice local power grids for foreign training clusters.",
+      "why_it_matters": "Demonstrates that the municipal gridlock facing AI datacenters is a global systemic crisis, not a localized US phenomenon.",
+      "sni": "9.1 / 10",
+      "web_sources": [
+        {
+          "title": "Global News Canada: Here's How Some Ontario Municipalities Are Grappling with New AI Data Centres",
+          "publisher": "Global News / The Canadian Press",
+          "url": "https://www.google.com/url?q=https://globalnews.ca/news/12061153/heres-how-some-ontario-municipalities-are-grappling-with-new-ai-data-centres/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "National News Report"
+        }
+      ],
+      "search_query": "Ontario municipalities grappling with new AI data centres Global News September 2026"
+    },
+    {
+      "id": 4,
+      "headline": "Financial Institutions Form Alliances to Deploy Real-Time Deepfake Detection Protocols",
+      "facts": "On September 16, enterprise security alliances formed across European and North American financial institutions to deploy real-time deepfake audio and video detection protocols, responding to automated multi-agent voice cloning attacks bypassing bank biometric authentication.",
+      "reality_audit": "Deepfake detection software is engaged in a losing game of cat-and-mouse; every time a detector learns an artifact pattern, adversarial diffusion models retrain within 48 hours to erase the signature.",
+      "why_it_matters": "Forces financial institutions to abandon biometric voice verification in favor of hardware cryptographic security tokens.",
+      "sni": "8.9 / 10",
+      "web_sources": [
+        {
+          "title": "The Futurum Group: Exprivia Bets on Deepfake Detection to Win AI-Security Deals",
+          "publisher": "The Futurum Group Intelligence",
+          "url": "https://www.google.com/url?q=https://futurumgroup.com/insights/exprivia-bets-on-deepfake-detection-to-win-ai-security-deals/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Enterprise Security Analysis"
+        }
+      ],
+      "search_query": "Exprivia deepfake detection AI security deals Futurum September 2026"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "SECTION 3 // DETAILED CASE STUDY ANALYSIS",
+    "headline": "The Physics of Backside Power Delivery: IR Drop Mitigation, TSV Capacitive Parasitics & Wafer Thinning Mechanics",
+    "image_url": "assets/backside-power-rail.jpg",
+    "image_caption": "Figure 3.9: Dual-sided wafer schematic showing backside power distribution networks, through-silicon nano-vias, and frontside signal routing layers.",
+    "image_alt": "Cross-section TEM image of backside power delivery network and nanosheet transistor channels",
+    "thesis": "For fifty years, semiconductor chips delivered both electrical power and communication signals through a single congested metal interconnect stack on the front of the silicon wafer. At sub-2nm dimensions, copper wire resistance explodes exponentially, causing severe resistive voltage drops (IR drop) that starve nanosheet transistors of operational voltage. Backside Power Delivery Networks (BSPDN) decouple power from signaling by routing heavy supply rails on the rear of the wafer, but introduce severe mechanical wafer-thinning stresses and nano-scale through-silicon via parasitics.",
+    "physics_breakdown": "In conventional Frontside Power Delivery (FSDN), electric current must navigate down through 15 to 20 thin back-end-of-line (BEOL) copper metal layers (M0 to M15). The resistance of a sub-20nm copper wire escalates according to the Fuchs-Sondheimer and Mayadas-Shatzkes models, where electron mean free path (? 39 nm in copper) exceeds wire dimensions, causing electron surface and grain boundary scattering that spikes resistivity by 500%. Consequently, dynamic power supply voltage (V_dd ? 0.7V) suffers an resistive IR drop of over 15% (?V = I R_interconnect > 100 mV), causing severe clock jitter and logic failure. Backside Power Delivery (such as TSMC's Super Power Rail) flips the manufacturing process: frontside logic and signal wires are fabricated first, bonded face-down to a carrier wafer, and the original silicon substrate is ground and polished down via Chemical-Mechanical Planarization (CMP) to a thickness of under 500 nm. Deep Reactive-Ion Etching (DRIE) creates sub-micron Nano Through-Silicon Vias (nano-TSVs) connecting wide, thick backside copper power rails directly to the nanosheet transistor source and drain terminals. This eliminates 15 resistive metal layers, reducing IR drop by 85% and reclaiming 10% to 15% of frontside metal routing tracks. However, the residual stress tensor in ultra-thin silicon (?_residual > 500 MPa) alters electron and hole mobility via piezoresistive effects, requiring atomic-scale stress-compensation dielectric layers (SiN/SiCN) to prevent wafer cracking during subsequent thermal annealing cycles (>400?C).",
+    "matrix": {
+      "mechanism": "CMP thinning of silicon substrates to sub-micron thickness, etched with nano-TSVs connecting backside power grids directly to transistor contacts.",
+      "audit": "Foundry PR promises '15% speedups and smaller chips' while concealing that extreme wafer thinning and double-sided lithography cuts wafer fab line yields by 12% in early production.",
+      "cascades": "EDA software giants (Synopsys, Cadence) completely overhaul place-and-route algorithms to optimize 3D dual-sided thermal and electrical co-design; packaging OSATs develop specialized backside heat-sink bonding.",
+      "sni": "9.9 / 10 (SUB-2NM NANO-ELECTRONICS & SOLID-STATE QUANTUM TRANSPORT)"
+    },
+    "takeaway": "The modern microchip is no longer a surface-level drawing; it is a three-dimensional skyscraper with the plumbing installed in the basement and the data traffic flying across the roof.",
+    "web_investigation": {
+      "overview": "IEEE International Electron Devices Meeting (IEDM) backside power papers, TSMC Super Power Rail VLSI 2026 disclosures, and imec backside interconnect reliability benchmarks.",
+      "sources": [
+        {
+          "title": "IEEE IEDM: Structural and Electrical Characterization of Sub-100nm Nano-TSVs for Backside Power Delivery Networks",
+          "publisher": "IEEE Electron Devices Society",
+          "url": "https://www.google.com/url?q=https://ieeexplore.ieee.org/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "Peer-Reviewed Semiconductor Research",
+          "snippet": "Quantifies IR drop suppression, parasitic capacitance of through-silicon vias, and thermal resistance in thinned silicon."
+        },
+        {
+          "title": "imec Advanced Interconnect Roadmap: Enabling the Angstrom Era via Backside Power Delivery and Direct Transistor Contact",
+          "publisher": "imec Research Publications",
+          "url": "https://www.google.com/url?q=https://www.imec-int.com/&source=gmail&ust=1789687013726000&sa=E",
+          "type": "International Research Consortium Paper",
+          "snippet": "Compares buried power rails, backside power rails, and wafer bonding mechanical integrity at 1.4nm nodes."
+        }
+      ],
+      "search_queries": [
+        "backside power delivery IR drop nano TSV CMP wafer thinning",
+        "TSMC Super Power Rail SPR VLSI 2026 nanosheet transistor"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will the US Department of Defense commission at least one operational, grid-independent nuclear microreactor powering an active military installation before December 31, 2027?",
+    "consensus_yes_pct": 72,
+    "consensus_no_pct": 28
+  },
+  "micro_quiz": [
+    {
+      "id": 1,
+      "question": "Why did the US Army award up to $2.2 billion in contracts to deploy nuclear microreactors at military sites?",
+      "options": [
+        "A) To test nuclear propulsion in military trucks",
+        "B) To create islanded, air-gapped baseload power that permanently shields defense AI and mission-critical installations from civilian grid collapse and cyber sabotage",
+        "C) To power civilian electric vehicle charging stations"
+      ],
+      "correct_index": 1,
+      "explanation": "The US Army awarded $2.2B for microreactors to secure dedicated, off-grid energy resilience for military installations and autonomous defense AI, severing reliance on vulnerable commercial electric grids."
+    },
+    {
+      "id": 2,
+      "question": "What physical problem in sub-2nm computer chips does Backside Power Delivery (BSPDN) solve?",
+      "options": [
+        "A) It prevents computer chips from rusting",
+        "B) It eliminates severe resistive voltage drop (IR drop) by moving thick power rails to the rear of the wafer, freeing up frontside wiring for dense signal interconnects",
+        "C) It allows chips to communicate with satellites without antennas"
+      ],
+      "correct_index": 1,
+      "explanation": "As transistors shrink, thin frontside copper wires experience massive resistance that causes severe voltage drops (IR drop). Moving power rails to the backside directly connects power to transistors, cutting IR drop by up to 85%."
+    },
+    {
+      "id": 3,
+      "question": "What major mechanical challenge occurs when thinning a 300mm silicon wafer down to sub-micron thickness for Backside Power Delivery?",
+      "options": [
+        "A) The wafer becomes magnetically charged",
+        "B) Extreme residual mechanical stress causes wafer warpage, structural cracking, and altered transistor carrier mobility via piezoresistive effects",
+        "C) The silicon turns into liquid"
+      ],
+      "correct_index": 1,
+      "explanation": "Grinding and polishing silicon down to hundreds of nanometers induces massive residual stress (>500 MPa), causing wafer warpage and micro-cracking unless stabilized by specialized bonding carriers and dielectric stress buffers."
+    },
+    {
+      "id": 4,
+      "question": "What key industry conclave took place on Day 2 of electronica India 2026 at the Bengaluru International Exhibition Centre (BIEC)?",
+      "options": [
+        "A) India Electronics Conclave 2026, focusing on automotive electronics, semiconductor packaging, and Karnataka hardware manufacturing",
+        "B) Annual Consumer Smartphone Expo",
+        "C) International Video Game Championship"
+      ],
+      "correct_index": 0,
+      "explanation": "On September 17, 2026, the India Electronics Conclave convened on Day 2 of electronica India at BIEC in Bengaluru to advance indigenous semiconductor packaging, SMT lines, and automotive electronics."
+    },
+    {
+      "id": 5,
+      "question": "How does the mantis shrimp strike its prey with the acceleration of a .22 caliber bullet without shattering its own club-like appendages?",
+      "options": [
+        "A) Its clubs are coated in natural diamond",
+        "B) Its clubs feature a specialized composite microstructure with a helicoidal 'Bouligand' architecture that deflects and dissipates impact shockwaves",
+        "C) It decelerates before making contact"
+      ],
+      "correct_index": 1,
+      "explanation": "The mantis shrimp's dactyl club contains a layered, helicoidal arrangement of mineralized chitin fibers (a Bouligand structure) that forces micro-cracks to twist and dissipate energy, preventing catastrophic failure during ultra-high-velocity impacts."
+    }
+  ],
+  "easter_egg": "The mantis shrimp strikes prey with an acceleration faster than a bullet from a gun (10,000 times gravity), creating cavitation bubbles that collapse with temperatures hotter than the surface of the sun?yet never breaks its own club thanks to an internal helicoidal 'Bouligand' fiber architecture that forces shockwaves to twist harmlessly into micro-spirals.",
+  "interactive_model": {
+    "archetype": "backside_power_nanosheet",
+    "title": "Backside Power Delivery Network (BSPDN) & Super Power Rail",
+    "subtitle": "Interactive 3D Nanosheet Transistor Channels, Nano-TSVs, Frontside Signal Interconnects & Backside Copper Power Mesh",
+    "badge": "NANO-ELECTRONICS // 3D INTERACTIVE LAB",
+    "camera": {
+      "distance": 275,
+      "pitch": 0.44,
+      "yaw": 0.68
+    },
+    "contextual_labels": {
+      "nanosheet_channel": {
+        "name": "Vertically Stacked Nanosheet GAA Channel",
+        "desc": "Sub-2nm gate-all-around silicon ribbons wrapped on all four sides by high-k metal gate dielectrics."
+      },
+      "frontside_signal_beol": {
+        "name": "Frontside Signal BEOL Routing Layers",
+        "desc": "Uncongested copper metal layers dedicated entirely to high-speed clock and logic interconnect signals."
+      },
+      "nano_tsv": {
+        "name": "Sub-Micron Nano Through-Silicon Via (Nano-TSV)",
+        "desc": "High-density vertical copper plug connecting backside power directly into the transistor source/drain terminal."
+      },
+      "backside_power_mesh": {
+        "name": "Backside Low-Resistance Copper Power Mesh",
+        "desc": "Wide, thick copper rails routing ground and Vdd across the thinned rear substrate with near-zero IR drop."
+      },
+      "carrier_wafer_interface": {
+        "name": "Oxide-Oxide Fusion Bonding Interface",
+        "desc": "Molecular-bonded carrier wafer providing mechanical rigidity to ultra-thinned 500nm functional silicon."
+      },
+      "stress_buffer_layer": {
+        "name": "Piezoresistive Dielectric Stress-Buffer Layer",
+        "desc": "Engineered silicon nitride films counteracting residual wafer warpage and mechanical shear stresses."
+      }
+    },
+    "controls": [
+      {
+        "id": "silicon_thickness",
+        "label": "Substrate Thickness",
+        "min": 200,
+        "max": 1000,
+        "step": 50,
+        "default": 450,
+        "unit": "nm"
+      },
+      {
+        "id": "tsv_pitch",
+        "label": "Nano-TSV Pitch",
+        "min": 50,
+        "max": 250,
+        "step": 10,
+        "default": 110,
+        "unit": "nm"
+      },
+      {
+        "id": "supply_current",
+        "label": "Core Current Density",
+        "min": 0.5,
+        "max": 3,
+        "step": 0.1,
+        "default": 1.8,
+        "unit": "mA/?m?"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "ir_drop_reduction",
+        "label": "IR Drop Voltage Improvement",
+        "unit": "%"
+      },
+      {
+        "id": "frontside_routing_gain",
+        "label": "Signal Routing Track Gain",
+        "unit": "%"
+      },
+      {
+        "id": "residual_mechanical_stress",
+        "label": "Silicon Residual Shear Stress",
+        "unit": "MPa"
+      },
+      {
+        "id": "clock_jitter_margin",
+        "label": "Dynamic Voltage Clock Margin",
+        "unit": "ps"
+      }
+    ]
+  }
+}
