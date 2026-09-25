@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 26,
+    "date": "2026-09-26",
+    "headline": "The Autonomous Silicon Architect: Cadence Unveils ChipStack RTL Generation Agent to Code Production Silicon & Automate PPA Optimization",
+    "file_path": "data/issues/2026-09-26.json"
+  },
+  {
     "issue_number": 25,
     "date": "2026-09-25",
     "headline": "The 23-Gigawatt Reconductoring Sprint: DOE Deploys $2B Across 21,000 Miles of Grid as AI Datacenter Demand Forces Emergency 'Grid-Squeezing' Campaign",
