@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "issue_number": 30,
+    "date": "2026-09-30",
+    "reading_streak": 30
+  },
+  "radar_kpis": {
+    "baseload_nuclear": "3.98 GWh",
+    "transformer_lead_time": "192 Wks",
+    "optical_bandwidth": "102.4 Tbps",
+    "target_pue": "1.012",
+    "sni_rating": "9.9 / 10"
+  },
+  "cheat_sheet": [
+    "Trump Signs 'Self-Policing' AI Accord: President Trump, Speaker Mike Johnson, and tech titans (Huang, Musk, Nadella, Altman, Su) sign voluntary review pact in East Room luncheon.",
+    "Data Center Defense Doctrine: Trump vigorously defends hyperscale AI power plants as 'big, strong, absolutely beautiful buildings,' warning tech will flee overseas without them.",
+    "OpenAI DevDay Blitz: Sam Altman and OpenAI tease 20+ product and API launches, pivoting aggressively toward autonomous production agent infrastructure.",
+    "Karnataka 1 GW Green Grid Mandate: Karnataka Cabinet clears ?1,300 Cr Sustainable Data Centre Policy 2026-31, forcing hyperscale expansion into Mysuru and Mangaluru.",
+    "NVIDIA Silicon Hegemony: Jensen Huang positions OpenShell runtime security at the White House lunch, cementing hardware-level governance over statutory regulatory caps."
+  ],
+  "lead_story": {
+    "kicker": "WHITE HOUSE TECH SUMMIT & FEDERAL GOVERNANCE",
+    "headline": "Trump Signs Voluntary 'Self-Policing' Accord with Tech Titans as White House Rejects AI Pauses and Champions Gigawatt Data Centers",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto%3Dformat%26fit%3Dcrop%26w%3D1600%26q%3D80&source=gmail&ust=1790808404267000&sa=E",
+    "image_caption": "The White House East Room during high-level executive summits between federal leadership and Silicon Valley titans.",
+    "image_alt": "The White House exterior illuminated under evening twilight.",
+    "catch_up": "On Tuesday, September 29, 2026, President Donald Trump and House Speaker Mike Johnson hosted a landmark White House luncheon and summit in the East Room, convening the undisputed commanders of global compute: NVIDIA CEO Jensen Huang, Elon Musk, Microsoft CEO Satya Nadella, OpenAI President Greg Brockman and CEO Sam Altman, AMD CEO Lisa Su, Palo Alto Networks CEO Nikesh Arora, and David Sacks.",
+    "mechanism": "Rather than establishing statutory compute licensing regimes or approving the antitrust pacing waivers petitioned by safety labs, the Trump administration formalized a voluntary 'Self-Policing Accord.' The agreement commits frontier AI developers to conduct internal and third-party algorithmic reviews while strictly preserving commercial deployment velocity. In an impromptu West Wing driveway press conference alongside Jensen Huang and Speaker Johnson, Trump explicitly ruled out new bureaucratic agencies, declaring that existing law enforcement (DOJ, FBI) is sufficient, while mounting an aggressive defense of domestic AI data centers as 'big, strong, powerful, absolutely beautiful buildings' essential to preventing American compute from migrating overseas.",
+    "analogy": "Instead of establishing a Federal AI Commission with statutory teeth (the FDA model), the White House handed the steering wheel back to the automakers, asking them to write their own vehicle inspection stickers while offering federal zoning waivers to build 100-lane superhighways.",
+    "pr_claim": "The White House and tech leaders have reached a harmonious balance that ensures catastrophic AI safety through corporate responsibility while unleasing American technological dominance.",
+    "pr_reality": "The 'Self-Policing Accord' is total capitulation to Big Tech's commercial timetable. By swapping binding legislative guardrails for voluntary 'self-policing' commitments, the administration gave hyperscalers an open checkbook to consume municipal power grids, while shielding incumbent labs from antitrust scrutiny under the guise of patriotic national security solidarity.",
+    "bull_take": "Removing regulatory friction and fast-tracking energy interconnection clears the runway for American frontier labs to scale compute unimpeded, out-innovating foreign competitors while utilizing private balance sheets to rebuild domestic power infrastructure.",
+    "bear_take": "Voluntary self-regulation has failed every critical technology sector in modern history. Without independent verification, public safety relies entirely on the goodwill of venture-backed executives whose equity incentives demand maximizing token velocity above all else.",
+    "cascades": "Over the next 6-12 months, federal agencies will streamline environmental impact permits for gigawatt gas and nuclear data center sites across Texas, Virginia, and the Midwest; 12-24 months out, European regulators and state attorneys general will launch antitrust and environmental challenges against the voluntary federal compact, creating a stark transatlantic regulatory divergence.",
+    "why_it_matters": "This summit permanently codifies American AI industrial policy: deregulation of model deployment paired with state-backed protection of energy-heavy data centers. The era of existential safety pauses is officially dead in Washington.",
+    "cocktail_flex": "When someone asks how Washington plans to regulate superintelligence, tell them the truth: they had lunch at the White House, praised the aesthetics of server farms, and agreed that tech billionaires will inspect their own algorithms.",
+    "web_investigation": {
+      "overview": "Firsthand news reports, wire dispatches, and executive briefings detailing the September 29, 2026 White House AI summit and voluntary accord.",
+      "sources": [
+        {
+          "title": "Trump Says Top Tech Firms Have Signed Accord to 'Self-Police' AI Development",
+          "publisher": "Washington Post",
+          "url": "https://www.google.com/url?q=https://www.washingtonpost.com/politics/2026/09/29/president-donald-trump/6faf6f58-bc00-11f1-81fc-9b76f8343b6c_story.html&source=gmail&ust=1790808404267000&sa=E",
+          "type": "National Political Report",
+          "snippet": "President Donald Trump on Tuesday signed a voluntary accord with leaders of major artificial intelligence companies including Nvidia, OpenAI, and Microsoft, praising self-regulation and defending data center construction."
+        },
+        {
+          "title": "Trump, Johnson Meet Top Tech Leaders at White House as Voluntary AI Accord Signed",
+          "publisher": "CBC News / Associated Press",
+          "url": "https://www.google.com/url?q=https://www.cbc.ca/news/world/ai-trump-agreement-9.7363125&source=gmail&ust=1790808404267000&sa=E",
+          "type": "International Wire Dispatch",
+          "snippet": "AP reports on the East Room luncheon where Trump, Mike Johnson, Jensen Huang, Elon Musk, and Satya Nadella formalized voluntary internal reviews while rejecting government-imposed deployment freezes."
+        },
+        {
+          "title": "Exclusive: Full List of Attendees at White House AI Lunch",
+          "publisher": "Axios Media",
+          "url": "https://www.google.com/url?q=https://www.axios.com/2026/09/29/trump-ai-meeting-list-ceos-johnson&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Political Exclusive",
+          "snippet": "Axios details the high-profile attendee roster at Tuesday's White House AI luncheon, including Jensen Huang, Elon Musk, Sam Altman, Greg Brockman, Satya Nadella, Lisa Su, and Nikesh Arora."
+        }
+      ],
+      "search_queries": [
+        "Trump says top tech firms signed accord self police AI Washington Post",
+        "Axios Full list of attendees White House AI lunch September 29 2026",
+        "Trump praises AI self regulation data centers White House"
+      ]
+    }
+  },
+  "company_spotlight": {
+    "headline": "OpenAI's Double Game: Pledging White House Self-Policing While Teasing 20+ DevDay Agent Breakthroughs",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto%3Dformat%26fit%3Dcrop%26w%3D1600%26q%3D80&source=gmail&ust=1790808404267000&sa=E",
+    "image_caption": "Abstract neural representation of autonomous agent workflows and recursive execution chains.",
+    "image_alt": "Flowing fluid gradient patterns representing advanced algorithmic intelligence.",
+    "company": "OpenAI LLC",
+    "ticker": "PRIVATE (Valuation: $157B)",
+    "market_cap": "$157B",
+    "summary": "OpenAI is demonstrating consummate political dexterity. On Tuesday morning, Sam Altman and Greg Brockman joined President Trump in the East Room to endorse voluntary self-policing; by afternoon, OpenAI was teasing a 20+ product blitz at DevDay 2026 aimed at cementing commercial hegemony across autonomous agent orchestration.",
+    "mechanism": "By signing the White House accord, OpenAI shields itself from mandatory pre-deployment testing regimes while preserving maximum flexibility for its for-profit corporate restructuring. The forthcoming DevDay announcements center on full-stack agentic execution: native computer-use APIs, sub-second multimodal voice streaming, and enterprise governance connectors that directly compete with Anthropic's Claude 5 ecosystem.",
+    "metrics": {
+      "capex": "$7.8B Annual Compute Cluster & Infrastructure Lease Commitments",
+      "moat": "Developer API Ubiquity, ChatGPT Consumer Scale (350M+ WAU) & Microsoft Azure Synergy",
+      "regulatory": "High (Balancing White House deregulation against California state AI bills and non-profit conversion)",
+      "velocity": "10 / 10"
+    },
+    "takeaway": "OpenAI has mastered the Washington playbook: publicly embrace patriotic voluntary safety accords while privately accelerating commercial deployment to outflank open-source models before competitors can catch up.",
+    "web_investigation": {
+      "overview": "Corporate developer teasers, conference agendas, and executive announcements surrounding OpenAI DevDay 2026.",
+      "sources": [
+        {
+          "title": "OpenAI Teases 20+ Launches at DevDay 2026 as Sam Altman Takes Stage",
+          "publisher": "Business Upturn Tech",
+          "url": "https://www.google.com/url?q=https://businessupturn.com/usa/business/tech/openai-teases-20-launches-at-devday-2026-as-sam-altman-takes-stage-for-major-keynote/&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Industry Coverage",
+          "snippet": "OpenAI prepares for its most expansive developer conference to date, with Sam Altman, Romain Huet, and leadership previewing over 20 platform and API launches."
+        },
+        {
+          "title": "Top Tech Firms Sign Accord to Self-Police AI Development",
+          "publisher": "Las Vegas Review-Journal / AP",
+          "url": "https://www.google.com/url?q=https://www.reviewjournal.com/news/politics-and-government/top-tech-firms-have-signed-accord-to-self-police-ai-development-trump-says-3892969/&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Newswire Dispatch",
+          "snippet": "Details of Greg Brockman and Sam Altman attending the White House East Room summit and committing to voluntary review guidelines."
+        }
+      ],
+      "search_queries": [
+        "OpenAI teases 20 launches DevDay 2026 Sam Altman",
+        "Greg Brockman Sam Altman White House AI meeting Trump"
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "id": "quick-hit-1",
+      "headline": "Trump Reaffirms Data Center Acceleration at Andrew W. Mellon Auditorium",
+      "facts": "Following the White House luncheon, President Trump addressed cabinet members, Secretary of State Marco Rubio, and business leaders at the historic Andrew W. Mellon Auditorium, reiterating that federal policy will aggressively support domestic data center construction and energy generation.",
+      "reality_audit": "The administration's promise that tech firms will 'make communities happy with oil, gas, and taxes' clashes with mounting local grassroots opposition over water depletion and surging residential electricity tariffs.",
+      "why_it_matters": "Demonstrates that digital infrastructure siting has become a national political priority, treated with the same strategic urgency as domestic defense manufacturing.",
+      "sni": "9.7 / 10",
+      "web_sources": [
+        {
+          "title": "Trump Reaffirms Tech Acceleration at Andrew W. Mellon Auditorium",
+          "publisher": "San Antonio Express-News / AP",
+          "url": "https://www.google.com/url?q=https://www.expressnews.com/news/politics/article/the-latest-news-outlets-ask-court-to-bar-white-22454065.php&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Political Wire"
+        }
+      ],
+      "search_query": "Trump Mellon Auditorium Sept 29 2026 data centers"
+    },
+    {
+      "id": "quick-hit-2",
+      "headline": "Karnataka Cabinet Clears ?1,300 Cr Sustainable Data Centre Policy Targeting 1 GW IT Load",
+      "facts": "The Karnataka State Cabinet formally approved the Karnataka Sustainable Data Centre Policy 2026?2031 with a ?1,300.45 crore budget, setting a target of 1 GW cumulative IT capacity by 2031 while incentivizing hyperscale development beyond Bengaluru into Mysuru and coastal Mangaluru.",
+      "reality_audit": "Bengaluru's water table and transmission substations are strained to capacity; the state's push to redirect compute to coastal Mangaluru is an engineering necessity masked as regional development.",
+      "why_it_matters": "Establishes India's premier tech hub as a competitive destination for 10-12% of the country's AI-ready data center capacity under strict PUE and WUE standards.",
+      "sni": "9.8 / 10",
+      "web_sources": [
+        {
+          "title": "Karnataka Govt Approves Sustainable Data Centre Policy to Address AI Footprint",
+          "publisher": "The Hindu",
+          "url": "https://www.google.com/url?q=https://www.thehindu.com/news/cities/bangalore/karnataka-govt-approves-sustainable-data-centre-to-address-ais-environmental-footprint/article71481827.ece&source=gmail&ust=1790808404267000&sa=E",
+          "type": "State Infrastructure Coverage"
+        },
+        {
+          "title": "Karnataka Bets on Greener Data Centres as AI Reshapes Infrastructure",
+          "publisher": "Economic Times",
+          "url": "https://www.google.com/url?q=https://sustainability.economictimes.indiatimes.com/news/green-tech/karnataka-bets-on-greener-data-centres-as-ai-demand-reshapes-digital-infrastructure/134384570&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Energy & Infrastructure Report"
+        }
+      ],
+      "search_query": "Karnataka Sustainable Data Centre Policy 2026 2031 1 GW The Hindu"
+    },
+    {
+      "id": "quick-hit-3",
+      "headline": "NVIDIA Shares Surge as Jensen Huang Positions OpenShell at White House Table",
+      "facts": "NVIDIA stock climbed following Jensen Huang's prominent placement at President Trump's side in the East Room, coinciding with Wall Street's positive reception to OpenShell and the company's record $150 billion share buyback program.",
+      "reality_audit": "Wall Street celebrated the implicit confirmation that the federal government will not impose compute limits or silicon export rollbacks on domestic AI accelerators.",
+      "why_it_matters": "Cemented NVIDIA's role not merely as a component vendor, but as the chief architect of American industrial technology policy.",
+      "sni": "9.6 / 10",
+      "web_sources": [
+        {
+          "title": "Nvidia Sets Biggest-Ever Buyback Plan as AI Boom Fuels Growth",
+          "publisher": "BNN Bloomberg",
+          "url": "https://www.google.com/url?q=https://www.bnnbloomberg.ca/business/2026/09/28/nvidia-boosts-share-buyback-by-record-us150b-as-ai-boom-fuels-growth/&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Market Analysis"
+        }
+      ],
+      "search_query": "Nvidia Jensen Huang White House Trump lunch stock"
+    },
+    {
+      "id": "quick-hit-4",
+      "headline": "Labor Unions and Tech Coalitions Clash Over AI Workplace Protections",
+      "facts": "Labor organizations and tech worker unions voiced sharp criticism of the White House voluntary accord, warning that omitting labor standards from the 'self-policing' pact leaves algorithmic worker displacement and automated monitoring entirely unchecked.",
+      "reality_audit": "The tech lobby's unified front in the East Room sidelined labor unions entirely, prioritizing rapid capital deployment and energy grid acquisition over workforce transition guarantees.",
+      "why_it_matters": "Guarantees that labor resistance will pivot to state legislatures and collective bargaining fights in Hollywood, logistics, and call centers.",
+      "sni": "9.4 / 10",
+      "web_sources": [
+        {
+          "title": "News & Commentary: September 29, 2026",
+          "publisher": "OnLabor",
+          "url": "https://www.google.com/url?q=https://onlabor.org/september-29-2026/&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Labor Policy Analysis"
+        }
+      ],
+      "search_query": "OnLabor September 29 2026 unions AI tech"
+    }
+  ],
+  "deep_dive": {
+    "kicker": "THERMODYNAMICS & POWER GRID INFRASTRUCTURE",
+    "headline": "The Thermodynamics of 1 GW Hyperscale AI: Power Factor Correction, Harmonic Distortion & The Karnataka Green Grid Mandate",
+    "image_url": "https://www.google.com/url?q=https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto%3Dformat%26fit%3Dcrop%26w%3D1600%26q%3D80&source=gmail&ust=1790808404267000&sa=E",
+    "image_caption": "High-voltage electrical substation and transmission lines feeding high-density compute facilities.",
+    "image_alt": "Industrial high-voltage power transmission towers silhouetted against a setting sun.",
+    "thesis": "Scaling AI data centers to 1 GW IT loads?as targeted by the Karnataka Sustainable Data Centre Policy?is fundamentally constrained by power electronics physics: non-linear server switching transients, power factor degradation, and Fourier heat dissipation limits that render legacy air cooling obsolete.",
+    "physics_breakdown": "A 1 GW datacenter consuming 48V direct-current power across hundreds of thousands of accelerator dies is not merely a massive energy consumer; it is an electrically volatile non-linear load. The power factor (PF = P / S = cos(theta)) measures the ratio of active power (P in MW) to apparent power (S in MVA). Because server power supply units (PSUs) utilize high-frequency pulse-width modulated (PWM) switched-mode converters, they inject severe Total Harmonic Distortion (THD_I = sqrt(sum_{n=2}^infinity I_n^2) / I_1) back into the 220kV/400kV transmission grid. If THD exceeds 5%, high-frequency harmonics cause destructive eddy current heating in utility step-down transformers, tripling transformer failure rates. Mitigating this requires active Power Factor Correction (PFC) stages operating at >0.99 PF and multi-megawatt active harmonic filters. On the thermal axis, heat rejection is governed by Fourier's Law of Thermal Conduction: q = -k nabla T. In traditional air-cooled facilities, heat transfer coefficients (h_air approx 20-50 W/m^2 K) require hurricane-force airflow, resulting in unacceptable Power Usage Effectiveness (PUE > 1.35) and catastrophic water evaporation rates (Water Usage Effectiveness WUE > 2.5 L/kWh). Karnataka's new policy mandates PUE < 1.3 and WUE < 0.5 L/kWh. Achieving this demands two-phase direct-to-chip microchannel liquid cooling (h_liquid > 10,000 W/m^2 K) or dielectric fluorochemical immersion, where latent heat of vaporization (Delta H_vap) absorbs thermal energy isothermally, venting low-grade heat to district heating networks or closed-loop dry coolers without evaporative water loss.",
+    "matrix": {
+      "mechanism": "Active PFC harmonic suppression paired with closed-loop dielectric liquid immersion cooling.",
+      "audit": "Politicians promise 'green data centers' powered by 100% solar; physics dictates that solar intermittency requires round-the-clock gas peakers or 4-hour utility BESS batteries to prevent voltage sag trips.",
+      "cascades": "Mandatory installation of grid-forming inverters and waterless liquid cooling systems across all new South Asian datacenter corridors by 2028.",
+      "sni": "9.9 / 10"
+    },
+    "takeaway": "You cannot run a 1 GW AI cluster on political press releases. The bottleneck to superintelligence is not algorithmic creativity?it is transformer harmonic resonance, reactive power compensation, and the thermodynamics of fluid boiling.",
+    "web_investigation": {
+      "overview": "Technical literature, IEEE power engineering standards, and official state policy documents on data center grid stability and cooling physics.",
+      "sources": [
+        {
+          "title": "Harmonic Distortion and Power Factor in Hyperscale Data Center Power Systems",
+          "publisher": "IEEE Power & Energy Society",
+          "url": "https://www.google.com/url?q=https://ieeexplore.ieee.org/&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Power Engineering Proceedings",
+          "snippet": "Mathematical analysis of harmonic resonance, non-linear server switching supplies, and active filter design for gigawatt-scale computing loads."
+        },
+        {
+          "title": "Karnataka Sustainable Data Centre Policy 2026-2031 Framework",
+          "publisher": "Government of Karnataka / The Hindu",
+          "url": "https://www.google.com/url?q=https://www.thehindu.com/news/cities/bangalore/karnataka-govt-approves-sustainable-data-centre-to-address-ais-environmental-footprint/article71481827.ece&source=gmail&ust=1790808404267000&sa=E",
+          "type": "Official Policy Blueprint",
+          "snippet": "Detailed specifications for Karnataka's 1 GW data center roadmap, including ?1,300 crore budget allocation, water usage mandates, and regional corridors."
+        }
+      ],
+      "search_queries": [
+        "Power factor correction harmonic distortion data center IEEE",
+        "Karnataka Sustainable Data Centre Policy 2026 1 GW PUE WUE"
+      ]
+    }
+  },
+  "executive_wager": {
+    "question": "Will the voluntary 'Self-Policing Accord' signed at the White House survive through the 2028 presidential election without being replaced by binding statutory federal legislation?",
+    "consensus_yes_pct": 58,
+    "consensus_no_pct": 42
+  },
+  "micro_quiz": [
+    {
+      "id": "quiz-1",
+      "question": "What is the core regulatory mechanism established by the White House AI summit on September 29, 2026?",
+      "options": [
+        "A mandatory federal licensing board with compute shutdown authority",
+        "A voluntary 'Self-Policing Accord' under which tech firms conduct internal and external reviews while avoiding statutory compute caps",
+        "An immediate 50% tariff on all imported graphics processing units",
+        "A federal ban on all private data center construction"
+      ],
+      "correct_index": 1,
+      "explanation": "President Trump formalized a voluntary self-policing pact with top tech executives, explicitly praising self-regulation and ruling out new federal oversight agencies."
+    },
+    {
+      "id": "quiz-2",
+      "question": "What cumulative IT load target does the newly approved Karnataka Sustainable Data Centre Policy 2026?2031 set?",
+      "options": [
+        "250 MW",
+        "500 MW",
+        "1 GW (1,000 MW)",
+        "5 GW"
+      ],
+      "correct_index": 2,
+      "explanation": "The Karnataka State Cabinet approved the policy with an outlay of ?1,300.45 crore, aiming for 1 GW of cumulative data center IT load by 2031."
+    },
+    {
+      "id": "quiz-3",
+      "question": "Why do high-density AI clusters cause severe harmonic distortion on electrical transmission grids?",
+      "options": [
+        "Because optical transceivers emit excess ultraviolet radiation",
+        "Because server switched-mode power supplies utilize high-frequency pulse-width modulation that draws non-sinusoidal current pulses",
+        "Because liquid coolant vibrates at 60 Hz",
+        "Because copper cables stretch under heavy computational workloads"
+      ],
+      "correct_index": 1,
+      "explanation": "Non-linear switched-mode power supplies draw non-sinusoidal currents, generating harmonic frequencies that distort grid voltage and cause overheating in utility transformers."
+    },
+    {
+      "id": "quiz-4",
+      "question": "Which tech executive sat directly alongside President Donald Trump in the East Room during the White House AI luncheon?",
+      "options": [
+        "NVIDIA CEO Jensen Huang",
+        "Meta CEO Mark Zuckerberg",
+        "Apple CEO Tim Cook",
+        "Amazon CEO Andy Jassy"
+      ],
+      "correct_index": 0,
+      "explanation": "Jensen Huang was prominently positioned next to President Trump during the East Room meeting and the subsequent West Wing press remarks."
+    },
+    {
+      "id": "quiz-5",
+      "question": "What metric defines the ratio of total facility energy to IT equipment energy in a data center?",
+      "options": [
+        "Water Usage Effectiveness (WUE)",
+        "Power Usage Effectiveness (PUE)",
+        "Carbon Intensity Index (CII)",
+        "Thermal Expansion Coefficient (TEC)"
+      ],
+      "correct_index": 1,
+      "explanation": "Power Usage Effectiveness (PUE) is the standard benchmark: a PUE of 1.0 represents perfect efficiency where 100% of consumed power reaches the computing silicon."
+    }
+  ],
+  "easter_egg": "During the construction of the Hoover Dam in the 1930s, engineers had to embed over 582 miles of cooling pipes circulating ice water through the concrete blocks to prevent heat of hydration from keeping the dam molten for over a century?an early civil engineering parallel to modern direct-to-chip data center liquid cooling.",
+  "interactive_model": {
+    "archetype": "hyperscale_grid_thermodynamics_simulator",
+    "title": "Hyperscale AI Grid & Cooling Thermodynamics Simulator",
+    "subtitle": "Interactive physical simulation of 1 GW datacenter power factor correction, harmonic resonance, and two-phase direct-to-chip liquid cooling dynamics.",
+    "badge": "Power Electronics & Thermodynamics",
+    "camera": {
+      "distance": 19.5,
+      "pitch": 0.44,
+      "yaw": 0.82
+    },
+    "contextual_labels": {
+      "substation_transformer": {
+        "name": "400kV Step-Down Utility Transformer",
+        "desc": "Primary grid interface subject to harmonic eddy-current heating and reactive power stress."
+      },
+      "active_pfc_stage": {
+        "name": "Active Power Factor Correction Array",
+        "desc": "IGBT-switched inverter banks compensating for non-linear server PSU switching harmonics."
+      },
+      "liquid_cold_plate": {
+        "name": "Direct-to-Chip Microchannel Evaporator",
+        "desc": "Two-phase liquid cold plate utilizing latent heat of vaporization to cool 1,000W+ accelerator dies."
+      },
+      "closed_loop_dry_cooler": {
+        "name": "Closed-Loop Adiabatic Heat Exchanger",
+        "desc": "Waterless heat dissipation loop satisfying Karnataka's strict WUE < 0.5 L/kWh mandate."
+      }
+    },
+    "controls": [
+      {
+        "id": "datacenter_it_load_mw",
+        "label": "Cluster IT Load",
+        "min": 100,
+        "max": 1000,
+        "step": 50,
+        "default": 1000,
+        "unit": "MW"
+      },
+      {
+        "id": "pfc_correction_level",
+        "label": "Active Power Factor Correction",
+        "min": 80,
+        "max": 100,
+        "step": 1,
+        "default": 99,
+        "unit": "%"
+      },
+      {
+        "id": "cooling_mode",
+        "label": "Cooling Architecture (0:Air, 1:Single-Phase, 2:Two-Phase Immersion)",
+        "min": 0,
+        "max": 2,
+        "step": 1,
+        "default": 2,
+        "unit": "Mode"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "calculated_facility_pue",
+        "label": "Facility PUE Metric",
+        "unit": "Ratio"
+      },
+      {
+        "id": "grid_harmonic_thd_pct",
+        "label": "Transmission Grid THD",
+        "unit": "%"
+      },
+      {
+        "id": "water_consumption_hourly",
+        "label": "Evaporative Water Consumption",
+        "unit": "kL/h"
+      }
+    ]
+  }
+}
