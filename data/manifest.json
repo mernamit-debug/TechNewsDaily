@@ -1,5 +1,11 @@
 [
   {
+    "issue_number": 31,
+    "date": "2026-10-01",
+    "headline": "OpenAI Unleashes 'Dots' Always-On Persistent Agents and GPT-6.1 Sol at DevDay 2026 as White House Accord Greenlights Unconstrained Deployment",
+    "file_path": "data/issues/2026-10-01.json"
+  },
+  {
     "issue_number": 30,
     "date": "2026-09-30",
     "headline": "Trump Signs Voluntary 'Self-Policing' Accord with Tech Titans as White House Rejects AI Pauses and Champions Gigawatt Data Centers",
